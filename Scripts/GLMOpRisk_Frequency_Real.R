@@ -141,7 +141,6 @@ summary(amodel)
 ### That's it! Now we have AICc values for our models and we have the average model (or mean model).
 
 ## predicting test set results
-
 av.pred <- predict(amodel, crs$training, type = "response")
 av.pred
 
@@ -157,7 +156,7 @@ MASS::fitdistr(exp(av.pred), "Poisson")
 
 MASS::fitdistr(crs[["training"]][["Exposure"]]*(exp(av.pred)), "Poisson")
 
-Est <- "file:///C:/Users/User/Documents/R PROJECT/OpRiskPHDGitHub/OpRisk_PHD_Dissertate/OpRisk_PHD_Dissertation/OPriskDataSet_training.csv"
+Est <- "file:///C:/Users/User/Documents/R PROJECT/OpRiskPHDGitHub/OpRisk_PHD_Thesis/Data/OPriskDataSet_GoF.csv"
 pred <- read.csv(Est,
                   sep=";",
                   dec=",",

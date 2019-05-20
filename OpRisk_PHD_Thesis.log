@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6730) (preloaded format=xelatex 2019.1.15)  20 MAY 2019 05:24
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6730) (preloaded format=xelatex 2019.1.15)  20 MAY 2019 12:52
 entering extended mode
 **./OpRisk_PHD_Thesis.tex
 (OpRisk_PHD_Thesis.tex
@@ -1581,6 +1581,12 @@ Overfull \hbox (27.3241pt too wide) in paragraph at lines 72--72
 linear models (GLM’s)[] []  
  []
 
+
+Overfull \hbox (21.5161pt too wide) in paragraph at lines 75--75
+ [][] [][]\TU/lmr/m/n/12 The estimation of some generalised additive models for
+ location scale and 
+ []
+
 )
 \tf@toc=\write7
 \openout7 = `OpRisk_PHD_Thesis.toc'.
@@ -1957,7 +1963,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2195; it cannot
 
 [57] [58]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2293; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2271; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1969,17 +1975,17 @@ File: IntraDayUpdatedTime.eps Graphic file (type eps)
 File: TrendTraderId.eps Graphic file (type eps)
 <TrendTraderId.eps>
 
-Overfull \hbox (213.47534pt too wide) in paragraph at lines 2292--2300
+Overfull \hbox (213.47534pt too wide) in paragraph at lines 2270--2278
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2300
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2278
 
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2307; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2285; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1991,24 +1997,23 @@ File: UpdatedDayFreq.eps Graphic file (type eps)
 File: TradedDayFreq.eps Graphic file (type eps)
 <TradedDayFreq.eps>
 
-Overfull \hbox (198.07262pt too wide) in paragraph at lines 2306--2314
+Overfull \hbox (198.07262pt too wide) in paragraph at lines 2284--2292
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2306--2314
+Underfull \hbox (badness 10000) in paragraph at lines 2284--2292
 
  []
 
 
-Overfull \hbox (0.43205pt too wide) in paragraph at lines 2322--2328
+Overfull \hbox (0.43205pt too wide) in paragraph at lines 2300--2306
 \TU/lmr/m/n/12 trade was booked to the moment the operational risk event was ob
 served and ended. 
  []
 
-[59] [60]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2332; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2310; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2022,38 +2027,38 @@ File: Dist_exposure.eps Graphic file (type eps)
 File: Benford.eps Graphic file (type eps)
 <Benford.eps>
 
-Overfull \hbox (29.17133pt too wide) in paragraph at lines 2331--2341
+Overfull \hbox (29.17133pt too wide) in paragraph at lines 2309--2319
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2331--2341
+Underfull \hbox (badness 10000) in paragraph at lines 2309--2319
 
  []
 
-[61]
-Overfull \hbox (3.79208pt too wide) in paragraph at lines 2370--2383
+[59] [60]
+Overfull \hbox (3.79208pt too wide) in paragraph at lines 2348--2361
 \TU/lmr/m/n/12 a factor variable with 23 categories; \TU/lmr/m/it/12 Reason\TU/
 lmr/m/n/12 , a description of the cause of the OpRisk 
  []
 
-[62]
+[61]
 File: Exploratory_UpdateTime_Frequency3plot.eps Graphic file (type eps)
 <Exploratory_UpdateTime_Frequency3plot.eps>
 
-Overfull \hbox (119.24615pt too wide) in paragraph at lines 2422--2423
+Overfull \hbox (119.24615pt too wide) in paragraph at lines 2400--2401
 [][] 
  []
 
 File: Exploratory_UpdateDay_Frequency3plot.eps Graphic file (type eps)
 <Exploratory_UpdateDay_Frequency3plot.eps>
 
-Overfull \hbox (119.24615pt too wide) in paragraph at lines 2428--2429
+Overfull \hbox (119.24615pt too wide) in paragraph at lines 2406--2407
 [][] 
  []
 
 
-Overfull \hbox (1.70477pt too wide) in paragraph at lines 2437--2445
+Overfull \hbox (1.70477pt too wide) in paragraph at lines 2415--2423
 []\TU/lmr/m/n/12 Similarly, the influence of trading desk’s on the frequency of
  operational events 
  []
@@ -2061,23 +2066,24 @@ Overfull \hbox (1.70477pt too wide) in paragraph at lines 2437--2445
 File: Density_UpdateDay_TradedDay.eps Graphic file (type eps)
 <Density_UpdateDay_TradedDay.eps>
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2460; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2438; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10.95 ".
 (fontspec)                  The requested feature is "RawFeature=+tnum". 
 
+[62] [63]
 File: Exploratory_Desk_Proportions.eps Graphic file (type eps)
 <Exploratory_Desk_Proportions.eps>
-[63] [64]
-Underfull \hbox (badness 10000) in paragraph at lines 2501--2501
+
+Underfull \hbox (badness 10000) in paragraph at lines 2479--2479
 [][][]\TU/lmr/m/n/10 i.e. the type of financial instrument, the trader who orig
 inated the incident on the deal, and
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2511; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2489; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2089,30 +2095,29 @@ File: Single_Instr.eps Graphic file (type eps)
 File: Stacked_TrId_TechSup.eps Graphic file (type eps)
 <Stacked_TrId_TechSup.eps>
 
-Overfull \hbox (17.17122pt too wide) in paragraph at lines 2510--2518
+Overfull \hbox (17.17122pt too wide) in paragraph at lines 2488--2496
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2510--2518
+Underfull \hbox (badness 10000) in paragraph at lines 2488--2496
 
  []
 
-[65]
+[64]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2548; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2526; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10.95 ".
 (fontspec)                  The requested feature is "RawFeature=+tnum". 
 
-[66] [67]
+[65] [66]
 File: Mosaic_Contingency.eps Graphic file (type eps)
 <Mosaic_Contingency.eps>
-[68]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2594; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2572; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2120,42 +2125,42 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2594; it cannot
 (fontspec)                  The requested feature is "RawFeature=+tnum". 
 
 
-Overfull \hbox (1.29373pt too wide) in paragraph at lines 2596--2596
+Overfull \hbox (1.29373pt too wide) in paragraph at lines 2574--2574
 []|\TU/lmr/m/n/10.95 TradeStatus| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2596--2596
+Underfull \hbox (badness 10000) in paragraph at lines 2574--2574
 []|\TU/lmr/m/n/10.95 Loss Indica-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2596--2596
+Underfull \hbox (badness 10000) in paragraph at lines 2574--2574
 []|\TU/lmr/m/n/10.95 Vice Princi-
  []
 
 
-Overfull \hbox (32.85162pt too wide) in paragraph at lines 2597--2597
+Overfull \hbox (32.85162pt too wide) in paragraph at lines 2575--2575
 []|[]| 
  []
 
 
-Overfull \hbox (12.93358pt too wide) in paragraph at lines 2599--2599
+Overfull \hbox (12.93358pt too wide) in paragraph at lines 2577--2577
 []|[]| 
  []
 
 
-Overfull \hbox (25.56987pt too wide) in paragraph at lines 2603--2603
+Overfull \hbox (25.56987pt too wide) in paragraph at lines 2581--2581
 []|[]| 
  []
 
 
-Overfull \hbox (13.44125pt too wide) in paragraph at lines 2594--2606
+Overfull \hbox (13.44125pt too wide) in paragraph at lines 2572--2584
  [][] 
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2617; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2595; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2163,88 +2168,338 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2617; it cannot
 (fontspec)                  The requested feature is "RawFeature=+tnum". 
 
 
-Overfull \hbox (37.26608pt too wide) in paragraph at lines 2620--2620
+Overfull \hbox (37.26608pt too wide) in paragraph at lines 2598--2598
 []|\TU/lmr/m/n/10.95 CapturedBy_TECHSUPPORT| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
+Underfull \hbox (badness 10000) in paragraph at lines 2599--2599
 []|\TU/lmr/m/n/10.95 TradeStatus_BO con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2624--2624
+Underfull \hbox (badness 10000) in paragraph at lines 2602--2602
 []|\TU/lmr/m/n/10.95 Reason_Trade en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2624--2624
+Underfull \hbox (badness 10000) in paragraph at lines 2602--2602
 \TU/lmr/m/n/10.95 richment for system
  []
 
 
-Overfull \hbox (35.26225pt too wide) in paragraph at lines 2625--2625
+Overfull \hbox (35.26225pt too wide) in paragraph at lines 2603--2603
 []|\TU/lmr/m/n/10.95 EventTypeCategoryLevel_EL7| 
  []
 
 
-Overfull \hbox (1.1749pt too wide) in paragraph at lines 2626--2626
+Overfull \hbox (1.1749pt too wide) in paragraph at lines 2604--2604
 []|\TU/lmr/m/n/10.95 BusinessLineLevel_BL2| 
  []
 
 
-Overfull \hbox (24.60002pt too wide) in paragraph at lines 2633--2633
+Overfull \hbox (24.60002pt too wide) in paragraph at lines 2611--2611
 |\TU/lmr/bx/n/12 The estimation of some poisson regression generalised linear m
 odels (GLM’s)| 
  []
 
+[67] [68]
+Overfull \hbox (2.40802pt too wide) in paragraph at lines 2628--2635
+\TU/lmr/m/n/12 tory variables are composed of numeric, continuous and categoric
+al variables. Where 
+ []
+
+
+Overfull \hbox (23.82877pt too wide) in paragraph at lines 2640--2645
+[]\TU/lmr/m/n/12 Other GLM arguments are: The afore-mentioned link function poi
+sson(link=“log”); 
+ []
+
+
+Overfull \hbox (58.81204pt too wide) in paragraph at lines 2640--2645
+\TU/lmr/m/n/12 a data frame containing the OpRisk dataset, data=crs$training; a
+nd the r offset=log(exposure), 
+ []
+
 [69]
+Overfull \hbox (82.41586pt too wide) in paragraph at lines 2674--2674
+[]\TU/lmtt/m/n/12 ## glm(formula = LossesIndicator ~ TradedDay + Desk, family =
+ poisson(link = "log"),[] 
+ []
+
+
+Overfull \hbox (16.28369pt too wide) in paragraph at lines 2682--2682
+[]\TU/lmtt/m/n/12 ##                       Estimate Std. Error z value         
+    Pr(>|z|)[] 
+ []
+
+
+Overfull \hbox (40.91988pt too wide) in paragraph at lines 2683--2683
+[]\TU/lmtt/m/n/12 ## (Intercept)           -7.99905    0.19636 -40.736 < 0.0000
+000000000002 ***[] 
+ []
+
+
+Overfull \hbox (28.60774pt too wide) in paragraph at lines 2684--2684
+[]\TU/lmtt/m/n/12 ## TradedDay             -0.01427    0.00667  -2.139         
+     0.03242 *[] 
+ []
+
+
+Overfull \hbox (34.79973pt too wide) in paragraph at lines 2685--2685
+[]\TU/lmtt/m/n/12 ## DeskAfrica             1.28441    0.41309   3.109         
+     0.00188 **[] 
+ []
+
+
+Overfull \hbox (40.96785pt too wide) in paragraph at lines 2686--2686
+[]\TU/lmtt/m/n/12 ## DeskBonds/Repos        1.86747    0.26354   7.086     0.00
+000000000138 ***[] 
+ []
+
+
+Overfull \hbox (34.81175pt too wide) in paragraph at lines 2687--2687
+[]\TU/lmtt/m/n/12 ## DeskCommodities        0.72735    0.24727   2.941         
+     0.00327 **[] 
+ []
+
+
+Overfull \hbox (17.49579pt too wide) in paragraph at lines 2688--2688
+[]\TU/lmtt/m/n/12 ## DeskDerivatives       -0.04525    0.27918  -0.162         
+     0.87123[] 
+ []
+
+
+Overfull \hbox (40.9678pt too wide) in paragraph at lines 2689--2689
+[]\TU/lmtt/m/n/12 ## DeskEquity             1.31836    0.22716   5.804     0.00
+000000648772 ***[] 
+ []
+
+
+Overfull \hbox (17.41187pt too wide) in paragraph at lines 2690--2690
+[]\TU/lmtt/m/n/12 ## DeskManagement/Other -13.99193  286.05004  -0.049         
+     0.96099[] 
+ []
+
+
+Overfull \hbox (17.4957pt too wide) in paragraph at lines 2691--2691
+[]\TU/lmtt/m/n/12 ## DeskMM                 0.21880    0.24801   0.882         
+     0.37766[] 
+ []
+
+
+Overfull \hbox (40.96788pt too wide) in paragraph at lines 2692--2692
+[]\TU/lmtt/m/n/12 ## DeskPrime Services     2.15462    0.22427   9.607 < 0.0000
+000000000002 ***[] 
+ []
+
+
+Overfull \hbox (28.60773pt too wide) in paragraph at lines 2693--2693
+[]\TU/lmtt/m/n/12 ## DeskSND               -0.71920    0.28362  -2.536         
+     0.01122 *[] 
+ []
+
+[70]
+Overfull \hbox (1.4256pt too wide) in paragraph at lines 2717--2718
+[]$\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 001373903 = \OML/cmm/m/i
+t/12 e[] \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 e[] \OMS/cmsy/m/n/12 ^^A \OML/cm
+m/m/it/12 e[]$\TU/lmr/m/n/12 , for the combination with \TU/lmr/bx/n/12 DeskPri
+me 
+ []
+
+[71]
+Overfull \hbox (649.7398pt too wide) in paragraph at lines 2740--2740
+[]\TU/lmtt/m/n/12 ### Let us fit a GLM to our data. This will be our global mod
+el. We will use "LossesIndicator" as the dependent variable, while the other va
+riables will be predictor variables. 
+ []
+
+
+Overfull \hbox (10.10393pt too wide) in paragraph at lines 2745--2745
+[]\TU/lmtt/m/n/12 data=crs$training, family=poisson(link = 'log'), offset = log
+(Exposure))[] 
+ []
+
+
+Overfull \hbox (2.0759pt too wide) in paragraph at lines 2757--2757
+[]    \TU/lmtt/m/n/12 Instrument + Reason + EventTypeCategoryLevel1 + BusinessL
+ineLevel1,[] 
+ []
+
+
+Overfull \hbox (59.54387pt too wide) in paragraph at lines 2758--2758
+[]    \TU/lmtt/m/n/12 family = poisson(link = "log"), data = crs$training, offs
+et = log(Exposure))[] 
+ []
+
+
+Overfull \hbox (58.89586pt too wide) in paragraph at lines 2766--2766
+[]\TU/lmtt/m/n/12 (Intercept)             -8.601892    0.738478 -11.648   < 0.0
+000000000000002 ***[] 
+ []
+
+
+Overfull \hbox (47.15982pt too wide) in paragraph at lines 2771--2771
+[]\TU/lmtt/m/n/12 DeskAfrica               2.388334    0.575306   4.151    0.00
+0033042768080 ***[] 
+ []
+
+
+Overfull \hbox (47.12386pt too wide) in paragraph at lines 2772--2772
+[]\TU/lmtt/m/n/12 DeskBonds/Repos          2.975192    0.442633   6.722    0.00
+0000000017977 ***[] 
+ []
+
+
+Overfull \hbox (47.14781pt too wide) in paragraph at lines 2775--2775
+[]\TU/lmtt/m/n/12 DeskEquity               1.745408    0.427535   4.082    0.00
+0044556065633 ***[] 
+ []
+
+[72] [73] [74]
+Overfull \hbox (114.85187pt too wide) in paragraph at lines 2881--2881
+[]\TU/lmtt/m/n/12 Global model call: glm(formula = LossesIndicator ~ UpdatedDay
+ + UpdatedTime + TradedDay + 
+ []
+
+
+Overfull \hbox (2.0759pt too wide) in paragraph at lines 2883--2883
+[]    \TU/lmtt/m/n/12 Instrument + Reason + EventTypeCategoryLevel1 + BusinessL
+ineLevel1,[] 
+ []
+
+
+Overfull \hbox (289.43965pt too wide) in paragraph at lines 2888--2888
+[]     \TU/lmtt/m/n/12 (Intrc) BsLL1 Desk ETCL1 Instr Reasn   TrddD TrdrI TrdSt
+  UpdtD      UpdtT     df    logLik   AICc  delta weight[] 
+ []
+
+
+Overfull \hbox (289.35548pt too wide) in paragraph at lines 2889--2889
+[]\TU/lmtt/m/n/12 894   -8.566     + +     +     +     + -0.014630000 +     +  
+                       71  -879.525 1907.6   0.00  0.082[] 
+ []
+
+
+Overfull \hbox (289.39151pt too wide) in paragraph at lines 2890--2890
+[]\TU/lmtt/m/n/12 382   -8.627     + +     +     +     + -0.014730000 +        
+                       68  -882.870 1907.7   0.14  0.076[] 
+ []
+
+
+Overfull \hbox (288.7436pt too wide) in paragraph at lines 2891--2891
+[]\TU/lmtt/m/n/12 1918  -8.362     + +     +     +     + -0.015200000 +     + -
+0.012880000            72  -878.679 1908.1   0.50  0.064[] 
+ []
+
+
+Overfull \hbox (289.04361pt too wide) in paragraph at lines 2892--2892
+[]\TU/lmtt/m/n/12 1406  -8.447     + +     +     +     + -0.015290000 +       -
+0.011540000            69  -882.168 1908.5   0.92  0.052[] 
+ []
+
+
+Overfull \hbox (289.3914pt too wide) in paragraph at lines 2893--2893
+[]\TU/lmtt/m/n/12 830   -8.889     + +     +     +     +              +     +  
+                       70  -881.128 1908.6   1.02  0.049[] 
+ []
+
+
+Overfull \hbox (289.09142pt too wide) in paragraph at lines 2894--2894
+[]\TU/lmtt/m/n/12 318   -8.942     + +     +     +     +              +        
+                       67  -884.505 1908.8   1.23  0.044[] 
+ []
+
+
+Overfull \hbox (288.7795pt too wide) in paragraph at lines 2895--2895
+[]\TU/lmtt/m/n/12 1854  -8.705     + +     +     +     +              +     + -
+0.011920000            71  -880.413 1909.4   1.78  0.034[] 
+ []
+
+
+Overfull \hbox (289.04358pt too wide) in paragraph at lines 2896--2896
+[]\TU/lmtt/m/n/12 2942  -8.730     + +     +     +     + -0.014640000 +     +  
+             0.3133000 72  -879.413 1909.6   1.97  0.031[] 
+ []
+
+[75]
+Overfull \hbox (51.51588pt too wide) in paragraph at lines 2933--2933
+[]\TU/lmtt/m/n/12 glm(formula = LossesIndicator ~ <8 unique rhs>, family = pois
+son(link = "log"),[] 
+ []
+
+
+Overfull \hbox (11.33992pt too wide) in paragraph at lines 2948--2948
+[]\TU/lmtt/m/n/12 BusinessLineLevel1  Desk     EventTypeCategoryLevel1  Instrum
+ent  Reason[] 
+ []
+
+
+Overfull \hbox (41.92781pt too wide) in paragraph at lines 2950--2950
+[]\TU/lmtt/m/n/12 TradedDay           TraderId TradeStatus              Updated
+Day  UpdatedTime[] 
+ []
+
+[76]
+Overfull \hbox (41.00398pt too wide) in paragraph at lines 2969--2969
+[]\TU/lmtt/m/n/12 confusionMatrix(table(pred$Response, crs[["training"]][["Loss
+esIndicator"]]))[] 
+ []
+
+[77] [78]
+Overfull \hbox (2.38803pt too wide) in paragraph at lines 3047--3047
+|\TU/lmr/bx/n/12 The estimation of some generalised additive models for locatio
+n scale and
+ []
+
+[79] [80]
 Chapter 4.
-[70
+[81
 
 ]
 Chapter 5.
-[71
+[82
 
-] [72
+] [83
 
 ]
-Overfull \hbox (3.7553pt too wide) in paragraph at lines 2748--2752
+Overfull \hbox (3.7553pt too wide) in paragraph at lines 3189--3193
  \TU/lmr/m/it/12 sues \TU/lmr/m/n/12 (pp. 1–12). Retrieved from []$[][][][] [] 
 [] [] [][][] [] [][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] []
  
  []
 
 
-Overfull \hbox (14.34705pt too wide) in paragraph at lines 2748--2752
+Overfull \hbox (14.34705pt too wide) in paragraph at lines 3189--3193
  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]
   
  []
 
-[73]
-Overfull \hbox (0.13258pt too wide) in paragraph at lines 2865--2869
+[84]
+Overfull \hbox (0.13258pt too wide) in paragraph at lines 3306--3310
  [][]\TU/lmr/m/n/12 Shefrin, H. (2016). \TU/lmr/m/it/12 Behavioral risk managem
 ent: Managing the psychology that drives 
  []
 
 
-Overfull \hbox (7.8196pt too wide) in paragraph at lines 2875--2879
+Overfull \hbox (7.8196pt too wide) in paragraph at lines 3321--3325
  \TU/lmr/m/n/12 operational risk and the cost of fraud. \TU/lmr/m/it/12 Expert 
 Systems with Applications\TU/lmr/m/n/12 , \TU/lmr/m/it/12 41\TU/lmr/m/n/12 (16)
 , 
  []
 
+[85]
 No file OpRisk_PHD_Thesis.bbl.
-[74]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2893.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2893.
+[86]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3339.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3339.
 (OpRisk_PHD_Thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2893.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2893.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3339.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3339.
 
 Package rerunfilecheck Info: File `OpRisk_PHD_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C988B88E65AB199F4A4742FC9F4BCF0C.
+(rerunfilecheck)             Checksum: 5B7067ABE2F028DDB42954A6854BEFF4.
 
 LaTeX Warning: There were undefined references.
 
@@ -2253,12 +2508,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 47450 strings out of 427798
- 1041253 string characters out of 3148017
- 1411435 words of memory out of 3000000
- 50771 multiletter control sequences out of 15000+200000
+ 47452 strings out of 427798
+ 1041382 string characters out of 3148017
+ 1415436 words of memory out of 3000000
+ 50773 multiletter control sequences out of 15000+200000
  555655 words of font info for 135 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  69i,17n,98p,1208b,844s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on OpRisk_PHD_Thesis.pdf (85 pages).
+Output written on OpRisk_PHD_Thesis.pdf (97 pages).
