@@ -1,0 +1,224 @@
+---
+title: 'Towards a Framework for Operational Risk in the Banking Sector'
+author: "Mphekeleli Hoohlo"
+geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
+year: '2019'
+degree: 'Doctor of Philosophy'
+field: 'Risk Theory (Finance)'
+chair: 'Eric Schaling, Ph.D.'
+committee2: 'Thanti Mthanti, Ph.D.'
+committee3: 'Odongo Kodongo, Ph.D.'
+committee4: 'Thabang Mokoaleli-Mokoteli, Ph.D.'
+committee5: 'Christopher Malikane, Ph.D.'
+gradschool: 'Paul Alagidede, Ph.D.'
+bibliography: Thesis.bib
+output:
+  dissertateUSU::dissertateUSU:
+    latex_engine: xelatex
+    keep_tex: yes
+    pandoc_args: [ "--csl", "apa6.csl" ]
+---
+
+```{r global_options, include=FALSE}
+## This saves you from having to do this for every chunk
+knitr::opts_chunk$set(fig.path = 'figures/',
+                      echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE)
+```
+
+
+<!-- Abstract -->
+\newpage
+\pagestyle{fancy}
+\fancyhead[L]{Abstract}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+\chapter*{ABSTRACT}
+\addcontentsline{toc}{section}{Abstract}
+
+\doublespacing
+\begin{center}
+Towards a Framework for Operational Risk \\ 
+in the Banking Sector \\
+\vspace{12pt}
+by \\
+\vspace{12pt}
+Mphekeleli Hoohlo \\
+University of the Witwatersrand, 2019
+\end{center}
+
+\vspace{12pt}
+
+\singlespacing
+\noindent Major Professor: Eric Schaling, Ph.D.
+
+\noindent Supervisor: Thanti Mthanti, Ph.D.
+
+\noindent Department: Law, Commerce \& Management
+
+\vspace{12pt}
+
+\doublespacing
+
+There have been a series of destructive events that have threatened the stability of the financial system due to (OpRisk). In most, if not all of these cases, human error is at the center of the chain of events that lead or may lead to (OpRisk) losses.  There are many attitudes that can potentially infect organisational processes, the  most persistent of these attitudes stem from human failings that are exploitable @barberis2003survey, thus forming a basis for the theoretical foundation of \texttt{OpRisk}.
+
+@shefrin2016behavioral notes that people would rather incur greater risks to hold on to things they already have, than the risks they would taken to get into that position in the first place, thereby risking a banks' survival, rather than expose their trading losses by consciously deceiving senior management to hide unethical operational practices. In this paper the application of machine learning techniques on the observed data demonstrates how these issues can be resolved given their flexibility to different types of empirical data.
+
+<!-- This code does not include the preliminary pages so I hard coded it -->
+<!-- \hspace{10.5 cm} (\pageref{LastPage} pages) -->
+
+\hspace{11 cm} (116 pages)
+
+
+\singlespacing
+
+
+<!-- Public Abstract -->
+\newpage
+\fancyhead[L]{Public Abstract}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+\chapter*{PUBLIC ABSTRACT}
+\addcontentsline{toc}{section}{Public Abstract}
+
+\doublespacing
+\begin{center}
+Towards a Framework for Operational Risk \\ 
+in the Banking Sector \\
+Mphekeleli Hoohlo
+\end{center}
+
+\vspace{12pt}
+
+The purpose of this research is to provide clarity; based on theory and empirical evidence, on how to tackle the specific problems in the *operational risk* (OpRisk) literature, which have earned a place in modern day recource in in risk and finance, due to how significantly its importance has increased over the last few decades. During this period, until present day, there have been and continues to be series of destructive events that have threatened the stability of financial systems due to OpRisk. In most, if not all of these cases, human error is at the center of the chain of events that lead or may lead to (OpRisk) losses. There are many attitudes that can potentially infect organisational processes, the  most persistent of these attitudes stem from human failings that are exploitable @barberis2003survey, thus forming a basis for the theoretical foundation of \texttt{OpRisk}.
+
+@shefrin2016behavioral notes that people would rather incur greater risks to hold on to things they already have, than the risks they would taken to get into that position in the first place, thereby risking a banks' survival, rather than expose their trading losses by consciously deceiving senior management to hide unethical operational practices. In this paper the application of machine learning techniques on the observed data demonstrates how these issues can be resolved given their flexibility to different types of empirical
+
+
+\singlespacing
+
+
+<!-- Dedication -->
+\newpage
+\fancyhead[L]{Dedication}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+\chapter*{DEDICATION}
+\addcontentsline{toc}{section}{Dedication}
+
+Dedicate it.
+
+
+<!-- Acknowledgements -->
+\newpage
+\fancyhead[L]{Acknowledgments}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+\chapter*{ACKNOWLEDGEMENTS}
+\addcontentsline{toc}{section}{Acknowledgments}
+
+Acknowledge those acknowledgable individuals and things.
+
+
+<!-- Front Matter -->
+\newpage
+\fancyhead[L]{Table of Contents}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+\tableofcontents
+
+\newpage
+\fancyhead[L]{List of Tables}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+\listoftables
+
+\newpage
+\fancyhead[L]{List of Figures}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+\listoffigures
+
+
+\newpage
+\pagenumbering{arabic}
+
+<!-- Chapter 1 -->
+\newpage
+\fancyhead[L]{Introduction}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+
+\chapter{INTRODUCTION}
+
+```{r, child="Chapter1.Rmd"}
+```
+
+
+<!-- Chapter 2 -->
+\FloatBarrier
+\newpage
+\fancyhead[L]{Literature Review}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+
+\chapter{LITERATURE REVIEW}
+\label{LITERATURE REVIEW}
+
+```{r, child="Chapter2.Rmd"}
+```
+
+
+<!-- Chapter 3 -->
+\FloatBarrier
+\newpage
+\fancyhead[L]{Exposure-based Operational Risk Analysis}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+
+\chapter{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS}
+
+```{r, child="Chapter3.Rmd"}
+```
+
+
+<!-- Chapter 4 -->
+\FloatBarrier
+\newpage
+\fancyhead[L]{Chapter 4's Title}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+
+\chapter{Chapter 4's Title}
+
+```{r, child="Chapter4.Rmd"}
+```
+
+
+<!-- Chapter 5 -->
+\FloatBarrier
+\newpage
+\fancyhead[L]{Chapter 5's Title}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+
+\chapter{Chapter 5's Title}
+
+```{r, child="Chapter5.Rmd"}
+```
+
+
+
+\FloatBarrier
+\newpage
+\fancyhead[L]{References}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+
+\chapter*{REFERENCES}
+
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.4in}
+\setlength{\parskip}{6pt}
+\noindent

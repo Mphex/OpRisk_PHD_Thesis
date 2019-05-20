@@ -1,0 +1,313 @@
+---
+output: pdf_document
+---
+
+\doublespacing
+
+\section{Introduction}
+\label{sec2:Introduction}
+
+A look into literary sources for OpRisk indicates [@acharyya2012current] that there is insufficient academic literature that looks to characterize its theoretical roots, as it is a relatively new discipline, choosing instead to focus on proposing a solution to the quantification of OpRisk. This chapter seeks to provide an overview of some of the antecedents of OpRisk measurement and management in the banking industry. As such, this chapter provides a discussion on why OpRisk is not trivial to quantify and attempts to understand its properties in the context of risk aversion with the thinking of practitioners and academics in this field.\medskip
+
+According to @cruz2002modeling, FI's wish to measure the impact of operational events upon profit and loss (P\&L), these events depict the idea of explaining the *volatility of earnings* due to OpRisk data points which are directly observed and recorded. By seeking to incorporate data intensive statistical approaches to help understand the data, the framework analyses response variables that are decidedly non-normal (including categorical outcomes and discrete counts) which can shed further light on the understanding of firm-level OpRisk RC. Lastly, a synopsis of gaps in the literature is presented.
+
+\section{The theoretical foundation of OpRisk}
+\label{sec:The theoretical foundation of OpRisk}
+
+@hemrit2012major argue that common and systematic operational errors in hypothetical situations poses presumtive evidence that OpRisk events, assuming that the subjects have no reason to disguise their preferences, are created sub-consciously. This study purports, supported by experimental evidence, behavioural finance theories should take some of this behaviour into account in trying to explain, in the context of a model, how investors maximise a specific utility/value function.\medskip
+
+Furthermore its argued by integrating OpRisk management into behavioral finance theory,\footnote{In behavioral finance, we investigate whether certain financial phenomena are the result of less than fully rational thinking [@barberis2003survey]}, that it may be possible to improve our understanding of firm level RC by refining the resulting OpRisk models to account for these behavioral traits - implying that people's economic preferences described in the model, have an economic incentive to improve the OpRisk RC measure. \medskip
+
+@wiseman1997longitudinal suggest that managerial risk-taking attitudes are influenced by the decision (performance) context in which they are taken. In essence, managerial risk-taking attitude is considered as a proxy for measuring OpRisk  [@acharyya2012current]. In so doing, @wiseman1997longitudinal investigate more comprehensive economic theories, viz.  prospect theory and the behavioural theory of the firm, that prove relevant to complex organizations who present a more fitting measure for OpRisk.\medskip 
+
+In a theoretical paper, @wiseman1997longitudinal discussed several organizational and behavioural theories, such as PT, which influence managerial risk-taking attitudes. Their findings demonstrate that behavioural views, such as PT and the behavioural theory of the firm explain risk seeking and risk averse behaviour in the context of OpRisk even after agency based influences are controlled for. Furthermore, they challenge arguments that behavioral influences are masking underlying root causes due to agency effects. Instead they argue for mixing behavioral models with agency based views to obtain more complete explanations of risk preferences and risk taking behavior [@wiseman1997longitudinal]. \medskip 
+
+Despite the reality that OpRisk does not lend itself to scientific analysis in the way that market risk and credit risk do, someone must do the analysis, value the RC measurement and hope the market reflects this. Besides, financial markets are not objectively scientific, a large percentage of successful people have been lucky in their forecasts, it is not an area which lends itself to scientific analysis.
+
+\section{Overview of operational risk management}
+\label{sec:Overview of operational risk management}
+
+It is important to note how OpRisk manifests itself: @king2001operational has established the causes and sources of operational loss events as observed phenomena associated with operational errors and are wide ranging. By definition, the occurence of a loss event is due to P\&L volatitlity from a payment, settlement or a negative court ruling within the capital horizon over a time period (of usually one year) [@einemann2018operational].  As such, P\&L volatitlity is not only related to the way firms finance their business, but also in the way they \emph{operate}.\medskip 
+
+In operating practice, one assumes that on observing or on following instructions we are consciously analysing and accurately executing our tasks based on the information. However, the occurence of operational loss events indicates that there are sub-concious faults in information processing, which we are not consciously aware of. These operational loss events are almost always initiated at the dealing phase of a trading process, which more often than not implicates front office (FO) personnel to bear the responsibility for the losses e.g., during the trading process in cases where OpRisk events occur as a result of a mismatch between the trade booked (booking in trade feed) and the details agreed by the trader. The middle office (MO) and back offices (BO) conduct the OpRisk management, who undertake a broad view of P\&L attribution carried out from deal origination to settlement within the perspective of strategic management, and detects the interrelationships between OpRisk factors with others to conceptualise the potential overall consequences [@acharyya2012current] e.g., in the afore-mentioned example, human error (a sub-conscious phenomenon) is usually quoted as the source of error, and the trade is fixed by \lq\lq amending\rq\rq\ or manually changing the trade details. \medskip
+
+Furthermore, @acharyya2012current recognised that organizations may hold OpRisk due to external causes, such as failure of third parties or vendors (either intentionally or unintentionally), in maintaining promises or contracts. The criticism in the literature is that no amount of capital is realistically reliable for the determination of RC as a buffer to OpRisk, particularly the effectiveness of the approach of capital adequacy from external events, as there is effectively no control over them.\medskip
+
+\section{The loss collection data exercise (LCDE)}
+\label{sec:The loss collection data exercise (LCDE)}
+
+The main challenge in OpRisk modeling is in poor loss data quantities, and low data quality. There are usually very few data points and are often characterised by high frequency low severity (HFLS) and low frequency high severity (LFHS) losses. It is common knowledge that HFLS losses at the lower end of the spectrum tend to be ignored and are therefore less likely to be reported, whereas low frequency high severity losses (LFHS) are well guarded, and therefore not very likely to be made public.\medskip
+
+In this study, a new dataset with unique feature characteristics is developed using the official loss data collection exercise (LDCE), as defined by @basel2011operational for internal data. The dataset in question is at the level of individual loss events, it is fundamental as part of the study to know when they happened, and be able to identify the root causes of losses arising from which OpRisk loss events.\medskip
+
+The LCDE is carried out drawing statistics directly from the trade generation and settlement system, which consists of a tractable set of documented trade detail extracted at the most granular level, i.e. on a trade-by-trade basis [as per number of events (frequencies) and associated losses (severities)], and then aggregated daily. The dataset is split into proportions and trained, validated and tested. The afore-mentioned LDCE, is an improved reflection of the risk factors by singling out the value-adding processes associated with individual losses, on a trade-by-trade level.
+
+\section{Current operational risk measurement modeling framework}
+\label{sec:Current operational risk measurement modeling framework}
+
+Historical severity curves obtained from historical loss counts have been widely considered to be the most reliable models when used in OpRisk loss estimation. However they have not been successfull when used as measures capturing forward-looking aspects of the OpRisk loss prediction problem.\medskip 
+
+In this paper, we develop data intensive analysis techniques which yield a more realistic estimation for underlying risk factors, through linking risk factors to covariates based on internal control vulnerabilities (ICV's). ICV's are selected as measures of trading risk exposure, business environment and internal control factors (BEICF's) i.e., trade characteristics and causal factors. For each loss event, information such as unique trade identifier, trader identification, loss event capture personnel, trade status and instrument type, loss event description, loss amount, market variables, trading desk and business line, beginning and ending date and time of the event, and settlement time are given.\medskip  
+
+AMA's allow banks to use their internally generated risk estimates Under Basel II; a first attempt internal measurement approach (IMA) capital charge calculation for OpRisk (i.e. ) is similar to the Basel II model for credit risk, where a loss event is a default in the credit risk jargon. There are generally seven event type categories [@risk2001supporting] and eight business lines. Potential losses are decomposed into several ($7 \times 8 = 56$) sub-risks using event types and business line combinations: e.g., execution, delivery \& process management is one such category defined the risk that operational losses/problems would take place in the banks transactions, given as:
+
+\begin{eqnarray}
+\mathcal{\Large{C}}_{OpRisk}^{IMA} &=& \sum_{i=1}^8 \sum_{k=1}^7 \gamma_{ik}\epsilon_{ik} \\
+where \quad \epsilon_{ik}&:& \quad \mbox{expected loss for business line $i$, risk type $k$} \nonumber \\
+      \gamma_{ik}&:& \quad \mbox{scaling factor} \nonumber
+\end{eqnarray}
+
+\subsection{The business line/ event type (BL/ET) matrix}
+
+The 3-dimensional diagram, Figure \ref{BL/ET Matrix} depicts the formation of the $BL/ET$ matrix: Duration (time $T+\tau$) is represented along the depth ordinate.
+
+\begin{figure}
+\begin{tikzpicture}[every node/.style={minimum size=0.5cm},on grid]
+\begin{scope}[every node/.append style={yslant=-0.5},yslant=-0.5]
+  \shade[right color=gray!10, left color=black!50](0,0) rectangle +(8,8);
+  \node at (0.5,7.5) {$\textbf{\mbox{BL}1}$};
+  \node at (0.5,6.5) {$\color{green}{{X^l}_{11}}$};   
+  \node at (1.5,7.5) {$\textbf{\mbox{BL}2}$};
+  \node at (2.5,7.5) {$\textbf{\mbox{BL}3}$};
+  \node at (3.5,7.5) {$\textbf{\mbox{BL}4}$};
+  \node at (4.5,7.5) {$\textbf{\mbox{BL}5}$};
+  \node at (5.5,7.5) {$\textbf{\mbox{BL}6}$};
+  \node at (6.5,7.5) {$\textbf{\mbox{BL}7}$};
+  \node at (7.5,7.5) {$\textbf{\mbox{BL}8}$};
+  \node at (7.5,6.5) {$\color{blue}{{X^l}_{18}}$};  
+  \draw (0,0) grid (8,8);
+\end{scope}   
+\begin{scope}[every node/.append style={yslant=0.5},yslant=0.5]  
+  \shade[right color=gray!70,left color=gray!10](8,-8) rectangle +(8,8);
+  \node at (11.5,-0.5) {$\mbox{T}+\tau \quad \Huge{\color{magenta}\xrightarrow{\hspace*{4cm}}}$};
+  \node at (8.5,-1.5) {\textbf{EL1}};
+  \node at (8.5,-2.5) {\textbf{EL2}};
+  \node at (8.5,-3.5) {\textbf{EL3}};
+  \node at (8.5,-4.5) {\textbf{EL4}};
+  \node at (8.5,-5.5) {\textbf{EL5}};
+  \node at (8.5,-6.5) {\textbf{EL6}};
+  \node at (8.5,-7.5) {\textbf{EL7}};
+  \node at (10.5,-1.5) {Internal Fraud};
+  \node at (10.5,-2.5) {External Fraud};
+  \node at (12.5,-3.5) {Employment Practices and Workplace Safety};
+  \node at (12.0,-4.5) {Client Products and Business Practices};
+  \node at (11.5,-5.5) {Damage to Physical Assets};
+  \node at (12.0,-6.5) {Business Disruption and System Failure};
+  \node at (12.5,-7.5) {Execution, Delivery and Process Management};
+\end{scope}   
+\begin{scope}[every node/.append style={yslant=0.5,xslant=-1},yslant=0.5,xslant=-1]
+  \node at (10.0,7.5) {Corporate Finance};
+  \node at (10.0,6.5) {Trading and Sales};
+  \node at (10.0,5.5) {Retail Banking};
+  \node at (10.0,4.5) {Commercial Banking};
+  \node at (10.0,3.5) {Payment and Settlement};
+  \node at (10.0,2.5) {Agency Services};
+  \node at (10.0,1.5) {Asset Management};
+  \node at (10.0,0.5) {Retail Brokerage};
+\end{scope}  
+\end{tikzpicture}
+\label{BL/ET Matrix}
+\caption{The 3-Dimensional grid of the BL/ET matrix for 7 event types and 8 business lines}
+\end{figure}
+
+\section{Loss Distribution Approach (LDA)}
+\label{sec:Loss Distribution Approach (LDA)}
+
+The Loss Distribution Approach (LDA) is an AMA method whose main objective is to provide realistic estimates to calculate VaR for OpRisk RC in the banking sector and it's business units based on loss distributions that accurately reflect the frequency and severity loss distributions of the underlying data. Having calculated separately the frequency and severity distributions, we need to combine them into one aggregate loss distribution that allows us to produce a value for the OpRisk VaR. \medskip
+
+We begin by defining some concepts:
+\begin{itemize}
+\item In line with Basel II, and according to @frachot2001loss, we consider a matrix consisting of business lines $BL$ and (operational) event types $ET$. The bank estimates, for each business line/event type (BL/ET) cell, the probability functions of the single event impact and the event frequency for the next three months. More precisely, in each cell of the BL/ET matrix separate distributions for loss frequency and severity are modeled and aggregated to a loss distribution at the group level. The aggregated operational losses can be seen as a sum $S$ of a random number $N$ of individual operational losses \begin{math} (X_1, \ldots, X_N )\end{math}. This sum can be represented by:
+
+\singlespacing
+\begin{equation}\label{eqn1}
+S = X_1, \ldots, X_N ,\quad N = 1, 2, \ldots 
+\end{equation}
+\doublespacing
+
+\item Three month daily statistics are taken of the time series of internal processing errors (frequency data) and their associated severities and used in each cell of the BL/ET matrix. Frequency refers to the number of events that occur within the specified time period (daily buckets) $T$ and $T + \tau$ and severity refers to the P\&L impact resulting from the frequency of events. The time (1 day bucket) period is chosen in order to ensure that the number of data points is sufficient for statistical analysis.
+\end{itemize}
+
+\subsection{Computing the frequency distribution}
+
+\begin{itemize}
+\item Let $\mathbf{N}_{ij}$ be variable in random selection, representing \textbf{the number of times of process risk event failures} between times $T$ \& $T +\tau$. Suppose subscript $i$ refers to the $BL$ which ranges from \begin{math} 1, \ldots, k \end{math} and subscript $j$ to $ET$ ($j=1$ for process risk). We have taken a random sample implying that the observations \begin{math} N_{ij}\end{math}, {where} \begin{math}{i,j}= (1,1)\,,\;\ldots, (k,1)\end{math} are independent and identically distributed (i.i.d). 
+
+\item The random variable $N_{i1}$\footnote{$N_{ij}$ \, where subscript $j=1$ since we are only dealing with $1$ event type i.e. process risk} has distribution function\footnote{The term distribution function is monotonic increasing function of $n$ which tends to $0$ as \begin{math} n \longrightarrow -\infty\end{math}, and to $1$ as \begin{math} n \longrightarrow \infty \end{math}} The random variable has distribution function (d.f.) \begin{math}\mathbf{P}_{i1}(n/\theta_0)  \end{math}, where $\theta_0$ is an unknown parameter of the estimated distribution.  The unknown parameter $\theta_0$ may be a scalar or a vector quantity \begin{math}\mathbf{\theta_0}\end{math}, for example, The Poisson distribution depends on one parameter called $\lambda$ whereas the univariate normal distribution depends on two parameters, $\mu$ and $\sigma ^2$, the mean and variance.  These parameters are to be estimated in some way. We use the Maximum Likelihood Estimate (m.l.e) which is that value of $\theta$ that makes the observed data \lq\lq most probable\rq\rq or \lq\lq most likely\rq\rq.\medskip
+
+\item The d.f. \begin{math}\mathbf{P}_{i1}(n/\theta_0)  \end{math}, is the probability that $N_{i1}$ takes a value less than or equal to $n$, where $n$ is a small sample from the entire population of observed frequencies, i.e.
+\singlespacing
+\begin{equation}\label{PDF}
+\mathbf{P}_{ij}(n)=Pr \left(N_{ij}\leq n \right) \quad{i,j}= (1,1),\ldots, (k,1)
+\end{equation}
+\doublespacing
+
+\item The probability density function (p.d.f) : A density function is a non--negative function $p(n)$ whose integral, extended over the entire $x$ axis, is equal to $1$ for a given continuous random variable $X$. i.e. it is the area under the probability density curve, of the discrete random variable $N_{i1}$ takes discrete values of $n$ with finite probabilities. In the discrete case the term for p.d.f. is the probability function (p.f.) also called the probability mass function, i.e. $N_{i1}$ is given by the probability that the variable takes the value $n$, i.e.
+
+\singlespacing
+\begin{equation}\label{eqn3}
+p_{ij}(n)=Pr\left(N_{ij} = n\right), \quad{i,j}= (1,1),\ldots, (k,1) 
+\end{equation} 
+\doublespacing
+
+\item The r.h.s of equation~(\ref{PDF}) is the summation of the r.h.s of equation~(\ref{eqn3}), we derive a relation for the \textbf{loss frequency distribution} in terms of the (p.f): 
+
+\singlespacing
+\begin{equation}\label{eqn4} 
+\mathbf{P}_{ij}(n)=\sum_{k=1}^{n_k} p_{ij}(n) \quad{i,j}= (1,1),\ldots, (k,1)
+\end{equation}
+\doublespacing
+
+\end{itemize}
+
+\subsection{Computing the severity distribution}
+
+\begin{itemize}
+\item Suppose $X_{ij}$ is a random variable representing \textbf{the amount of one loss event} in a cell of the BL/ET matrix. Define next period's loss in each cell $(i,j)$, where $i$ is the number of business line cells, \begin{math} {{L}^{T+1}}_{i,j}\end{math}: Operational loss for loss type $j=1$ (process risk). One models the amount of the total operational loss of type $j$ at a given time $T$ \& $T + 1$, over the future (say 3 months), as:
+
+\singlespacing
+\begin{equation}\label{eqn5}
+{L}^{T+1}=\sum_{i=1}^{k}{L}^{T+1}_{i1}=\sum_{i=1}^{2}\sum_{l=1}^{{{N}_{i1}}^{T+1}}{{X}^{l}}_{i1} \quad l=1,2,\ldots, N_{i1} 
+\end{equation}
+\doublespacing
+
+\item Let $ N_1, N_2,...,N_m $ (where $m$ in the number of combinations in the BL/ET matrix) be random variables that represent the loss frequencies. It is usually assumed that the random variables $X_{i1}$ are independently distributed and independent of the number of events $N_{m}$. A fixed number of a particular loss type would be denoted by ${{X}^{1}}_{i1}$, i.e the random variable \begin{math}{{X}^{l}}_{i1}\end{math}, represents random samples of the severity distribution [@aue2006lda].\medskip
+
+The \textbf{loss severity distribution} is denoted by \begin{math}\mathbf{F}_{i1}\end{math}. Since loss severity variate $X$ is continuous (i.e. can take on any real value), we define a level of precision $\emph{h}$ such that the probability of $X$ being within $\pm\emph{h}$ of a given number $x$ tends to zero. The loss severity, $X_{i1}$ has a (d.f.) \begin{math}\mathbf{F}_{i1}(x/\theta_1) \end{math}, where $\theta_1$ is an unknown parameter and $x$ is a small sample from the entire population of loss severity.
+
+\item We define probability density in the continuous case as follows:
+
+\singlespacing
+\begin{eqnarray}
+f_{X}(x) &=& \lim_{h\rightarrow 0}\frac{Pr[x < X \leq x + h]}{h}\nonumber\\
+&=& \lim_{h\rightarrow 0}\frac{F_{X}(x + h) - F_{X}(x)}{h}\nonumber\\
+&=&\frac{dF_{X}(x)}{dx} \label{eqn6a}
+\end{eqnarray}
+\doublespacing
+
+operate with $\int\,dx$ on both sides of \ref{eqn6a}
+
+\singlespacing
+\begin{equation}
+\mathbf{F}_{X_{ij}}(x)=\int_{k=1}^{\infty} f_{X_{ij}}(x)dx \quad{i,j}= (1,1),\ldots, (k,1)\label{eqn6b}
+\end{equation}
+\doublespacing
+
+where $f_{X_{ij}}(x)$ is the probability density function (p.d.f.). Once again, the subscript $X$ identifies the random variable for severity (P\&L impact) of one loss event while the argument $x$ is an arbitrary sample of the severity events.
+\end{itemize}
+
+\subsection{Formal Results}
+
+Having calculated both the frequency and severity process we need now to combine them in one aggregate loss distribution that allows us to predict an amount for  the operational losses to a degree of confidence. There is no simple way of aggregating the frequency and severity distribution. Numerical approximation techniques (computer algorithms) successfully bridge the divide between theory and implementation for the problems of mathematical analysis.\medskip
+
+
+The aggregated losses at time $t$ are given by $\vartheta(t) = \sum_{n=1}^{N(t)} X_{n}$ (where X represents individual operational losses). Frequency and severity distributions are estimated, e.g., the poisson distribution is a representation of a discrete variable commonly used to model operational event frequency (counts), and a selection from continuous distributions which can be linear (e.g. gamma distribution) or non-linear (e.g. lognormal distribution) for operational loss severity amounts. The compound loss distribution $\mathbf{G}(t)$ can now be derived.  Taking the aggregated losses we obtain:
+
+\singlespacing 
+\begin{equation}\label{Compound_losses}
+\mathbf{G}_{\vartheta(t)}(x)=Pr[\vartheta(t)\leq x]=Pr\left(\sum_{n=1}^{N(t)}X_{n} \leq x\right)
+\end{equation}
+\doublespacing
+
+For most choices of $N(t)$ and $X_{n}$, the derivation of an explicit formula for $\mathbf{G}_{\vartheta(t)}(x)$ is, in most cases impossible. $\mathbf{G}(t)$ can only be obtained numerically using the Monte Carlo method, Panjer's recursive approach, and the inverse of the characteristic function [@frachot2001loss; @aue2006lda; @panjer2006operational; \& others]. \medskip
+
+\begin{itemize}
+\item We now introduce the aggregate loss variable at time $t$ given by $\vartheta(t)$. This new variable represents \textbf{the loss for business line $i$ and event type $j$}. The aggregate loss is defined by \begin{math} \vartheta(t) = \sum_{n=1}^{N(t)} X_{n} \end{math} (where X represents individual operational losses). Once frequency and severity distributions are estimated, the compound loss distribution \begin{math} \mathbf{G}(t)\end{math} can be derived.  Taking the aggregated losses we obtain:
+
+\singlespacing
+\begin{equation}\label{eqn6}
+\mathbf{G}_{\vartheta(t)}(x)=Pr[\vartheta(t)\leq x]=Pr\left(\sum_{n=1}^{N(t)}X_{n} \leq x\right)
+\end{equation}
+\doublespacing
+
+\item The derivation of an explicit formula for \begin{math}\mathbf{G}_{\vartheta(t)}(x) \end{math} is, in most cases impossible. Again we implicitly assume that the processes \{$N(t)$\} and $\{X_{n}\}$ are independent and identically distributed (i.i.d).  Deriving the analytical expression for \begin{math}\mathbf{G}_{\vartheta(t)}(x) \end{math}, we see a fundamental relation corroborated by @frachot2001loss, @cruz2002modeling, @embrechts2013modelling, \& others:
+
+\singlespacing
+\begin{equation}\label{eqn7}
+\mathbf {G}_{\vartheta(t)}(x)=\left\{\begin{array}{rcl}
+                 &\sum_{n,k=0,1}^{\infty} p_{k}(n)\mathbf{F}_{X}^{k\star}(x) &x>0\\ &p_{k}(0) &x=0
+                 \end{array}\right\}
+\end{equation}
+\doublespacing
+
+where $\star $ is the \emph{convolution} operator on d.f.'s, \begin{math}\mathbf{F}^{k\star} \end{math} is the k-fold convolution of \begin{math}\mathbf{F} \end{math} with itself. The convolution of two functions $f(x)$ and $g(x)$ is the function
+\singlespacing
+\begin{equation}
+\int_{0}^{x}f(t)g(x-t)dt
+\end{equation}
+\doublespacing , i.e. \begin{math} \mathbf{F}_{X}^{k\star}(x)=Pr(X_1 + \ldots + X_k \leq x) \end{math}, the d.f. of the sum of $k$ independent random variables with the same distribution as $X$. 
+
+\item The aggregate loss distribution \begin{math} \mathbf {G}_{\vartheta(t)}(x) \end{math} cannot be represented in analytic form, hence approximations, expansions, recursions of numerical algorithms are proposed to overcome this problem.  For purposes of our study, an approximation method will do. One such method consists of taking a set \begin{math} \langle \vartheta_1, \ldots , \vartheta_s \rangle \end{math}, otherwise known as the ideal generated by elements \begin{math} \vartheta_1, \ldots , \vartheta_s \end{math} which are $s$ simulated values of the random variable $\vartheta_{ij}$  for $s = 1,\ldots, S$ [@fraleigh2003first].\medskip
+
+This method is popularly known as Monte Carlo simulation coined by physicists in the 1940's, it derives its name and afore--mentioned popularity to its similarities to games of chance. The way it works in layman's terms is; in place of simulating scenario's based on a base case, any possible scenario through the use of a probability distribution (not just a fixed value) is used to simulate a model many times. In the LDA separate distributions of frequency and severity are derived from loss data then combined by Monte Carlo simulation. 
+\end{itemize}
+
+\subsection{Dependence Effects (Copulae)}
+
+The standard assumption in the LDA is that frequency and severity distributions in a cell are independent and the severity samples are i.i.d. According to Basel II, dependence effects in OpRisk are not considered. Economic capital allocation however, could benefit if it were determined in a way that recognises the risk-reducing impact of correlation effects between the risks of the BL/ET combinations. Concluding remarks from a study by
+@urbina2014application allude that failure to account for correlation may lead to risk management practices that are unfair, as evidenced in an example using data from the banking sector. \medskip
+
+One of the main issues we are confronted with in OpRisk measurement is the aggregation of individual risks (in each BL/ET element). A powerful concept to aggregate the risks -- the \emph{copula} function -- has been introduced in finance by @embrechts2002correlation. Copulas have been used extensively in finance theory lately and are sometimes held accountable for recent global financial failures, e.g. the global credit crunch of 2008 - 2009. They are nevertheless still applicable and in use for OpRisk as operational risk models follow a different stochastic process to other areas of risk, e.g. operational VaR is subject to more jumps than market VaR and is thought to be discrete whereby market VaR is continuous. \medskip
+
+Copulas are functions which conveniently incorporate correlation into a function that combines each of the frequency (marginal) distributions to produce a single bivariate cumulative distribution function. Our model is used to determine the aggregate (bivariate) distribution of a number of correlated random variables through the use a Clayton copula. Dependence matters due to the effect of the addition of risk measures over different risk classes (cells in the BL/ET matrix). \medskip
+
+More precisely, the frequency distributions of the individual cells of the BL/ET matrix are correlated through a Clayton copula in order to replicate observed correlations in the observed data. Let $m$ be the number of cells, $\mathbf{G_1}, \mathbf{G_2},...,\mathbf{G_m}$ the distribution functions of the frequency distributions in the individual cells and $\mathbf{C}$ the so--called copula. Abe Sklar  proved in 1959 through his theorem (Sklar's  Theorem) that for any joint distribution $\mathbf{G}$ the copula $\mathbf{C}$ is unique.  $\mathbf{C}$ is a distribution function on $[0,1]^{m}$ with uniform marginals. We refer to a recent article by @chavez2006quantitative for further information: It is sufficient to note that $\mathbf{C}$ is unique if the marginal distributions are continuous. 
+
+\singlespacing
+\begin{equation}\label{eqn7a}
+\mathbf{G}(x_1, \ldots, x_m) = \mathbf{C}\left(\mathbf{G_1}(x_1), \ldots, \mathbf{G_m}(x_m) \right)
+\end{equation}
+\doublespacing
+
+Conversely, for any copula $\mathbf{C}$ and any distribution functions $\mathbf{G_1}, \mathbf{G_2},...,\mathbf{G_m}$, the functions $\mathbf{C}\left(\mathbf{G_1}(x_1), \ldots, \mathbf{G_m}(x_m) \right)$ is a joint distribution function with marginals $\mathbf{G_1}(x_1), \ldots, \mathbf{G_m}(x_m)$. Moreover, combining given marginals with a chosen copula through Equation \ref{eqn7a} always yields a multivariate distribution with those marginals. The copula function has then a great influence on the aggregation of risk.
+
+\section{LDA model shortcomings}
+\label{ssec:LDA model shortcomings}
+
+After most complex banks adopted the LDA for accounting for RC, significant biases and delimitations in loss data remain when trying to attribute capital requirements to OpRisk losses [@frachot2001loss]. OpRisk is related to the internal processes of the FI, hence the quality and quantity of internal data (optimally combined with external data) are of greater concern as the available data could be rare and/or of poor quality. Such expositions are unsatisfactory if OpRisk, as @cruz2002modeling professes, represents the next frontier in reducing the riskiness associated with earnings.
+
+@opdyke2014estimating advanced studies intending on eliminating bias apparently due to heavy tailed distributions to further provide insight on new techniques to deal with the issues that arise in LDA modeling, keeping practitioners and academics at breadth with latest research in OpRisk VaR theory. Recent work in LDA modeling has been found wanting [@badescu2015modeling], due to the very complex characteristics of data sets in OpRisk VaR modeling, and even when studies used quality data and adequate historical data points, as pointed out in a recent paper by @hoohlo2015new, there is a qualitative aspect in OpRisk modeling that is often ignored, but whose validity should not be overlooked. \medskip
+
+@opdyke2014estimating, @agostini2010combining, @de2015combining, @galloppo2014review, and others explicate how greater accuracy, precision and robustness uphold a valid and reliable estimate for OpRisk capital as defined by Basel II/III. Transforming this basic knowledge into \lq\lq risk culture\rq\rq\ or firm-wide knowledge for the effective management of OpRisk, serves as a starting point for a control function providing attribution and accounting support within a framework, methodology and theory for understanding OpRisk measurement. FI's are beginning to implement sophisticated risk management systems similar to those for market and credit risk, linking theories which govern how these risk types are controlled to theories that govern financial losses resulting from OpRisk events. \medskip
+
+@de2015combining and @galloppo2014review sought to address the shortcomings of @frachot2001loss by finding possible ways to improve the problems of bias and data delimitation in operational risk management. They follow the recent literature in finding a statistical-based model for integrating internal data and external data as well as scenario assessments in on endeavor to improve on accuracy of the capital estimate. 
+
+\section{A new class of models capturing forward-looking aspects}
+\label{sec:A new class of models capturing forward-looking aspects}
+
+@agostini2010combining also argued that banks should adopt an integrated model by combining a forward-looking component (scenario analysis) to the historical operational VaR, further adding to the literature through their integration model which is based on the idea of estimating the parameters of the historical and subjective distributions and then combining them by using the advanced CT. \medskip
+
+The idea at the basis of CT is that a better estimation of the OpRisk measure can be obtained by combining the two sources of information: The historical loss data and expert's judgements, advocating for the combined use of both experiences. @agostini2010combining seek to explain through a weight called the credibility, the amount of credence given to two components (historical and subjective) determined by statistical uncertainty of information sources, as opposed to a weighted average approach chosen on the basis of qualitative judgements.\medskip
+
+Thus generating a more predictable and forward looking capital estimate. He deemed the integration method as advantageous as it is self contained and independent of any arbitrary choice in the weight of the historical or subjective components of the model. 
+
+\section{EBOR methodology for capturing forward-looking aspects of ORM}
+\label{sec:EBOR methodology for capturing forward-looking aspects of ORM}
+
+In a theoretical paper, @einemann2018operational construct a mathematical framework for an EBOR model to quantify OpRisk for a portfolio of pending litigations. Their work unearths an invaluable contribution to the literature, discussing a strategy on how to integrate EBOR and LDA models by building hybrid frameworks which facilitate the migration of OpRisk types from a *classical* to an exposure-based treatment through a quantitative framework, capturing forward looking aspects of BEICF's [@einemann2018operational], a key source of the OpRisk data. As mentioned in their paper [@einemann2018operational], they were first lay the groundwork for future development across industry and to establish a common language through a strategy for integrating EBOR and LDA models, the former used for predictable loss types e.g., a portfolio of pending litigations; a predictable loss type in so far as the event triggering the filing of the litigation has already happened and only the final outcome of the court case has to be modeled, and the latter which cover risks that are well reflected through historical events.\medskip 
+
+\section{Benefits and Limitations}
+\label{sec:Benefits and Limitations}
+
+These approaches in \ref{sec:Current operational risk measurement modeling framework}, were found to have significant advantages over conventional LDA methods, proposing that an optimal mix of the two modeling elements could more accurately predict OpRisk VaR over traditional methods. Particularly @agostini2010combining, whose integration model represents a benchmark in OpRisk measurement by including a component in the AMA model that is not obtained by a direct average of historical and subjective VaR.\medskip
+
+Instead, the basic idea of the integration methodology in \ref{sec:A new class of models capturing forward-looking aspects} is to estimate the parameters of the frequency and severity distributions based on the historical losses and correct them; via a statistical theory, to include information coming from the scenario analysis. The method has the advantage of being completely self contained and independent of any arbitrary choice in the weight of the historical or subjective component of the model, made by the analyst. The components weights are derived in an objective and robust way, based on the statistical uncertainty of information sources, rather than through risk managers choices based on qualitative motivations. \medskip
+
+However, they could not explain the prerequisite coherence between the historical and subjective distribution function needed in order for the model to work; particularly when a number of papers [@chau2014robust], propose using mixtures of (heavy tailed) distributions commonly used in the setting of OpRisk capital estimation [@opdyke2014estimating].\medskip
+
+In \ref{sec:Applicability of EBOR methodology for capturing forward-looking aspects of ORM}, their model [@einemann2018operational] is particularly well-suited to the specific risk type dealt with in their paper i.e., the portfolio of litigation events, due to better usage of existing information and more plausible model behavior over the litigation life cycle, but is bound to under-perform for many other OpRisk event types, since these EBOR models are typically designed to quantify specific aspects of OpRisk -   litigation risk have rather concentrated risk profiles.  However, EBOR models are important due to wide applicability beyond capital calculation and its potential to evolve into an important tool for auditing process and early detection of potential losses.\medskip
+
+\section{Gap in the Literature}
+\label{sec:Gap in the Literature}
+
+There is cognitive pressure which seeks to remove information which we are largely unaware of, because they are undetectable to human senses that no one could ever see them. We seek to remove this pressure, effectively lowering uncertainty and allowing us to position ourselves to develop a defense against our cognitive biases. It is through patterns in that information that we are largely unaware of that predictions could arise; or that, OpRisk management incorporates rather than dismiss the many alternatives that were not imagined, the possibility of market inefficiencies or finding value in unusual places. 
+
+\section{Conclusion}
+\label{sec:Conclusion}
+
+A substantial body of evidence suggests that loss aversion, the tendency to be more sensitive to losses than to gains plays an important role in determining how people evaluate risky gambles. In this paper we evidence that human choice behavoir can substantially deviate from neoclassical norms.\medskip
+
+PT takes into account the loss avoidance agents and common attitudes toward risk or chance that cannot be captured by EUT; which is not testing for that inherent bias, so as to expect the probability of making the same operational error in future to be overcompensated for i.e., If an institution suffers from an OpRisk event and survives, it's highly unlikely to suffer the same loss in the future because they will over-provide for particular operational loss due to their natural risk aversion. This is a testable proposition which fits normal behavioral patterns and is consistent with risk averse behaviour. 
+
+\singlespacing
+
