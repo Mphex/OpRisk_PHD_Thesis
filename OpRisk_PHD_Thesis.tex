@@ -1713,6 +1713,7 @@ patterns and is consistent with risk averse behaviour.
 \fancyfoot[C]{}
 
 \chapter{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS}
+\label{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS}
 
 \doublespacing
 
@@ -1722,56 +1723,55 @@ patterns and is consistent with risk averse behaviour.
 The fundamental premise in the nature behind ORMFs, is to provide an
 exposure-based treatment of OpRisk losses which caters to modeling
 capital estimates for forward-looking aspects of ORM. This proves tricky
-due to the need of specific knowledge about potential loss events as a
-requirement, from the time the loss event occurs and the underlying
-loss-generating mechanisms until the actual realised loss is realised.
-By its very nature, this OpRisk type is characterised by a significant
-lag between the moment the event is conceived to the point the event is
-observed and accounted for.\medskip 
+as a requirement, due to the need for specific knowledge about potential
+loss events, from the time the loss event occurs and the underlying
+loss-generating mechanisms, until the actual realised loss materialises.
+By its very nature, OpRisk is characterised by a significant lag between
+the moment the event is conceived to the point the event is observed and
+accounted for.\medskip 
 
 For example, in the case of rogue trading, there is a frequency exposure
 associated with traders \emph{going rogue}, due to a probability of
-rogue events happening between a specific group of traders, which is
-then modeled for each rogue trading event and the impact (severity based
-on the size of the position) of the loss when it is realised (at time of
-detection). This timing paradox often results in questionable capital
-estimates, especially for those near misses, pending and realised losses
-that need to be captured in the model.
+rogue events happening between a specific group of traders over time,
+which is then modeled for each rogue trading event and the impact
+(severity based on the size of the position) of the loss when it is
+realised (at time of detection). This timing paradox often results in
+questionable capital estimates, especially for those near misses,
+pending and realised losses that need to be captured in the model.
 
 \section{Applicability of EBOR methodology for capturing forward-looking aspects of ORM}
 \label{sec:Applicability of EBOR methodology for capturing forward-looking aspects of ORM}
 
-By it's very nature, OpRisk has a significant lag usually characterised
-by the time delay between the moment the OpRisk event is conceived up
-until the moment the event is observed and accounted for, i.e., there is
-a gap in time between the moment the risk is conceived and the realised
-losses. A fundamental premise behind the tricky nature of ORMF, is to
-provide an exposure-based treatment of OpRisk losses which caters for
-modeling capital estimates of forward-looking aspects of ORM, due to the
-lag in the loss data.\medskip
+OpRisk is characterised by a time delay \(\tau\), wherein the p\&l
+impact lags behind the moment the OpRisk event is conceived up until the
+event is observed and accounted for. Advancing our knowledge toward the
+current ORMF's aims to provide an exposure-based treatment of OpRisk
+losses which caters for modeling capital estimates of forward-looking
+aspects of ORM.\medskip
 
-Einemann et al. (2018) works unearth an invaluable contribution to the
-literature, whereby the EBOR model is considered as an additional cell,
-anagolously to the BL/ET matrix combinations in a classical LDA model,
-therefore building hybrid frameworks when integrated with the LDA model
+Einemann et al. (2018) unearth a useful EBOR model, wherein an
+additional cell is considered, anagolous to the BL/ET matrix
+combinations, contributing into the classical LDA model thereby building
+hybrid OpRisk frameworks which integrate EBOR models with the LDA model,
 facilitating the migration of OpRisk types from a classical to an
 exposure-based treatment through a quantitative framework (Einemann et
-al., 2018). Conceptually, the EBOR component can be extended to include
-potential future events e.g., future litigations, based on some
+al., 2018). Conceptually, the EBOR model component can be extended to
+include potential future events e.g., future litigations, based on some
 underlying property, capturing forward looking aspects of business
 environment and internal control factors (BEICF's) thereof.\medskip
 
 The fundamental premise behind the LDA is that each firm's OpRisk losses
-are a reflection of it's underlying Oprisk exposure. OpRisk events
-relating to a varying or constant degree of exposure need to take this
-into account when modeling count or frequency of an event occuring. In
-particular, the assumption behind the use of the Poisson distribution in
-the model to estimate the frequency of losses, is that both the the
-intensity (or rate) of occurrence and the opportunity (or exposure) for
-counting can assume either of these two forms, for all available
-observations (Dobson \& Barnett, 2008). In the former case the varying
-degrees of exposure impact on the rate of events, whereas in the latter
-case the exposure is constant hence not relevant to the model.\medskip
+are a reflection of it's underlying OpRisk exposure (Einemann et al.,
+2018). Dobson \& Barnett (2008) relates OpRisk events to a varying or a
+constant degree of exposure, which needs to be taken into account when
+modeling counts or frequencies of occurance. In particular, the
+assumption behind the use of the Poisson distribution in the model to
+estimate the frequency of losses for all available observations, is that
+both the the intensity (or rate) of occurrence and the opportunity (or
+exposure) for counting can assume either of these two afore-mentioned
+forms (Dobson \& Barnett, 2008). In the former case the varying degrees
+of exposure impact on the rate of events, whereas in the latter case the
+exposure is constant hence not relevant to the model.\medskip
 
 When observed counts all have the same exposure, modeling the mean count
 \(\mu\) as a function of explanatory variables \(x_{1},\ldots,x_{p}\) is
@@ -1779,9 +1779,9 @@ the same as modeling the rate \(R\). The actual measure of exposure we
 need to use depends specifically on projecting the count of OpRisk
 events (frequency of realised losses) as the target variable in the
 model as opposed to the measure if the target variable were the severity
-of the losses, whereby modeling for each rogue trading event the
-severity based on size of loss position as severity exposure, and time
-to detection or CapturedBy as severity risk factors.
+of the losses, e.g.~in modeling rogue trading severity exposure of
+events is based on size of loss position at time to detection or
+CapturedBy as severity risk factors.
 
 \subsection{Definition of exposure}
 \label{ssec:Definition of exposure}
@@ -1839,17 +1839,17 @@ of potential losses.
 \section{Generalised Linear Models (GLM's)}
 \label{sec:Generalised Linear Models}
 
-Many of the ideas and concepts of linear modelling carry over to
-generalized linear modelling, however the ``generalized'' term is used
-to refer to all linear models other than simple straight lines found in
-the ``general'' case. In the case of the OpRisk dataset, the
-relationship between outcomes and drivers of risk are frequently not
-normal, therefore models of the form
+Many of the ideas and concepts (Dobson \& Barnett, 2008) of linear
+modelling carry over to generalized linear modelling, however the
+``generalized'' term is used to refer to all linear models other than
+simple straight lines found in the ``general'' case. In the case of the
+OpRisk dataset, the relationship between outcomes and drivers of risk
+are frequently not normal, therefore models of the form
 
 \singlespacing
 
 \begin{eqnarray}\label{linearmodel}
-E(\mathbf{Y_i}) = \mathbf(\mu_i) = \mathbf{x_i}^T\mathbf(\Beta); \qquad \mathbf{Y_i} \thicksim \mathbf{N(\mu_i, \sigma^2)},
+E(\mathbf{Y_i}) = \mathbf{\mu_i} = \mathbf{x_i}^T\mathbf{\beta} \qquad \mathbf{Y_i} \thicksim \mathbf{N(\mu_i, \sigma^2)},
 \end{eqnarray} \doublespacing
 
 where random variables \(\mathbf{Y_i}\) are independent, are not
@@ -1858,7 +1858,7 @@ applicable. The transposed vector \(\mathbf{x_i}^T\) represents the
 advances in statistical theory and computational techniques, generalised
 linear models (GLM); which are analogous to linear models, are used to
 assess and quantify the relationships between a target variable and
-explanatory variables. GLM's differ in that (Dobson \& Barnett, 2008)
+explanatory variables (Dobson \& Barnett, 2008). GLM's differ in that
 
 \begin{itemize}
 \item The distribution of the target variable is chosen from the exponential family
@@ -1866,13 +1866,13 @@ explanatory variables. GLM's differ in that (Dobson \& Barnett, 2008)
 \end{itemize}
 
 Operational riskiness in FIs grows as trading transactions grow in
-complexity, i.e.~the more complex and numerous trading activity builds
+complexity i.e., the more complex and numerous trading activity builds
 the higher the rate at which new cases of OpRisk events occur.
 Therefore, it is likely that the rate of operational hazard may be
 increasing exponentially over time. The scientifically interesting
 question is whether the data provides any evidence that the increase in
 the underlying operational hazard generation is slowing. The
-aforementioned postulate provides a plausible model to start
+afore-mentioned postulate provides a plausible model to start
 investigating this question.\medskip
 
 \section{Exponential family of distributions}
@@ -1880,16 +1880,16 @@ investigating this question.\medskip
 
 As with the linear model, consider independent rv's \(\mathbf{Y_i}\) not
 i.i.d, whose probability depends on a parameter \(\theta_i\). The choice
-of parameter \(\theta_i\) determines the response distribution who is
+of parameter \(\theta_i\) determines the response distribution which is
 assumed to have the same form as the exponential family, in turn
 characterising the statistical unit \(i\). Thus, the exponential family
-representation depend on a constant scale parameter \(\phi\), and
-varying parameters \(\theta_i\). the pdf of \(Y_i\) is
+representation depends on varying parameters \(\theta_i\), and a
+constant scale parameter \(\phi\). the pdf of \(\mathbf{Y_i}\) is
 
 \singlespacing
 
 \begin{eqnarray}\label{Exponentialfamily}
-f(y_i;\theta_i;\phi) = e^{\left[\frac{a(y_i)b(\theta_i) -c(\theta_i)}{\phi}-d(y_i,\phi)\right]}, \quad y_i \in X 
+f(y_i;\theta_i;\phi) = \exp\left[\frac{a(y_i)b(\theta_i) -c(\theta_i)}{\phi}-d(y_i,\phi)\right], \quad y_i \in Y 
 \end{eqnarray} \doublespacing
 
 where \(a\), \(b\), \(c\), \& \(d\) are regarded as known functions.
@@ -1897,16 +1897,16 @@ Expanding the expression in equation \ref{Exponentialfamily} yields
 
 \singlespacing
 
-\begin{eqnarray}\label{Exponentialfamily}
-f(y_i;\theta_i;\phi) &=& e^{\left[\frac{a(y_i)b(\theta_i) -c(\theta_i)}{\phi}-d(y_i,\phi)\right]} \nonumber\\
- &=& \frac{1}{e^{(d(y,\phi)}}e^{\left[\frac{a(y_i)b(\theta_i) -c(\theta_i)}{\phi}\right]} \nonumber\\
- &=& r(y,\phi)\frac{1}{e^{\frac{(c(\theta_i)}{\phi}}}e^{\frac{a(y_i)b(\theta_i)}{\phi}} \nonumber\\
- &=& r(y,\phi)s(\theta,\phi)e^{\frac{a(y_i)b(\theta_i)}{\phi}}\\
- \mbox{where} \quad r(y,\phi)&=& \frac{1}{e^{d(y,\phi)}} \mbox{and where}\quad s(\theta,\phi) = \frac{1}{e^{\frac{c(\theta_i)}{\phi}}}
+\begin{eqnarray}\label{Exponentialfamilies}
+f(y_i;\theta_i;\phi) &=& \exp\left[\frac{a(y_i)b(\theta_i) -c(\theta_i)}{\phi}-d(y_i,\phi)\right] \nonumber\\
+ &=& \frac{1}{e^{d(y,\phi)}}\exp\left[\frac{a(y_i)b(\theta_i) -c(\theta_i)}{\phi}\right] \nonumber\\
+ &=& r(y,\phi)\frac{1}{e^{\frac{c(\theta_i)}{\phi}}}\exp\left[\frac{a(y_i)b(\theta_i)}{\phi}\right] \nonumber\\
+ &=& r(y,\phi)s(\theta,\phi)\exp\left[\frac{a(y_i)b(\theta_i)}{\phi}\right]\\
+ \mbox{where} \quad r(y,\phi) &=& \frac{1}{e^{d(y,\phi)}}\quad \mbox{and where}\quad s(\theta,\phi) = \frac{1}{e^{\frac{c(\theta_i)}{\phi}}}\nonumber
 \end{eqnarray} \doublespacing
 
-since the scale parameter \(\phi\) remains the same, the distribution
-belongs to the exponential family if it can be written in the form
+since the scale parameter \(\phi\) is constant, the distribution belongs
+to the exponential family if it can be written in the form
 
 \singlespacing
 
@@ -1920,9 +1920,9 @@ Heller, 2008). The specific elements of a GLM are (Covrig et al., 2015;
 Dobson \& Barnett, 2008):
 
 \begin{enumerate}
-\item The random component given by the independent random variables $Y_1, Y_2, \ldots, Y_n $ not identically distributed. Note that the rv's $\mathbf{Y_i}$ for the Oprisk data, indexed by the subscript $i$, have different expected values $\mu_i$. Sometimes there may be only one observation $y_i$ for each $Y_i$, but there may be several observations $y_{ij} \quad (j=1,\ldots,p_i)$ for each $\mathbf{Y_i}$. The pdf or probability mass function of $\mathbf{Y_i}$ is given in equation \ref{Exponential} for $f(y)$, which specifies that the distribution of the response is in the exponential family. The support set $X$ of the rv $Y_i$ is subset of $\mathbf{N}$ of $\mathbf{R}$. 
+\item The random component given by the independent random variables $Y_1, Y_2, \ldots, Y_n $ not identically distributed. Note that the rv's $\mathbf{Y_i}$ for the Oprisk data, indexed by the subscript $i$, have different expected values $\mu_i$. Sometimes there may be only one observation $y_i$ for each $Y_i$, but there may be several observations $y_{ij}, (j=1,\ldots,n_i)$ for each $\mathbf{Y_i}$. The pdf or probability mass function of $\mathbf{Y_i}$ is given in equation \ref{Exponential} for $f(y)$, which specifies that the distribution of the response is in the exponential family. The support set $X$ of the rv $Y_i$ is subset of $\mathbf{N}$ of $\mathbf{R}$. 
 
-\item The second advance is the extension of computational methods to estimate the models systematic component, so called the "linear predictor" described in equation \ref{linearmodel} built with $p+1$ parameters $\mathbf{\beta} = (\beta_0,\beta_1,\ldots,\beta_p)$ and with $p$ expalanatory variables:
+\item The second advance is the extension of computational methods to estimate the models systematic component, so called the "linear predictor" described in equation \ref{linearmodel} built with $p+1$ parameters $\mathbf{\beta} = (\beta_0,\beta_1,\ldots,\beta_p)$ and with $p$ explanatory variables:
 
 \singlespacing
 \begin{eqnarray}\label{linearpredictor}
@@ -1949,8 +1949,8 @@ response distribution and the choice of link is suggested by the
 functional form of the relationship between the response and explanatory
 variables. In choosing these components extra steps are taken compared
 to ordinary regression modeling. Commonly used links functions are given
-in Table \ref{tab_linkfcn}. Table \ref{tab_linkfcn} presents the various
-units produced for the various GLM links.
+in Table \ref{tab_linkfcn} which also presents the units produced for
+the various GLM links.
 
 \begin{table}[tb]
 \centering
@@ -1974,13 +1974,13 @@ Identity & $\mu$ & Original Continuous Unit & normal \\
 
 Modeling counts as realised operational hazard in an OpRisk group
 requires correction for the period in days \(d\) exposed to risk. If
-\(\mu\) is the mean of the count \(y\) then the occurence rate
-\(\frac{\mu}{d}\) of interest and
+\(\mu\) is the mean of the count \(y\) then the occurence rate of
+interest \(R= \frac{\mu}{d}\) and
 
 \singlespacing
 
 \begin{eqnarray}
-g\left(\frac{\mu}{d}\right) = x^t\beta
+g\left(\frac{\mu}{d}\right) = \mathbf{x}^T\mathbf{\beta}
 \end{eqnarray} \doublespacing
 
 When \(g\) is the log function, this becomes
@@ -1988,20 +1988,20 @@ When \(g\) is the log function, this becomes
 \singlespacing
 
 \begin{eqnarray}\label{offset}
-\mbox{ln}\left(\frac{\mu}{d}\right) = x^T\beta \quad \Rightarrow \quad \mbox{ln}\mu = ln d + x^T\beta
+\mbox{ln}\left(\frac{\mu}{d}\right) = \mathbf{x}^T\mathbf{\beta} \quad \Rightarrow \quad \mbox{ln}\mu = ln d + \mathbf{x}^T\mathbf{\beta}
 \end{eqnarray} \doublespacing
 
-Where the variable \(d\) appears representing the risk exposure and
-ln\(d\) is called an ``offset''. Equation \ref{offset} differs from the
-usual specification of the linear predictor due to the inclusion of the
-term ln\(d\). An offset is effectively another explanatory variable in
-the regression, with a \(\beta\) coefficient = 1. With the offset, \(y\)
-has expected value directly proportional to exposure:
+Where the variable \(d\) appears representing the risk \emph{exposure}
+and ln\(d\) is called an ``offset''. Equation \ref{offset} differs from
+the usual specification of the linear predictor due to the inclusion of
+the term ln\(d\). An offset is effectively another explanatory variable
+in the regression, with a \(\beta\) coefficient = 1. With the offset,
+\(y\) has expected value directly proportional to exposure:
 
 \singlespacing
 
 \begin{eqnarray}
-\mu = d e^{x^T\beta}
+E(Y) = \mu = d e^{x^T\beta}
 \end{eqnarray} \doublespacing
 
 Offsets are used to correct for differing periods of observation (De
@@ -2018,75 +2018,130 @@ the same, the risk also doubles.
 
 \subsection{Exponential family of distributions}
 
-The introduction to this chapter raised the question of increasing
-OpRisk hazards due to more complex transactionsin which \(\mu_i\), the
-expected number of new cases on day \(t_i\) is modeled. The model
-assumes that if \(\mu_i\) is the (rate) number of expected new OpRisk
-hazards can often increase exponentially through time. Hence, if
-\(\mu_i\) is the expected number of new cases on day \(t_i\), is
-increases according to:
+In concluding section \ref{sec:Generalised Linear Models} in Chapter
+\ref{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS}, the question of
+increasing OpRisk hazards due to more complex transactions was raised,
+in which \(\mu_i\), the expected number of new cases on day \(t_i\) is
+modeled. The model assumes that the number of expected new OpRisk
+hazards can often increase exponentially over time. Hence, if \(\mu_i\)
+is the expected number of new cases over time \([T,T+\tau_i] = t_i\),
+then an appropraite model takes on the form:
 
 \singlespacing
 
 \begin{eqnarray}\label{expgrowth}
-\mu_i = \gamma \mbox{exp}({\delta\tau_i}) \nonumber
+E(\mathbf{Y}_i) = \mu_i = d_i\exp{(\beta t_i)} 
 \end{eqnarray} \doublespacing
 
-where \(\gamma\) and \(\delta\) are unknown parameters. Taking a log
-link turns the model into Generalised Linear Model (GLM) form so that:
+where the random variables \(\mathbf{Y_i}\) are independent,
+\(d_i = \mbox{exposure}_i\), and \(\beta\)'s are a set of unknown
+parameters in \(\mathbf{\beta}\). For a list of \(N\) different Oprisk
+events, note that the random variables \(Y_i\) are the basis for the
+OpRisk hazard defined by a binary response variable \emph{LossIndicator}
+which denotes the presence or absence loss. Define random variabels
+\(Y_1,\ldots,Y_N\) as follows
+
+\begin{definition}\label{DefLosInd}
+\singlespacing
+\begin{equation}\label{LossIndicator}
+\mathbf {Y}_i =\left\{\begin{array}{rcl}
+                 & 1 & for realised OpRisk losses  \\
+                 & 0 & pending losses and near misses 
+                      \end{array}\right\}
+\end{equation}
+\doublespacing
+\end{definition}
+
+indexed by the subscript \(i\), who may have different expected values
+\(\mu_i\). It is important to note that sometimes there may be one
+observation \(y_i\) for each \(Y_i\), but on other occasions there may
+be several observations \(y_{ij}\quad(j=1,\ldots,n_i)\) for each
+\(Y_i\). Equation \ref{expgrowth} can be turned into GLM form by using a
+log link so that
+
+\singlespacing
+
+\begin{eqnarray}
+ln\mu_i = lnd_i + \beta t_i
+\end{eqnarray} \doublespacing
+
+Parameter \(\mu\) will depend on risk factors, which are the causal
+factors that are associated with OpRisk hazards and therefore the basic
+unit that create losses with random uncertainty e.g., the trasaction
+population size, the period of observation, and various characteristics
+of the population (e.g., updatedtime, instrument, trader, etc.). The
+transposed vector \(\mathbf{x}_i^T\) represents the \(i\)th row of the
+design matrix \(\mathbf{X}\), it takes the form
+\(t_i = x_{ij}^T, (j=1,\ldots,p_i)\) for \(p\) explanatory variables
+(covariates or dummy variables).\medskip
+
+The response variable is a series of OpRisk events \(\mathbf{Y}\) where
+the probability of the event occuring in a very small time (or space) is
+low and the events occur independently. Since this is a count, the
+Poisson distribution is probably a reasonable distribution to try. The
+Poisson distribution is denoted by
+\(\mathbf{Y_i} \thicksim \mathbf{Poi}(\theta_i)\). Rewriting Equation
+\ref{Exponential} as
+
+\singlespacing
+
+\begin{eqnarray}
+f(y;\theta) = \exp[a(y)b(\theta) + c(\theta) + d(y)],
+\end{eqnarray} \doublespacing
+
+Substituting \(a(y)=y\), \(b(\theta) = \mbox{ln}\theta\),
+\(c(\theta) = -\theta\), and \(d(y) = -\mbox{ln}y!\); given
+\(\mbox{ln}\) is some monotone differentiable (link) function, so the
+GLM for this situaton uses a poisson response distribution, log link:
+Equation \ref{Exponentialfamily} can be expressed as:
 
 \singlespacing
 
 \begin{eqnarray}\label{eqn:simplepoisson}
-\mbox{log}(\mu_i) = \mbox{log}(\gamma) + \delta\tau_i = \beta_0 + \tau_i\beta_1
+f(y_i;\theta) = \exp{\left[y\mbox{ln}\theta - \theta -\mbox{ln}y!\right]}
 \end{eqnarray} \doublespacing
 
-Where the LHS is the observed number of new cases over time
-\([\tau,\tau+1]\), and the RHS is a linear in the parameters
-\(\beta_0 =\) \mbox{log}(\(\gamma\)) and \(\beta_1 = \delta\). We define
-a binary response variable \emph{LossIndicator}, which takes on the
-value \(1\) for realised losses, and the value \(0\) for pending losses,
-and/or near misses. The choice of the poisson distribution shows the
-number of relevant Oprisk event's incidence in a specified time interval
-\([\tau,\tau+1]\) is probably a reasonable distribution to try. So the
-GLM for this situation uses a poisson response distribution, log link,
-and linear predictor \(\beta_0 + t_i\beta_1\).\medskip
+Equation ref\{eqn:simplepoisson\} the probability function for the
+discrete random variable \(\mathbf{Y}\), can be rewritten as
 
-Many of the ideas and concepts of linear modelling carry over to
-generalized linear modelling, however the ``generalized'' term is used
-to refer to all linear models other than simple straight lines found in
-the ``general'' case. for example, the quadratic term (\(\beta_2t_i^2\))
-could be added to the model, which usefully approximates other
-situations which may influence the counts adapted to the poisson case
-other than only the unchecked prevalence of Oprisk hazards. Amending the
-RHS of Equation \ref{eqn:simplepoisson} with the quadratic term so other
-situations other than the unrestricted spread of OpRisk hazards are
-represented yields:
+\singlespacing
+
+\begin{eqnarray}\label{POISSON}
+f(y,\theta) = \frac{\theta^ye^{-\theta}}{y!}
+\end{eqnarray} \doublespacing
+
+Where \(y\) takes the values \(0,1,2,..\). If a random variable has a
+poisson distribution, its expected value \(E(Y)\) and variance
+\(Var(Y)\) are equal i.e., \(\theta =\lambda\).
+
+The choice of the poisson distribution is a questionable model for use
+on real world data, mainly because earnings volatility is high in the
+real world, therefore real world data is often \textbf{overdispersed}
+i.e., have a larger variance than the expected value. A quadratic term
+(\(\beta_2t_i^2\)) could be added to the model, which usefully
+approximates other situations which may influence the counts adapted to
+the poisson case other than only those due to the unchecked prevalence
+of Oprisk hazards. The RHS of Equation \ref{eqn:simplepoisson} with the
+quadratic term so other situations other than the unrestricted spread of
+OpRisk hazards becomes
 
 \singlespacing
 
 \begin{eqnarray}\label{eqn:adaptedpoisson}
-\mu = d_i\mbox{exp}(\beta_0 + \beta_1\tau_i + \beta_2{\tau_i}^2) 
+\mu = d_i\exp{(\beta_0 + \beta_1x_{ij} + \beta_2x_{ij}^2)} 
 \end{eqnarray} \doublespacing
 
 \section{A poisson regression operational hazard model}
 \label{sec:A poisson regression operational hazard model}
 
-The LHS of a GLM formula is the model's random component i.e.,
-observations of the number of OpRisk transactions over the trading
-transaction period in an FI's portfolio; given by the independent random
-variables \(y_1, y_2,\ldots, y_n\), not i.i.d (Wood, 2017 \&
-@covrig2015using). \(Y\) takes a (exponential) family argument,
-depending on parameters \(ln\lambda\), where \(\lambda\) which
-represents the average frequency of the OpRisk transactions. It is worth
-distinguishing between the response data \(y_i\) which is an observation
-of \(Y\).\medskip
-
-The target variable (LossIndicator) which shows the number of relevant
-Oprisk event's incidence in a specified time interval \(\tau\) and
-\(\tau+1\), justifying the choice of poisson distribution as a
-reasonable model for is count data. It's probability mass function (pdf)
-is:
+The random component is given by the independent random variables
+\(Y_1, Y_2,\ldots, Y_n\), not i.i.d (Covrig et al., 2015; Wood, 2017).
+\(\mathbf{Y}\) takes a (exponential) family argument, depending on
+parameters \(ln\lambda\), where \(\lambda\) which represents the average
+frequency of the OpRisk transactions. The response data \(y_i\) is an
+observation of \(Y\). The target variable \emph{LossIndicator} defined
+in \ref{DefLosInd} is the basis for the choice of poisson distribution
+as a reasonable model. It's probability mass function (pdf) is:
 
 \singlespacing
 
@@ -2109,7 +2164,7 @@ specifies the linear predictor. It builds on equation
 \nu = \beta_0 + \sum_{j=1}^{p}\beta_jx_{ij}, \qquad \mbox{where} \quad i = 1,\ldots,n
 \end{eqnarray} \doublespacing
 
-If sample variables \(Y_i \sim \mbox{Poisson}(\lambda_i)\), then
+If sample variables \(Y_i \thicksim \mbox{Poisson}(\lambda_i)\), then
 \(\mu = E[Y_i] = \lambda_i\); the link function between the random and
 systematic components, viz.~a tranformation by the model by some
 function \(g()\), which does not change features essential to to
@@ -2143,7 +2198,7 @@ for the estimation of loss frequency is:
 \end{eqnarray} \doublespacing
 
 where \(\mbox{ln}d_i\) is the natural log of risk exposure, called the
-``offset variable''.
+``offset variable''.\medskip
 
 The poisson distribution is restrictive when applied to approximate
 counts, due to the assumption made about it that the mean and variance
@@ -2737,7 +2792,8 @@ variable, while the other variables will be predictor variables.
 \singlespacing
 
 \begin{verbatim}
-### Let us fit a GLM to our data. This will be our global model. We will use "LossesIndicator" as the dependent variable, while the other variables will be predictor variables.
+### Let us fit a GLM to our data. This will be our global model. use "LossesIndicator"
+#as the dependent variable, while the other variables will be predictor variables.
 freqfit <- glm(LossesIndicator ~ UpdatedDay + UpdatedTime +
                  TradedDay + TradedTime + Desk + CapturedBy +
                  TradeStatus + TraderId + Instrument + Reason
@@ -2999,11 +3055,7 @@ confusionMatrix(table(pred$Response, crs[["training"]][["LossesIndicator"]]))
 ## 
 \end{verbatim}
 
-\textbackslash{}textbf\{
-
 \subsection{Modelling population size of the OpRisk events}
-
-\}
 
 We have gained initial insights through data exploration in Section
 \ref{sec:Exploratory data analysis} and then built models. The next
@@ -3042,11 +3094,7 @@ months * 20 = 5 years:
 corresponds to a 5yr population of \(63929\) observations. What remains
 is to use the extrapolation script to generate the simulated dataset.
 
-\textbackslash{}textbf\{
-
 \section{The estimation of some  generalised additive models for location scale and shape (GAMLSS) for severity of loss}
-
-\}
 \label{sec:The estimation of some  generalised additive models for location scale and shape (GAMLSS) for severity of loss}
 
 We introduce a Box-Cox Power Exponential distribution (BCPE), which is a

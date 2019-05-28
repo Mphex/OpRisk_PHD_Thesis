@@ -178,6 +178,7 @@ Acknowledge those acknowledgable individuals and things.
 \fancyfoot[C]{}
 
 \chapter{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS}
+\label{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS}
 
 ```{r, child="Chapter3.Rmd"}
 ```

@@ -189,6 +189,56 @@
    \textsc{#1}%
 }
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LAYOUT: Title Page - info filled above    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\maketitle}{
+	\thispagestyle{empty}
+	\begin{center}
+	\doublespaced
+	\MakeUppercase{\@title}\\
+	by\\
+	\@author \\
+	\singlespaced
+	A dissertation submitted in partial fulfillment\\
+	of the requirements for the degree \\
+	\doublespaced
+	of\\
+	\MakeUppercase{\degree} \\
+	in\\
+  \field \\
+	\end{center}
+	\vspace{40pt}
+	\noindent Approved: \\
+	\vspace{40pt}
+	\noindent\begin{tabular}{ll}
+    \makebox[2.8in]{\hrulefill} & \makebox[2.8in]{\hrulefill}\\
+    \chairperson                 & \committeeone \\
+    Supervisor                    & Co-supervisor \\
+    & \\
+    & \\
+    \makebox[2.8in]{\hrulefill} & \makebox[2.8in]{\hrulefill}\\
+    \committeetwo                & \committeethree \\
+    Panel Member (WBS)             & Panel Member (WBS) \\
+    & \\
+    & \\
+    \makebox[2.8in]{\hrulefill} & \makebox[2.8in]{\hrulefill}\\
+    \committeefour               & \gradschoolguy \\
+    Panel Member (SEBS)             & Panel Member (WBS) and Academic Director \\
+                                    & of Wits Graduate School of Business \\
+    \end{tabular}
+  \vspace{30pt}
+    \begin{center}
+	  \singlespacing
+      UNIVERSITY OF THE WITWATERSRAND\\
+	    Johannesburg, Gauteng\\
+	    \doublespacing
+	    \yeardegree
+	  \end{center}
+	\clearpage
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% MISCELLANEOUS - ADDITIONAL PACKAGES %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
