@@ -1864,6 +1864,7 @@ explanatory variables (Dobson \& Barnett, 2008). GLM's differ in that
 \item The distribution of the target variable is chosen from the exponential family
 \item A transformation of the mean of the response is linearly related to the explanatory variables, however their association need not be of the simple linear form in equation \ref{linearmodel}
 \end{itemize}
+\medskip
 
 Operational riskiness in FIs grows as trading transactions grow in
 complexity i.e., the more complex and numerous trading activity builds
@@ -1988,7 +1989,7 @@ When \(g\) is the log function, this becomes
 \singlespacing
 
 \begin{eqnarray}\label{offset}
-\mbox{ln}\left(\frac{\mu}{d}\right) = \mathbf{x}^T\mathbf{\beta} \quad \Rightarrow \quad \mbox{ln}\mu = ln d + \mathbf{x}^T\mathbf{\beta}
+\mbox{ln}\left(\frac{\mu}{d}\right) = \mathbf{x}^T\mathbf{\beta} \quad \Rightarrow \quad \mbox{ln}\mu = \mbox{ln}d + \mathbf{x}^T\mathbf{\beta}
 \end{eqnarray} \doublespacing
 
 Where the variable \(d\) appears representing the risk \emph{exposure}
@@ -2018,14 +2019,14 @@ the same, the risk also doubles.
 
 \subsection{Exponential family of distributions}
 
-In concluding section \ref{sec:Generalised Linear Models} in Chapter
+Concluding Section \ref{sec:Generalised Linear Models} in Chapter
 \ref{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS}, the question of
-increasing OpRisk hazards due to more complex transactions was raised,
-in which \(\mu_i\), the expected number of new cases on day \(t_i\) is
-modeled. The model assumes that the number of expected new OpRisk
-hazards can often increase exponentially over time. Hence, if \(\mu_i\)
-is the expected number of new cases over time \([T,T+\tau_i] = t_i\),
-then an appropraite model takes on the form:
+increasing OpRisk hazard rates due to increasing transaction complexity
+was raised, wherein \(\mu_i\), the expected number of new cases on day
+\(t_i\) is modeled. The model assumes that the number of expected new
+OpRisk hazards often increase exponentially over time. Hence, if
+\(\mu_i\) is the expected number of new cases over time
+\([T,T+\tau] = t_i\), then an appropraite model takes the form:
 
 \singlespacing
 
@@ -2045,8 +2046,8 @@ which denotes the presence or absence loss. Define random variabels
 \singlespacing
 \begin{equation}\label{LossIndicator}
 \mathbf {Y}_i =\left\{\begin{array}{rcl}
-                 & 1 & for realised OpRisk losses  \\
-                 & 0 & pending losses and near misses 
+                 & 1 & \mbox{for realised OpRisk losses}  \\
+                 & 0 & \mbox{for pending losses and near misses} 
                       \end{array}\right\}
 \end{equation}
 \doublespacing
@@ -2061,17 +2062,17 @@ log link so that
 
 \singlespacing
 
-\begin{eqnarray}
-ln\mu_i = lnd_i + \beta t_i
+\begin{eqnarray}\label{linearcombination}
+\mbox{ln}\mu_i = \mbox{ln}d_i + \beta t_i
 \end{eqnarray} \doublespacing
 
 Parameter \(\mu\) will depend on risk factors, which are the causal
 factors that are associated with OpRisk hazards and therefore the basic
-unit that create losses with random uncertainty e.g., the trasaction
+unit that create losses with random uncertainty e.g., the transaction
 population size, the period of observation, and various characteristics
-of the population (e.g., updatedtime, instrument, trader, etc.). The
+of the population (i.e., UpdatedTime, Instrument, TraderId, etc.). The
 transposed vector \(\mathbf{x}_i^T\) represents the \(i\)th row of the
-design matrix \(\mathbf{X}\), it takes the form
+design matrix \(\mathbf{X}\), it takes the form;
 \(t_i = x_{ij}^T, (j=1,\ldots,p_i)\) for \(p\) explanatory variables
 (covariates or dummy variables).\medskip
 
@@ -2085,7 +2086,7 @@ Poisson distribution is denoted by
 
 \singlespacing
 
-\begin{eqnarray}
+\begin{eqnarray}\label{CanonicalExponential}
 f(y;\theta) = \exp[a(y)b(\theta) + c(\theta) + d(y)],
 \end{eqnarray} \doublespacing
 
@@ -2093,7 +2094,7 @@ Substituting \(a(y)=y\), \(b(\theta) = \mbox{ln}\theta\),
 \(c(\theta) = -\theta\), and \(d(y) = -\mbox{ln}y!\); given
 \(\mbox{ln}\) is some monotone differentiable (link) function, so the
 GLM for this situaton uses a poisson response distribution, log link:
-Equation \ref{Exponentialfamily} can be expressed as:
+Equation \ref{CanonicalExponential} can be expressed as:
 
 \singlespacing
 
@@ -2101,8 +2102,8 @@ Equation \ref{Exponentialfamily} can be expressed as:
 f(y_i;\theta) = \exp{\left[y\mbox{ln}\theta - \theta -\mbox{ln}y!\right]}
 \end{eqnarray} \doublespacing
 
-Equation ref\{eqn:simplepoisson\} the probability function for the
-discrete random variable \(\mathbf{Y}\), can be rewritten as
+Equation \ref{eqn:simplepoisson} is the probability function for the
+discrete random variable \(\mathbf{Y}\), it can be rewritten as
 
 \singlespacing
 
@@ -2112,16 +2113,16 @@ f(y,\theta) = \frac{\theta^ye^{-\theta}}{y!}
 
 Where \(y\) takes the values \(0,1,2,..\). If a random variable has a
 poisson distribution, its expected value \(E(Y)\) and variance
-\(Var(Y)\) are equal i.e., \(\theta =\lambda\).
+\(Var(Y)\) are equal i.e., \(\theta =\lambda\).\medskip
 
-The choice of the poisson distribution is a questionable model for use
-on real world data, mainly because earnings volatility is high in the
-real world, therefore real world data is often \textbf{overdispersed}
-i.e., have a larger variance than the expected value. A quadratic term
+The choice of the poisson distribution for use on real world data is
+questionable, mainly because earnings volatility is high in the real
+world, therefore real world data is often \textbf{overdispersed} i.e.,
+has a larger variance than the expected value. A quadratic term
 (\(\beta_2t_i^2\)) could be added to the model, which usefully
 approximates other situations which may influence the counts adapted to
 the poisson case other than only those due to the unchecked prevalence
-of Oprisk hazards. The RHS of Equation \ref{eqn:simplepoisson} with the
+of Oprisk hazards. The RHS of Equation \ref{linearcombination} with the
 quadratic term so other situations other than the unrestricted spread of
 OpRisk hazards becomes
 
@@ -2137,48 +2138,42 @@ OpRisk hazards becomes
 The random component is given by the independent random variables
 \(Y_1, Y_2,\ldots, Y_n\), not i.i.d (Covrig et al., 2015; Wood, 2017).
 \(\mathbf{Y}\) takes a (exponential) family argument, depending on
-parameters \(ln\lambda\), where \(\lambda\) which represents the average
-frequency of the OpRisk transactions. The response data \(y_i\) is an
-observation of \(Y\). The target variable \emph{LossIndicator} defined
-in \ref{DefLosInd} is the basis for the choice of poisson distribution
-as a reasonable model. It's probability mass function (pdf) is:
+parameters \(\mbox{ln}\lambda\), where \(\lambda\) represents the
+average frequency of the OpRisk transactions. The response data \(y_i\)
+is an observation of \(Y\). The target variable \emph{LossIndicator}
+defined as per definition \ref{DefLosInd} is the basis for the poisson
+distribution as a reasonable model of choice. As per equation
+\ref{POISSON}, it's probability mass function (pdf) is:
 
 \singlespacing
 
 \begin{eqnarray}\label{eqn:Poisson}
-Y &\sim& \mbox{poisson}(\lambda), \quad f(y;\lambda) = \frac{\lambda^y}{y!}\dot\exp{-y}\\
- &\mbox{where}& \quad y \in  \mathbb{N}, \mbox{and} \quad \lambda > 0 \nonumber
+Y &\thicksim & \mbox{Poi}(\lambda), \quad f(y;\lambda) = \frac{\lambda^y e^{-\lambda}}{y!}\\
+ &\mbox{where}& \quad y \in  \mathbb{N}, \mbox{and} \quad \lambda > 0. \nonumber
 \end{eqnarray} \doublespacing
 
-the expectation and variance
+Again, the expectation and variance
 \(E[Y] = \mbox{VaR}[Y] = \lambda\)\footnote{If you were to guess an independent $Y_i$ from a random sample, the best guess is given by this expression},
-are both equal to parameter \(\lambda\) simultaneously. The RHS of
-Equation \ref{eqn:Poisson} is the model's systematic component, and it
-specifies the linear predictor. It builds on equation
-\ref{eqn:adaptedpoisson} with \(p+1\) parameters,
-\(\beta = (\beta_0\ldots,\beta_p)^t\), and \(p\) explanatory variables:
+are both equal to parameter \(\lambda\) simultaneously. The model's
+systematic component, equation \ref{linearpredictor} specifies the
+linear predictor and is built with \(p + 1\) parameters
+\(\beta = (\beta_0\ldots,\beta_p)^t\), with \(p\) explanatory variables:
 
 \singlespacing
 
 \begin{eqnarray}
-\nu = \beta_0 + \sum_{j=1}^{p}\beta_jx_{ij}, \qquad \mbox{where} \quad i = 1,\ldots,n
+\eta_i = \beta_0 + \sum_{j=1}^{p}\beta_jx_{ij}, \qquad \mbox{where} \quad j = 1,\ldots,p_i
 \end{eqnarray} \doublespacing
 
-If sample variables \(Y_i \thicksim \mbox{Poisson}(\lambda_i)\), then
-\(\mu = E[Y_i] = \lambda_i\); the link function between the random and
+If sample variables \(Y_i \thicksim \mbox{Poi}(\lambda_i)\), then
+\(\mu_i = E[Y_i] = \lambda_i\); the link function between the random and
 systematic components, viz.~a tranformation by the model by some
 function \(g()\), which does not change features essential to to
-fitting, but rather a scaling in magnitude so that:
-
-\singlespacing
-
-\begin{eqnarray}\label{eqn:linkfcn }
-\nu_i &=& g(\lambda_i) = \mbox{ln}\lambda_i, \qquad \mbox{that is} \nonumber \\
-\nu &=& \beta_0 + \sum_{j=1}^{p}\beta_jx_{ij}
-\end{eqnarray} \doublespacing
-
-so the mean frequency or otherwise the rate \(R\), will be predicted by
-the model\ldots
+fitting, but rather a scaling in magnitude: i.e., the link between
+naturakl canonical parameter \(\theta\) in equation
+\ref{Exponentialfamily} and parameter \(\lambda\), the mean frequency of
+poisson distribution \(\theta = \mbox{ln}\lambda\), or otherwise the
+rate, will be predicted by the model\ldots
 
 \singlespacing
 
@@ -2204,10 +2199,11 @@ The poisson distribution is restrictive when applied to approximate
 counts, due to the assumption made about it that the mean and variance
 of the number of events are equal. However, in models for count data
 where means are low so that the number of zeros and ones in the data is
-exessive are well adapted to the poisson case (Wood, 2017). These cases
-are characteristic of scenarios in OpRisk other than those modeling
-situations when the unchecked spreading of negligent behaviour may
-result in an operational hazard. For example, the negative binomial
+exessive are well adapted to the poisson case (Wood, 2017).\medskip
+
+These cases are characteristic of scenarios in OpRisk other than those
+modeling situations when the unchecked spreading of negligent behaviour
+may result in an operational hazard. For example, the negative binomial
 and/or quasipoisson regression models ascribe to data that exhibits
 \emph{overdispersion}, wherein the variance is much larger than the mean
 for basic count data, therefore they have been eliminated in this paper.
@@ -2600,9 +2596,6 @@ exceptions). In particular, the biggest number of realised losses in
 both BO and BO-BO Confirmed statuses occur due to automated trading
 systems (ATS) who also give rise to the exceptions mentioned.\medskip
 
-Table \ref{tab:Mosaic_Contingency} and Figure \ref{Mosaic_Contingency}
-are obtained with the following commands:
-
 \singlespacing
 
 \singlespacing
@@ -2731,29 +2724,41 @@ weighted against it.
 ## 
 ## Deviance Residuals: 
 ##     Min       1Q   Median       3Q      Max  
-## -2.9195  -0.5659  -0.2276  -0.0495   4.3643  
+## -2.9946  -0.5576  -0.2284  -0.0517   4.3648  
 ## 
 ## Coefficients:
-##                       Estimate Std. Error z value             Pr(>|z|)    
-## (Intercept)           -7.99905    0.19636 -40.736 < 0.0000000000000002 ***
-## TradedDay             -0.01427    0.00667  -2.139              0.03242 *  
-## DeskAfrica             1.28441    0.41309   3.109              0.00188 ** 
-## DeskBonds/Repos        1.86747    0.26354   7.086     0.00000000000138 ***
-## DeskCommodities        0.72735    0.24727   2.941              0.00327 ** 
-## DeskDerivatives       -0.04525    0.27918  -0.162              0.87123    
-## DeskEquity             1.31836    0.22716   5.804     0.00000000648772 ***
-## DeskManagement/Other -13.99193  286.05004  -0.049              0.96099    
-## DeskMM                 0.21880    0.24801   0.882              0.37766    
-## DeskPrime Services     2.15462    0.22427   9.607 < 0.0000000000000002 ***
-## DeskSND               -0.71920    0.28362  -2.536              0.01122 *  
+##                        Estimate Std. Error z value             Pr(>|z|)
+## (Intercept)           -8.022977   0.192289 -41.724 < 0.0000000000000002
+## TradedDay             -0.013556   0.006385  -2.123             0.033759
+## DeskAfrica             1.402399   0.388993   3.605             0.000312
+## DeskBonds/Repos        1.981497   0.251700   7.872  0.00000000000000348
+## DeskCommodities        0.765467   0.240063   3.189             0.001430
+## DeskDerivatives       -0.072921   0.272344  -0.268             0.788889
+## DeskEquity             1.326918   0.220486   6.018  0.00000000176424133
+## DeskManagement/Other -14.044212 289.296857  -0.049             0.961281
+## DeskMM                 0.255313   0.238297   1.071             0.283985
+## DeskPrime Services     2.208663   0.217438  10.158 < 0.0000000000000002
+## DeskSND               -0.714792   0.272087  -2.627             0.008612
+##                         
+## (Intercept)          ***
+## TradedDay            *  
+## DeskAfrica           ***
+## DeskBonds/Repos      ***
+## DeskCommodities      ** 
+## DeskDerivatives         
+## DeskEquity           ***
+## DeskManagement/Other    
+## DeskMM                  
+## DeskPrime Services   ***
+## DeskSND              ** 
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
 ## (Dispersion parameter for poisson family taken to be 1)
 ## 
-##     Null deviance: 1943.5  on 1630  degrees of freedom
-## Residual deviance: 1719.4  on 1620  degrees of freedom
-## AIC: 2253.4
+##     Null deviance: 2089.9  on 1746  degrees of freedom
+## Residual deviance: 1835.4  on 1736  degrees of freedom
+## AIC: 2411.4
 ## 
 ## Number of Fisher Scoring iterations: 15
 \end{verbatim}
@@ -3022,7 +3027,7 @@ day.\medskip
 \begin{verbatim}
 library(e1071)
 
-confusionMatrix(table(pred$Response, crs[["training"]][["LossesIndicator"]]))
+confusionMatrix(table(pred$response, crs[["training"]][["LossesIndicator"]]))
 \end{verbatim}
 
 \begin{verbatim}
@@ -3030,26 +3035,26 @@ confusionMatrix(table(pred$Response, crs[["training"]][["LossesIndicator"]]))
 ## 
 ##    
 ##        0    1
-##   0 1142  132
-##   1  233  124
+##   0 1234  142
+##   1  236  135
 ##                                           
-##                Accuracy : 0.7762          
-##                  95% CI : (0.7552, 0.7962)
-##     No Information Rate : 0.843           
+##                Accuracy : 0.7836          
+##                  95% CI : (0.7636, 0.8027)
+##     No Information Rate : 0.8414          
 ##     P-Value [Acc > NIR] : 1               
 ##                                           
-##                   Kappa : 0.2714          
+##                   Kappa : 0.2873          
 ##                                           
-##  Mcnemar's Test P-Value : 0.0000001657    
+##  Mcnemar's Test P-Value : 0.000001724     
 ##                                           
-##             Sensitivity : 0.8305          
-##             Specificity : 0.4844          
-##          Pos Pred Value : 0.8964          
-##          Neg Pred Value : 0.3473          
-##              Prevalence : 0.8430          
-##          Detection Rate : 0.7002          
-##    Detection Prevalence : 0.7811          
-##       Balanced Accuracy : 0.6575          
+##             Sensitivity : 0.8395          
+##             Specificity : 0.4874          
+##          Pos Pred Value : 0.8968          
+##          Neg Pred Value : 0.3639          
+##              Prevalence : 0.8414          
+##          Detection Rate : 0.7064          
+##    Detection Prevalence : 0.7876          
+##       Balanced Accuracy : 0.6634          
 ##                                           
 ##        'Positive' Class : 0               
 ## 

@@ -185,7 +185,7 @@ Offsets are used to correct for differing periods of observation [@de2008general
 
 \subsection{Exponential family of distributions}
 
-In concluding Section \ref{sec:Generalised Linear Models} in Chapter \ref{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS}, the question of increasing OpRisk hazard rates due to increasing transaction complexity was raised, wherein $\mu_i$, the expected number of new cases on day $t_i$ is modeled. The model assumes that the  number of expected new OpRisk hazards often increase exponentially over time. Hence, if $\mu_i$ is the expected number of new cases over time $[T,T+\tau] = t_i$, then an appropraite model takes the form:
+Concluding Section \ref{sec:Generalised Linear Models} in Chapter \ref{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS}, the question of increasing OpRisk hazard rates due to increasing transaction complexity was raised, wherein $\mu_i$, the expected number of new cases on day $t_i$ is modeled. The model assumes that the  number of expected new OpRisk hazards often increase exponentially over time. Hence, if $\mu_i$ is the expected number of new cases over time $[T,T+\tau] = t_i$, then an appropraite model takes the form:
 
 \singlespacing
 \begin{eqnarray}\label{expgrowth}
@@ -201,7 +201,7 @@ where the random variables $\mathbf{Y_i}$ are independent, $d_i = \mbox{exposure
 \mathbf {Y}_i =\left\{\begin{array}{rcl}
 				 & 1 & \mbox{for realised OpRisk losses}  \\
                  & 0 & \mbox{for pending losses and near misses} 
-                      \end{array}\right\
+                      \end{array}\right\}
 \end{equation}
 \doublespacing
 \end{definition}
@@ -210,7 +210,7 @@ indexed by the subscript $i$, who may have different expected values $\mu_i$. It
 
 \singlespacing
 \begin{eqnarray}\label{linearcombination}
-\mbox{ln]\mu_i = \mbox{ln}d_i + \beta t_i
+\mbox{ln}\mu_i = \mbox{ln}d_i + \beta t_i
 \end{eqnarray}
 \doublespacing
 
@@ -242,7 +242,7 @@ f(y,\theta) = \frac{\theta^ye^{-\theta}}{y!}
 
 Where $y$ takes the values $0,1,2,..$. If a random variable has a poisson distribution, its expected value $E(Y)$ and variance $Var(Y)$ are equal i.e., $\theta =\lambda$.\medskip
 
-The choice of the poisson distribution for use on real world data is questionable, mainly because earnings volatility is high in the real world, therefore real world data is often \textbf{overdispersed} i.e., has a larger variance than the expected value. A quadratic term ($\beta_2t_i^2$) could be added to the model, which usefully approximates other situations which may influence the counts adapted to the poisson case other than only those due to the unchecked prevalence of Oprisk hazards. The RHS of Equation \ref{linearcombination}} with the quadratic term so other situations other than the unrestricted spread of OpRisk hazards becomes 
+The choice of the poisson distribution for use on real world data is questionable, mainly because earnings volatility is high in the real world, therefore real world data is often \textbf{overdispersed} i.e., has a larger variance than the expected value. A quadratic term ($\beta_2t_i^2$) could be added to the model, which usefully approximates other situations which may influence the counts adapted to the poisson case other than only those due to the unchecked prevalence of Oprisk hazards. The RHS of Equation \ref{linearcombination} with the quadratic term so other situations other than the unrestricted spread of OpRisk hazards becomes 
 
 \singlespacing
 \begin{eqnarray}\label{eqn:adaptedpoisson}
@@ -253,17 +253,16 @@ The choice of the poisson distribution for use on real world data is questionabl
 \section{A poisson regression operational hazard model}
 \label{sec:A poisson regression operational hazard model}
 
-The random component is given by the independent random variables $Y_1, Y_2,\ldots, Y_n$, not i.i.d [@wood2017generalized; @covrig2015using]. $\mathbf{Y}$ takes a (exponential) family argument, depending on parameters $\mbox{ln}\lambda$, where $\lambda$ represents the average frequency of the OpRisk transactions. The response data $y_i$ is an observation of $Y$. The target variable *LossIndicator* defined in \ref{DefLosInd} is the basis for the choice of poisson distribution as a reasonable model. It's probability mass function (pdf) is:
+The random component is given by the independent random variables $Y_1, Y_2,\ldots, Y_n$, not i.i.d [@wood2017generalized; @covrig2015using]. $\mathbf{Y}$ takes a (exponential) family argument, depending on parameters $\mbox{ln}\lambda$, where $\lambda$ represents the average frequency of the OpRisk transactions. The response data $y_i$ is an observation of $Y$. The target variable *LossIndicator* defined as per definition \ref{DefLosInd} is the basis for the poisson distribution as a reasonable model of choice. As per equation \ref{POISSON}, it's probability mass function (pdf) is:
 
 \singlespacing
 \begin{eqnarray}\label{eqn:Poisson}
-Y &\sim& \mbox{Poi}(\lambda), \quad f(y;\lambda) = \frac{\lambda^y\exp{-\lambda}}{y!}\\
- &\mbox{where}& \quad y \in  \mathbb{N}, \mbox{and} \quad \lambda > 0 \nonumber
+Y &\thicksim & \mbox{Poi}(\lambda), \quad f(y;\lambda) = \frac{\lambda^y e^{-\lambda}}{y!}\\
+ &\mbox{where}& \quad y \in  \mathbb{N}, \mbox{and} \quad \lambda > 0. \nonumber
 \end{eqnarray}
 \doublespacing
 
-the expectation and variance $E[Y] = \mbox{VaR}[Y] = \lambda$\footnote{If you were to guess an independent $Y_i$ from a random sample, the best guess is given by this expression}, are both equal to parameter $\lambda$ simultaneously.
-The RHS of Equation \ref{eqn:Poisson} is the model's systematic component, and it specifies the linear predictor. $\beta = (\beta_0\ldots,\beta_p)^t$, and $p$ explanatory variables:
+Again, the expectation and variance $E[Y] = \mbox{VaR}[Y] = \lambda$\footnote{If you were to guess an independent $Y_i$ from a random sample, the best guess is given by this expression}, are both equal to parameter $\lambda$ simultaneously. The model's systematic component, equation \ref{linearpredictor} specifies the linear predictor and is built with $p + 1$ parameters $\beta = (\beta_0\ldots,\beta_p)^t$, with $p$ explanatory variables:
 
 \singlespacing
 \begin{eqnarray}
@@ -271,16 +270,7 @@ The RHS of Equation \ref{eqn:Poisson} is the model's systematic component, and i
 \end{eqnarray}
 \doublespacing
 
-If sample variables $Y_i \thicksim \mbox{Poisson}(\lambda_i)$, then $\mu_i = E[Y_i] = \lambda_i$; the link function between the random and systematic components, viz. a tranformation by the model by some function $g()$, which does not change features essential to to fitting, but rather a scaling in magnitude so that:
-
-\singlespacing
-\begin{eqnarray}\label{eqn:linkfcn }
-\eta_i &=& g(\lambda_i) = \mbox{ln}\lambda_i, \qquad \mbox{that is} \nonumber \\
-\eta &=& \beta_0 + \sum_{j=1}^{p}\beta_jx_{ij}
-\end{eqnarray}
-\doublespacing
-
-so the mean frequency or otherwise the rate $R$, will be predicted by the model\ldots
+If sample variables $Y_i \thicksim \mbox{Poi}(\lambda_i)$, then $\mu_i = E[Y_i] = \lambda_i$; the link function between the random and systematic components, viz. a tranformation by the model by some function $g()$, which does not change features essential to to fitting, but rather a scaling in magnitude: i.e., the link between naturakl canonical parameter $\theta$ in equation \ref{Exponentialfamily} and parameter $\lambda$, the mean frequency of poisson distribution $\theta = \mbox{ln}\lambda$, or otherwise the rate, will be predicted by the model\ldots
 
 \singlespacing
 \begin{eqnarray}\label{eqn:multmodel}
@@ -1239,22 +1229,14 @@ set.seed(crv$seed)
 
 crs$nobs <- nrow(crs$input)
 
-crs$train <- sample(crs$nobs, 0.7*crs$nobs)
+crs$train <- sample(crs$nobs, 0.75*crs$nobs)
 
 crs$nobs %>%
   seq_len() %>%
-  setdiff(crs$train) %>%
-  sample(0.15*crs$nobs) ->
-  crs$validate
-
-crs$nobs %>%
-  seq_len() %>%
-  setdiff(crs$train) %>%
-  setdiff(crs$validate) ->
+  setdiff(crs$train) ->
   crs$test
 
 crs$training <- as.data.frame(crs$input[crs$train,])
-crs$validation <- as.data.frame(crs$input[crs$validate,])
 crs$testing <- as.data.frame(crs$input[crs$test,])
 ```
 \doublespacing
@@ -1519,9 +1501,152 @@ head(pred)
 
 library(e1071)
 
-confusionMatrix(table(pred$Response, crs[["training"]][["LossesIndicator"]]))
+confusionMatrix(table(pred$response, crs[["training"]][["LossesIndicator"]]))
 
 ```
+
+```{r, results="hide", fig.show="hide", fig.keep="none", echo=FALSE}
+
+
+options(scipen = 999)
+
+# Load packages
+library(rattle, quietly = TRUE)
+library(magrittr, quietly = TRUE) # Utilize the %>% and %>% pipeline operators
+library(Hmisc, quietly = TRUE)
+library(chron, quietly = TRUE)
+library(dplyr, quietly = TRUE)
+library(ggplot2)
+library(caTools)
+library(caret)
+
+
+building <- TRUE
+scoring <- ! building
+
+# A predefined value is used to reset the random seed so that results are repeatable
+
+crv$seed <- 41 # set random seed to make your partition reproducible
+
+#==========================================================================================
+#crv$training.proportion <- 0.7 # proportion of data used for training
+#crv$validation.proportion <- 0.15 # proportion of data used for validation
+
+# Load the dataset OPriskDataSet_exposure
+
+
+fname <- "file:///C:/Users/User/Documents/R PROJECT/OpRiskPHDGitHub/OpRisk_PHD_Thesis/Data/OPriskDataSet_exposure.csv"
+crs$dataset <- read.csv(fname,
+              sep=";",
+              dec=",",
+              na.strings=c(".", "NA", "", "?"),
+              strip.white=TRUE, encoding="UTF-8")
+
+exposure <- crs$dataset[,ncol(crs$dataset)]
+
+#class(exposure)
+#length(exposure)
+
+crs$dataset <- as.data.frame(crs$dataset)
+
+# The following varaible selections have been noted
+
+crs$input <- crs$dataset %>%
+  group_by(UpdatedDay,
+           UpdatedTime,
+           TradedDay,
+           TradedTime,
+           Desk,
+           CapturedBy,
+           TradeStatus,
+           TraderId,
+           Instrument,
+           Reason,
+           EventTypeCategoryLevel1,
+           BusinessLineLevel1) %>%
+  transmute(LossesIndicator = LossIndicator,
+            Losses = Loss,
+            Exposure = exposure)
+
+# Create function "getmode" which finds the modal class in the categorical variables
+getmode <- function(x){
+  u <- unique(x)
+  as.integer(u[which.max(tabulate(match(x,u)))])
+}
+# Reorder the categorical variables so that the modal class 
+# is specified as the reference level
+for (i in 5:(ncol(crs$input) - 3)){
+     crs$input[[i]] <- relevel(crs$input[[i]], getmode(crs$input[[i]]))
+}
+
+# crs$target  <- "LossesIndicator"
+# crs$risk    <- NULL
+# crs$ident   <- NULL
+# crs$ignore  <- c("UpdateTime", "TradeTime", "Nominal", "FloatRef", "LastResetDate", "LastResetRate", "Theta", "Loss", "Unexplained")
+# crs$weights <- NULL
+
+# Build the training/validation/testing datasets
+# nobs=2330 training=1632 validation=350 testing=349
+
+set.seed(crv$seed)
+
+crs$nobs <- nrow(crs$input)
+
+crs$train <- sample(crs$nobs, 0.75*crs$nobs)
+
+crs$nobs %>%
+  seq_len() %>%
+  setdiff(crs$train) ->
+  crs$test
+
+crs$training <- as.data.frame(crs$input[crs$train,])
+crs$testing <- as.data.frame(crs$input[crs$test,])
+
+### Let us fit a GLM to our data. This will be our global model. use "LossesIndicator"
+#as the dependent variable, while the other variables will be predictor variables.
+freqfitt <- glm(LossesIndicator ~ UpdatedDay + UpdatedTime +
+                 TradedDay + TradedTime + Desk + CapturedBy +
+                 TradeStatus + TraderId + Instrument + Reason
+               + EventTypeCategoryLevel1 + BusinessLineLevel1,
+data=crs$testing, family=poisson(link = 'log'), offset = log(Exposure))
+
+summary(freqfitt)
+
+require(MuMIn)
+
+library(parallel)
+cl <- makeCluster(4) # Assign R cores to the job
+options(na.action=na.fail)
+freqfitts <- dredge(freqfitt)
+freqfitts
+stopCluster(cl)
+
+cl <- makeCluster(4) # Assign R cores to the job
+ atmodel <- (model.avg(get.models(freqfitts, subset=delta<2)))
+ summary(atmodel)
+ stopCluster(cl)
+ 
+av.predt <- predict(atmodel, crs$training, type = "response")
+av.predt
+
+library(R2HTML)
+HTMLStart(); HTML(data.frame(av.predt)); w <- HTMLStop()
+browseURL(w)
+
+MASS::fitdistr(av.predt, "Poisson")
+
+Estimate <- "file:///C:/Users/User/Documents/R PROJECT/OpRiskPHDGitHub/OpRisk_PHD_Thesis/Data/OPriskDataSet_Test.csv"
+PRED <- read.csv(Estimate,
+                  sep=";",
+                  dec=",",
+                  na.strings=c(".", "NA", "", "?"),
+                  strip.white=TRUE, encoding="UTF-8")
+head(PRED)
+library(e1071)
+confusionMatrix(table(PRED$Response_test, crs[["testing"]][["LossesIndicator"]]))
+
+```
+
 
 \subsection{Modelling population size of the OpRisk events}
 
