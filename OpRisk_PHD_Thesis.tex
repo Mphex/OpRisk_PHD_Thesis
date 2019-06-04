@@ -2724,43 +2724,31 @@ weighted against it.
 ## 
 ## Deviance Residuals: 
 ##     Min       1Q   Median       3Q      Max  
-## -2.9946  -0.5576  -0.2284  -0.0517   4.3648  
+## -2.8706  -0.5300  -0.2286  -0.0545   4.3750  
 ## 
 ## Coefficients:
-##                        Estimate Std. Error z value             Pr(>|z|)
-## (Intercept)           -8.022977   0.192289 -41.724 < 0.0000000000000002
-## TradedDay             -0.013556   0.006385  -2.123             0.033759
-## DeskAfrica             1.402399   0.388993   3.605             0.000312
-## DeskBonds/Repos        1.981497   0.251700   7.872  0.00000000000000348
-## DeskCommodities        0.765467   0.240063   3.189             0.001430
-## DeskDerivatives       -0.072921   0.272344  -0.268             0.788889
-## DeskEquity             1.326918   0.220486   6.018  0.00000000176424133
-## DeskManagement/Other -14.044212 289.296857  -0.049             0.961281
-## DeskMM                 0.255313   0.238297   1.071             0.283985
-## DeskPrime Services     2.208663   0.217438  10.158 < 0.0000000000000002
-## DeskSND               -0.714792   0.272087  -2.627             0.008612
-##                         
-## (Intercept)          ***
-## TradedDay            *  
-## DeskAfrica           ***
-## DeskBonds/Repos      ***
-## DeskCommodities      ** 
-## DeskDerivatives         
-## DeskEquity           ***
-## DeskManagement/Other    
-## DeskMM                  
-## DeskPrime Services   ***
-## DeskSND              ** 
+##                       Estimate Std. Error z value             Pr(>|z|)    
+## (Intercept)          -8.053221   0.193632 -41.590 < 0.0000000000000002 ***
+## TradedDay            -0.014087   0.006381  -2.208             0.027266 *  
+## DeskAfrica            1.457695   0.413087   3.529             0.000417 ***
+## DeskBonds/Repos       1.764230   0.254571   6.930      0.0000000000042 ***
+## DeskCommodities       0.924033   0.235749   3.920      0.0000887114575 ***
+## DeskDerivatives      -0.577626   0.344672  -1.676             0.093763 .  
+## DeskEquity            1.365152   0.225948   6.042      0.0000000015232 ***
+## DeskManagement/Other -1.410706   1.014052  -1.391             0.164177    
+## DeskMM                0.339561   0.241501   1.406             0.159711    
+## DeskPrime Services    2.129594   0.223030   9.548 < 0.0000000000000002 ***
+## DeskSND              -0.716361   0.283796  -2.524             0.011596 *  
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
 ## (Dispersion parameter for poisson family taken to be 1)
 ## 
-##     Null deviance: 2089.9  on 1746  degrees of freedom
-## Residual deviance: 1835.4  on 1736  degrees of freedom
-## AIC: 2411.4
+##     Null deviance: 1994.9  on 1630  degrees of freedom
+## Residual deviance: 1764.7  on 1620  degrees of freedom
+## AIC: 2310.7
 ## 
-## Number of Fisher Scoring iterations: 15
+## Number of Fisher Scoring iterations: 8
 \end{verbatim}
 
 \doublespacing
@@ -3023,42 +3011,6 @@ considering how the variables interact with each other.
 
 Yields a daily rate of \(\lambda = 0.156958922\) or 0.1840831\% per
 day.\medskip
-
-\begin{verbatim}
-library(e1071)
-
-confusionMatrix(table(pred$response, crs[["training"]][["LossesIndicator"]]))
-\end{verbatim}
-
-\begin{verbatim}
-## Confusion Matrix and Statistics
-## 
-##    
-##        0    1
-##   0 1234  142
-##   1  236  135
-##                                           
-##                Accuracy : 0.7836          
-##                  95% CI : (0.7636, 0.8027)
-##     No Information Rate : 0.8414          
-##     P-Value [Acc > NIR] : 1               
-##                                           
-##                   Kappa : 0.2873          
-##                                           
-##  Mcnemar's Test P-Value : 0.000001724     
-##                                           
-##             Sensitivity : 0.8395          
-##             Specificity : 0.4874          
-##          Pos Pred Value : 0.8968          
-##          Neg Pred Value : 0.3639          
-##              Prevalence : 0.8414          
-##          Detection Rate : 0.7064          
-##    Detection Prevalence : 0.7876          
-##       Balanced Accuracy : 0.6634          
-##                                           
-##        'Positive' Class : 0               
-## 
-\end{verbatim}
 
 \subsection{Modelling population size of the OpRisk events}
 
