@@ -332,12 +332,14 @@ of various data-intensive techniques amongst each other, and versus
 regression performances.\medskip
 
 Our understanding of existing ORMF to date is limited to the assumption
-that financial institutions (FI's) are risk-neutral. Thirdly, in lieu of
-the afore-mentioned, this study finally seeks to invalidate the
-risk-neutral assumption, by means of various unsupervised learning
-techniques, by proposing that FI's are more risk-averse; this can be
-measured by analysing subtle patterns between data features and trends
-in the allocated risk capital estimates. In theory, a risk manager who
+that financial institutions (FI's) are risk-neutral: In lieu of the
+afore-mentioned this study finally seeks to invalidate the risk-neutral
+assumption; by means of an evidence-based discoveries of the natural
+clusters in the unknowns of the data through a prescribed model which
+applies unsupervised learning techniques to determine what is going on,
+by proposing that FI's are more risk-averse. This determination can be
+made by analysing subtle patterns between data features and trends in
+the allocated risk capital estimates. In theory, a risk manager who
 experiences persistent/excessive losses due to particular risk events,
 would over-compensate cover for these particular risk types, and this
 would show in reduced losses in these types over time.
@@ -345,64 +347,86 @@ would show in reduced losses in these types over time.
 \section{Fundamentals of ORMF's}
 \label{sec:Fundamentals of ORMF's}
 
-Most banks' estimates for their risk are divided into credit risk
-(50\%), market risk (15\%) and OpRisk (35\%). Cruz (2002) postulated
-that OpRisk, which focuses on the human side of risk management is
-difficult to manage with the reduced ability to measure it. The process
-of OpRisk, that is, the how manifests in conscious and/or unconscious
-states of the risk manager/s (Hemrit \& Arab, 2012), and encompasses
-approaches and theories that focus on how one will choose when faced
-with a decision, based on how comfortable they are with the situation
-and the variables that are present.
+Taking a few steps back to Cruz (2002), they allude to the notion that
+most banks' estimates for their risk's are divided into credit risk
+(50\%), market risk (15\%) and OpRisk (35\%). Cruz (2002) postulate that
+OpRisk, which focuses on the human side of risk management is difficult
+to manage with the reduced ability to measure it. The process of that
+risk, that is, the how in OpRisk manifests in the conscious and/or
+unconscious states of the risk management practitioner (Hemrit \& Arab,
+2012), and encompasses approaches and theories that focus on how they
+will choose when faced with a decision based on how comfortable they are
+with the situation and the variables that are present.
 
 \subsection{Definition of operational risk}
 \label{ssec:Definition of operational risk}
 
-Operational risk (OpRisk) is defined as:
-\emph{The risk of loss resulting from inadequate or failed internal processes, people and systems, and from external events. This definition includes legal risk, but excludes strategic and reputational risk.}(Risk,
-2001).\medskip
+\begin{definition}
+\textbf{Operational risk} (OpRisk) is defined as: \emph{The risk of loss resulting from inadequate or failed internal processes, people and systems, and from external events. This definition includes legal risk, but excludes strategic and reputational risk.}[@risk2001supporting].\medskip
+\end{definition}
 
-A major managerial concern for businesses is an inability to identify
-and account for their susceptibility to OpRisk events following a number
-of very costly and highly publicized operational losses, in particular,
-it became popular following a fraudulent trading incident which was
-responsible for a catastrophic loss that lead to the collapse of Barings
-Bank (the UK's oldest bank) in 1995.\medskip
+A major managerial concern for businesses is their inability to identify
+and hence account for susceptibility to OpRisk events following a number
+of very costly and highly publicized operational losses. In particular,
+Oprisk became popular following a now famed fraudulent trading incident
+which was responsible for catastrophic losses that lead to the collapse
+of Barings Bank (the UK's oldest bank) in 1995.\medskip
 
 The term OpRisk began to be used after the afore-mentioned and similar
-types of OpRisk events became more common. A (rogue) trader (Nick
-Leeson), who risked the banks' survival rather than expose his trading
-losses, by consciously deceiving senior management to hide his unethical
-acts, was found to have been responsible for unethical trading practices
-when he created illegal trades in his account, then used his position in
-the front and back offices of the bank to hide his trading losses. Worse
-still, he incurred a greater risk to the bank by lying in order to give
-a false impression of his profits. Shefrin (2016) notes that people
-would rather incur greater risks to hold on to things they already have,
-than the risks they would taken to get into that position in the first
-place.\medskip
+types of OpRisk events became common. A trader (Nick Leeson Panjer
+(2006)) risked the banks' survival rather than expose his trading losses
+by consciously deceiving senior management to hide unethical rogue
+trading acts, was found to have been responsible for unethical trading
+practices when he created illegal trades in his account, then used his
+position in the front and back offices of the bank to hide his losses.
+Worse still, he went further in his fraudulent activity incurring
+greater risks to the bank, by lying in order to give a false impression
+of his profits. this alludes to the behavoural notion (Shefrin, 2016),
+that in most decision-making positions people would rather incur greater
+risks to hold on to things they already have, than the risks they would
+have taken to get into that position in the first place.\medskip
 
-It was later discovered that he was placing illegal bets in the
+It was later discovered that Nick was placing illegal bets in the
 Asian-markets, and kept these contracts out of sight from senior
 management to cover up his illegal activity. When his fraudulent
 behaviour was discovered (after an earthquake hit at Kobe in Japan, that
 collapsed the Osaka Securities Exchange) he succumbed to unrecoverable
-losses due to trading positions he had accumulated, which resulted in a
+losses due to trading positions he had accumulated which resulted in a
 loss of around \pounds 1.3 billion to the bank, thus resulting in it's
-collapse. In most, if not all of these cases, human error is at the
-center of the chain of events that lead or may lead to OpRisk
+collapse (Martin, 2009). In most, if not all of these cases, human error
+is at the center of the chain of events that lead or may lead to OpRisk
 losses.\medskip\medskip
 
 Since then, there have been a series of destructive events that have
-threatened the stability of the financial system due to OpRisk. Large
-fines have been imposed on the culprits and regulatory scrutiny has been
-heightened as a result of a number of operational events, e.g.~the
-January 2016 \lq\lq Dark Pool\rq\rq~trading penalties suffered by
-Barclays (\$70mn) and Credit Suisse (\$85mn), imposed by the United
-States (US) based securities exchange commision (SEC). These OpRisk loss
-events were due to fraudulent trading activity consisting of rogue
-traders dealing in illegally placed high frequency trades for private
-clients where prices were hidden.\medskip 
+threatened the stability financial systems due to OpRisk losses. Hefty
+fines worthy of bringing down an entire corporate entities often have to
+be imposed on guilty parties causing irreparable damage to banks'
+averall business and reputation, such that regulatory scrutiny has been
+heightened as a result of a number of scandalous operational events
+e.g., the January 2016 \lq\lq Dark Pool\rq\rq~trading penalties suffered
+by Barclays Bank PLC amounting to about \$70mn and Credit Suisse
+(\$85mn), imposed by the United States (US) based securities exchange
+commision (SEC). These OpRisk loss events were due to fraudulent trading
+activity consisting of rogue traders dealing in illegally placed high
+frequency trades for private clients where prices are hidden.\medskip
+
+Kennett \& Carrivick (2018) recognises from information offered via the
+ORX global banking loss database that gross loss sizes were
+predominantly high and volatile, characterised by a period (from 2011 to
+2016) driven by the occurence of large loss events. This coincides with
+the afore-mentioned post-crisis period, predominantly in 2012, following
+which a comparatively stable period in 2017 where industry Oprisk losses
+sees sizes decrease significantly. Figure \ref{bank-oprisk_fig}
+illustrates distribution of severity of losses reported from 2011 to
+2016 during which major banks suffered nearly \$210 billion from Oprisk.
+
+\begin{figure}
+\centering
+\copyrightbox[b]{\includegraphics[width=15cm,height=10cm]{bank-oprisk_fig1_full.eps}}
+             {Source: \url{https://www.bain.com/contentassets/f0199ad9887e402cb37cd1fd316f5ee3/bain_brief_how_banks_can_manage_operational_risk.pdf}}
+\caption[Losses suffered from 2011 to 2016 from Oprisk]{Histogram showing a breakdown of gross losses focusing on OpRisk loss events in comparison to each other recorded from 2011 up to and including 2016}
+\label{bank-oprisk_fig}
+\end{figure}
 
 In South Africa (SA), there is an upcoming case of price fixing and
 market allocation in trading foreign exchange (FX) currency pairs,
@@ -1228,11 +1252,14 @@ losses, on a trade-by-trade level.
 \section{Current operational risk measurement modeling framework}
 \label{sec:Current operational risk measurement modeling framework}
 
-Historical severity curves obtained from historical loss counts have
-been widely considered to be the most reliable models when used in
-OpRisk loss estimation. However they have not been successfull when used
-as measures capturing forward-looking aspects of the OpRisk loss
-prediction problem.\medskip 
+Historical severity curves obtained from historical loss counts
+presented in conventional quantification techniques, have been widely
+considered to be the most reliable models when used in OpRisk loss
+estimation. However, they have not been successfull when used as
+measures capturing forward-looking aspects, which aim at replacing the
+afore-mentioned techniques by measures using event frequencies based on
+actual exposures instead of hisorical loss counts obtained in the OpRisk
+loss prediction problem (Einemann et al., 2018).\medskip 
 
 In this paper, we develop data intensive analysis techniques which yield
 a more realistic estimation for underlying risk factors, through linking
@@ -3257,6 +3284,12 @@ Kahneman, D., \& Tversky, A. (2013). Prospect theory: An analysis of
 decision under risk. In \emph{Handbook of the fundamentals of financial
 decision making: Part i} (pp. 99--127). World Scientific.
 
+\leavevmode\hypertarget{ref-orxablr2018}{}%
+Kennett, R., \& Carrivick, L. (2018). \emph{Annual banking loss report:
+operational risk loss data for banks submitted between 2012 and 2017}
+(pp. 1--16). Retrieved from
+\url{https://managingrisktogether.orx.org/orx-loss-data/annual-banking-loss-report}
+
 \leavevmode\hypertarget{ref-king2001operational}{}%
 King, J. L. (2001). \emph{Operational risk: Measurement and modelling
 (the wiley finance series)}.
@@ -3268,6 +3301,11 @@ taking. \emph{Neuron}, \emph{47}(5), 763--770.
 \leavevmode\hypertarget{ref-list2004neoclassical}{}%
 List, J. A. (2004). Neoclassical theory versus prospect theory: Evidence
 from the marketplace. \emph{Econometrica}, \emph{72}(2), 615--625.
+
+\leavevmode\hypertarget{ref-martin2009risk}{}%
+Martin, P. H. (2009). As risk management evolves, is operational risk
+management important? \emph{The Journal of Operational Risk},
+\emph{4}(4), 75.
 
 \leavevmode\hypertarget{ref-mignola2016comments}{}%
 Mignola, G., Ugoccioni, R., \& Cope, E. (2016). \emph{Comments on the
