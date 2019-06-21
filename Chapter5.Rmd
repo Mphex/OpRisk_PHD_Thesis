@@ -1,3 +1,148 @@
+ ---
+output: pdf_document
+---
+\doublespacing
 
+\section{A new class of ORMF models approach}
+\label{sec:A new class of ORMF models approach}
 
+A substantial body of evidence shows that decision makers systematically violate EUT when choosing between risky prospects. Indeed, people would rather satisfy their needs than maximise their utility, contravening the normative model of rational choice (i.e., EUT) which has dominated the analysis of decision making under risk. In recent work [@barberis2003survey] in behavioral finance, it has been argued that some of the lessons learnt from violations of EUT are central to understanding a number of financial phenomena. In response to this, there has been several theories put forward advocating for the basis of a slightly different intepretation which describes how individuals actually make decisions under uncertainty/risk. Of all the non-EUT's, we focus on Prospect Theory (PT) as this framework has had most success matching most empirical facts\footnote{OpRisk loss events in FI's are largely due to human failings that are exploitable e.g., fraudulent trading activity, and PT is based on the same behavioural element of how people make financial decisions about prospects}.\medskip 
 
+@kahneman2013prospect list the key elements of PT, which are 1] a value function, and 2] a non-linear transformation of the probability scale, that factors in risk aversion of the participants. According to @kahneman2013prospect, the probability scale overweights small probabilities and underweights high probabilities. This feature is known as loss/risk aversion: This means that people have a greater sensitivity to losses (around 2.5 times more times) than gains, and are especially sensitive to small losses unless accompanied by small gains\footnote{Diminishing marginal utility for gains but opposite for losses.}. Loss aversion is a strong differentiator when it comes to explaining exceptions to the general risk patterns that characterize prospect theory.\medskip
+
+\subsection{Prospect theory}
+\label{ssec:Prospect theory}
+
+According to @kahneman2013prospect, the decision maker, who is a risk agent within the FI, constructs a representation of the losses and outcomes that are relevant to the decision, then assesses the value of each prospect and chooses according to the losses (changes in wealth), not the overall financial state of the FI. Therefore, by relaxation of the expectation principle in equation \ref{ssec:Expected utility theory}, the over-all value $\mathbf{\bigvee}$ of the regular prospect $(x,p;y,q)$: In such a prospect, one receives $x$ with probability $p$, $y$ with probability $q$, and nothing with probability $1-p-q$, is expressed in terms of two scales, $\pi(\cdot)$, and $\nu(\cdot)$, where $\pi(\cdot)$ is a decision weight and $\nu(\cdot)$ a number reflecting the subjective value of the outcome. Then $\mathbf{\bigvee}$ is assigned the value:
+
+\begin{equation}\label{eqn2}
+\mathbf{\bigvee}=\pi(p)\nu(x)+\pi(q)\nu(y) \qquad\mbox{iff} \qquad p+q \leq 1
+\end{equation}
+
+The scale, $\pi$, associates with each probability $p$ a decision weight which reflects the impact of $p$ on the over-all value of the prospect. The second scale, $\nu$, assigns to each outcome $x$ a number $\nu(x)$, which measures the value of deviations from a reference point i.e., gains or losses.  $\pi$ is not a probability measure and $\pi(p) + \pi(1-p) < 1$. Through PT we add new parameters and arguments to improve the mathematical modelling method for decisions taken under risk/uncertainty, such that the value of each outcome is multiplied by a decision weight, not by an additive probability.\medskip
+
+PT looks for common attitudes in people (in FI's) with regard to their behaviour toward taking financial risks or gambles that cannot be captured by EUT. In light of this view, people are not fully invested in either of the percieved outcomes $x$ and $y$, Which tells us that $p+q \leq 1$.  In lieu of this, an FI using (internal) historical OpRisk loss data to model future events; say a historical case of fraud at the FI occurs and is incorporated in the model, the probability of making the same error in future is provided for in the model versus risk events that haven't happened. The modelled future should over-provide for the loss events that have already occured, which fits normal patterns around individuals psycological make up and is consistent with risk-averse behavior. The idea at the basis of PT is that a better modeling method can be obtained which leads to a closer approximation of the over-all-value of OpRisk losses. 
+
+\section{Theoretical investigations for the quantification of modern ORM}
+
+Within the variety of relations among risk preferences, people have difficulty in grasping the concept of risk-neutrality. In a market where securities are traded, risk-neutral probabilities are the cornerstone of trade, due to their importance in the law of no arbitrage for securities pricing. Mathematical finance is concerned with pricing of securities, and makes use of this idea.\medskip
+
+That is, assuming that arbitrage activities do not exist, two positions with the same pay-off must also have an identical market value [@gisiger2010risk]. A position (normally a primary security) can be replicated through a construction consisting of a linear combination of long, as well as short positions of traded securities. It is a relative pricing concept which removes risk-free profits due to the no-arbitrage condition.\medskip
+
+This idea seems quite intuitive from an OpRisk management perspective. The fact that one can take internal historical loss data and use this to make a statement on the \texttt{OpRisk} VaR measure for the population, is based on the underlying assumption of risk neutrality. Consider a series of disjoint risky events occurring at times $\tau$ to $\tau + 1$. We can explore the concept of a two state economy in which value is assigned to gains and losses, rather than to final assets, such that an incremental gain or loss can be realised at state $\tau + 1$, contingent on the probability which positively impacts on the event happening.\medskip
+
+\subsection{Risk-neutral measure $\mathbb{Q}$}
+
+Risk-neutral probabilities simply enforce a linear consistency for views on equivalent losses/gains, with regard to the shape of the value function. The shape the graph depicts a linear relationship based on responses to gains/losses and value. The risk neutral probability is not the real probability of an event happening, but should be interpreted as (a functional mapping) of the number of loss events (frequency).\medskip
+
+Suppose we have: $\Theta = \mbox{Gain/Loss}$; $\nu(x) = \mbox{risk event happening}$; and $X = \mbox{Individual gain/loss (or both)}$, then
+\begin{eqnarray}\label{eqn3}
+\Theta = &\sum_{i=1}^{n}\mbox{Pr}[\nu (x_{i})]*X_i & \\
+ \mbox{where} \nonumber\\
+&\sum_{i=1}^{n}\mbox{Pr}[\nu (x_{i})] = 1 &\qquad \mbox{and} \qquad \mbox{Pr}[\nu (x_{i})] \geq 0 \quad \forall i\nonumber
+\end{eqnarray}         
+
+Note that the random variable $\Theta$ is the sum of the products of frequency and severity for losses (in \texttt{OpRisk} there are no gains).\medskip
+
+This formula is used extensively in actuarial practices, for decisions relating to quantifying different types of risk, in particular in the quantification of value-at-risk (VaR) (a risk measure used to determine capital adequacy requirements, commonly adopted in the banking industry).\medskip
+
+A quantile of the distribution of the aggregate losses is the level of exposure to risk, expressed as VaR. People exhibit a specific four-fold behaviour pattern when facing risk [@shefrin2016behavioral]. There are four combinations of gain/loss and moderate/extreme probabilities, with two choices of risk attitude per combination. OpRisk measurement focuses on only those casual factors that create losses with random uncertainty, for the value adding processes of the business unit.
+
+\subsection{Cluster analysis}
+
+Cluster analysis (CA) is an unsupervised machine learning technique, which sets out to group combinations of covariates according to levels of similarity into clusters. The CA algorithm attempts to optimise homogeneity within data groups, and heterogeneity between groups of observations. Thus, in the context of ORM, CA regroups these combinations of covariates into clusters (so that features within each group are similar to one another, and different from features in other groups), ordering and prioritising the root causes of losses.\medskip
+
+A new and challenging argument can be demonstrated through clustering correlated data objects in the OpRisk dataset, by asserting that clustering should show more than one distinct group. In addition, the more groups of distinct clusters, losses are expected to drop, and losses in distinct clusters should also show a decreasing trend over time, with intensifying exposure. Ultimately, subtle patterns of frequencies and associated severities of losses in the OpRisk data can be revealed.\medskip  
+
+The OpRisk dataset is subdivided for training patterns, validated and tested with the \emph{k}-means clustering algorithm. To achieve this the \emph{k}-means algorithm randomly subdivides the data in k groups. Firstly, each groups mean is found by clustering the centers in the input variable-space of the training patterns. In each cluster within each group, the significant variables' coefficients which determine cluster have set centers closest to the cluster centers generated by the \emph{k}-means clustering algorithm applied to the input vectors of the training data [@flake1998square]. These clusters  have centers closest:- as defined by a differential metric i.e., the Euclidean distance, to a relationship (e.g. a linear combination of coefficients and variables) which most accurately predicts the target variable.
+
+\subsection{Research Objective 3}
+
+To identify potential flaws in the loss distribution approach (LDA) model of ORM by employing CA. The \textit{classical}  LDA model, through a mathematical framework derives a negative pay-off function (loss) based on a risk-neutral measure $\mathbb{Q}$. The study addresses weaknesses in the current LDA model framework, by assuming managerial risk-taking attitudes are more risk averse.\medskip
+
+More precisely, the goal is to use CA to learn deep hierarchies of features\footnote{A typical approach taken in the literature is to use an unsupervised learning algorithm to train a model of the unlabeled data and then use the results to extract interesting features from the data [@coates2012learning]} found during operations, to then determine whether risk adverse techniques over-compensate for persistent loss event types over time. 
+
+\section{Description of the dataset}
+
+The characteristics of the traded transactions or of the associated risk correction event are given by the following variables: Trade, UpdateTime, UpdatedDay, TradedTime, TradedDay, Desk, CapturedBy, TradeStatus, TraderId, Instrument, Reason behind the risk correction event, Nominal, FloatRef floating rate reference for fixed income products, ResetDate and ResetRate, Theta, Loss severity, four EventTypeCategoryLevel viz., EL1 - IF, EL4 - CPBP, EL6 - BDSF, and EL7 - EDPM  \& all seven associated  BusinessLineLevel, and the LossIndicator. The exposure variable shows the length of the time interval from the initial moment when the risk event happened, until the occurrence of a risk correction.\medskip
+
+The data is limited to the training dataset over the interval 01 January - 31 March 2013, in Figure \ref{Fig4}, portrays detail of the trend of OpRisk losses against exposures for each of the 1631 observations and 16 variables. In the first plot, transactions with small exposures are concentrated in the first quadrant where HFLS losses persist. This is in line with the sentiment in risk management circles, that small exposures are not actively managed and hence risk mitigation is not a priority. As a result many of the unforeseeable LFHS losses occur here, as they are not anticipated and therefore slip through OpRisk defences, who more often than not, do not mitigate against these events.\medskip
+
+Loss severities decrease with increasing exposures, as seen by the lowering variabilities (and colour concentration of the exposure) between loses and exposures. This  support the view that more impactful past losses invoke active risk management and mitigation, as risk managers overcompensate for these severities in their management practices i.e., they are more risk averse. In addition there are graphically displayed correlations (which work for numerical explanatory variables only), which are ordered by their strengths. There is a weak positive relationship between exposure and UpdatedDay, TradedTime \& TradedDay; a weak negative relationship with UpdatedTime.  
+
+\section{Exploratory data analysis}
+
+\begin{figure}
+\begin{frame}
+      \centering
+       \begin{tabular}{cc}
+        \textbf{OpRisk loss severities vs exposure} & \textbf{Ordered correlations by strength}\\
+        \includegraphics[width=7cm]{Loss_vs_Exposure(1).eps}
+         &
+         \includegraphics[width=7cm]{CorrPlot.eps}
+         \end{tabular}
+    \end{frame}
+    \caption{Graphically displayed correlations by strength and a plot of OpRisk loss severities vs exposure}
+    \label{Fig4}
+\end{figure}
+
+\subsection{The estimation of \emph{k}-means clustering algorithm}
+
+A cluster analysis will identify groups within a dataset. The target variable is LossIndicator, a binary variable indicating a $1$ if a realised loss occurs and $0$ for those pending or near misses. The \emph{K}-means clustering algorithm will search for K clusters (specified by the user). The resulting \emph{k} clusters are represented by the mean or average values of each of the variables. Let us consider a model where the LossIndicator is the target variable: The user whose task it is to specify \emph{k}, may guess right or in practice they may obtain a priori, the knowledge of how to select the appropriate \emph{k} in advance.\medskip
+
+Rather than the trial and error method which involves guessing \emph{k} values and successively computing minimum separation between centers, there are several data mining techniques found in the literature, that can be used to determine the optimal \emph{k} [@rousseeuw1987silhouettes]. The output plot for the estimation of the optimal \emph{k} is presented in Figure \ref{Fig5} below. We have iterated over cluster sizes from 2 to 10 clusters. The program KMeans resets the random number seed to obtain the same results each time. where the optimal \emph{k} found to be significant close to $\emph{k} = 10$.\medskip
+
+The plot displays the 'sum(withinss)' for each clustering and the change in this value from the previous clustering. The Sum(WithinSS) (blue line) as a performance metric indicates that beyond \emph{k} = 4 clusters the model overfits: Its computes the absolute error which is initially  large, then monotonicaly decreases to the point \emph{k} = 4, it then begins to increase subsequent to the point where the Diffprevious Sum(WithinSS) (red line) intersects viz., at \emph{k} = 4 clusters, which means \emph{k} = 4 is the local optimal number of clusters i.e., beyond which the iterative relative errors converges faster than the absolute errors and successively reduces as \emph{k} increases from 4 to 10.  
+
+\begin{figure}
+\centering
+\includegraphics[width=15cm, height=7.5cm]{IterateKmeans.eps}
+\caption{Finding the optimal number of \emph{k} groups by the Silhouette Statistic SS: Sum is a  measure to approximate the optimal number of \emph{k} groups by the Silhouette Statistic SS}
+\label{IterateKmeans}
+\end{figure}
+
+\subsubsection{Rattle program code}
+
+\subsubsection{Results}
+\begin{verbatim}
+Cluster sizes:
+
+[1] "478 404 570 179"
+
+Data means:
+
+      Trade  UpdatedDay UpdatedTime   TradedDay  TradedTime 
+0.762016409 0.448559166 0.486589314 0.487369712 0.601539912 
+       Loss    exposure 
+0.003232348 0.121083376 
+
+Cluster centers:
+
+      Trade UpdatedDay UpdatedTime TradedDay TradedTime        Loss
+1 0.8106844  0.3943515   0.4123358 0.2912134  0.8556825 0.004692829
+2 0.8716248  0.4900990   0.5409218 0.7948845  0.8270263 0.002132631
+3 0.8378683  0.4493567   0.5264944 0.4160234  0.2165842 0.002308103
+4 0.1431301  0.4970205   0.4351758 0.5443203  0.6397973 0.004757466
+    exposure
+1 0.08060460
+2 0.06359981
+3 0.07134609
+4 0.51729829
+
+Within cluster sum of squares:
+
+[1]  84.88017  89.27845 148.89661  59.37208
+
+Time taken: 1.86 secs
+
+Rattle timestamp: 2018-12-13 07:22:48 User
+\end{verbatim}
+
+\begin{sidewaysfigure}
+\centering
+\includegraphics[width=22.5cm, height=15cm]{CA14MeansPlot.eps}
+\caption{A scatterplot matrix for the \emph{k}-means clustering of size 4, and the covariates of frequency loss events consisting of 369 loss event frequencies amounting to R 61 534 745 P\&L severity of loss impact.}
+\label{CA14MeansPlot}
+\end{sidewaysfigure}
+
+\singlespacing

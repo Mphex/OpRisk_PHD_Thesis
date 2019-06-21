@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6730) (preloaded format=xelatex 2019.1.15)  4 JUN 2019 03:42
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6730) (preloaded format=xelatex 2019.1.15)  21 JUN 2019 23:56
 entering extended mode
 **./OpRisk_PHD_Thesis.tex
 (OpRisk_PHD_Thesis.tex
@@ -715,7 +715,27 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count295
 \c@blind@pangramcount=\count296
 \c@blind@pangrammax=\count297
+) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.s
+ty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip112
+\LTright=\skip113
+\LTpre=\skip114
+\LTpost=\skip115
+\LTchunksize=\count298
+\LTcapwidth=\dimen177
+\LT@head=\box46
+\LT@firsthead=\box47
+\LT@foot=\box48
+\LT@lastfoot=\box49
+\LT@cols=\count299
+\LT@rows=\count300
+\c@LT@tables=\count301
+\c@LT@chunks=\count302
+\LT@p@ftn=\toks23
 )
+("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\copyrightbox\copyri
+ghtbox.sty"
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\t
 ikz.sty"
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.
@@ -724,15 +744,15 @@ sty"
 s.sty"
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
 util-common.tex"
-\pgfutil@everybye=\toks23
-\pgfutil@tempdima=\dimen177
-\pgfutil@tempdimb=\dimen178
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen178
+\pgfutil@tempdimb=\dimen179
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
 util-common-lists.tex"))
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
 util-latex.def"
-\pgfutil@abb=\box46
+\pgfutil@abb=\box50
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -752,30 +772,30 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
 keys.code.tex"
-\pgfkeys@pathtoks=\toks24
-\pgfkeys@temptoks=\toks25
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
 keysfiltered.code.tex"
-\pgfkeys@tmptoks=\toks26
+\pgfkeys@tmptoks=\toks27
 ))
-\pgf@x=\dimen179
-\pgf@y=\dimen180
-\pgf@xa=\dimen181
-\pgf@ya=\dimen182
-\pgf@xb=\dimen183
-\pgf@yb=\dimen184
-\pgf@xc=\dimen185
-\pgf@yc=\dimen186
+\pgf@x=\dimen180
+\pgf@y=\dimen181
+\pgf@xa=\dimen182
+\pgf@ya=\dimen183
+\pgf@xb=\dimen184
+\pgf@yb=\dimen185
+\pgf@xc=\dimen186
+\pgf@yc=\dimen187
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count298
-\c@pgf@countb=\count299
-\c@pgf@countc=\count300
-\c@pgf@countd=\count301
-\t@pgf@toka=\toks27
-\t@pgf@tokb=\toks28
-\t@pgf@tokc=\toks29
+\c@pgf@counta=\count303
+\c@pgf@countb=\count304
+\c@pgf@countc=\count305
+\c@pgf@countd=\count306
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
 gf.cfg"
@@ -795,13 +815,13 @@ File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
 gfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )
-\pgfsys@objnum=\count302
+\pgfsys@objnum=\count307
 )))
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
 gfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count303
-\pgfsyssoftpath@bigbuffer@items=\count304
+\pgfsyssoftpath@smallbuffer@items=\count308
+\pgfsyssoftpath@bigbuffer@items=\count309
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
 gfsysprotocol.code.tex"
@@ -819,12 +839,12 @@ alc.code.tex"
 til.code.tex")
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathp
 arser.code.tex"
-\pgfmath@dimen=\dimen187
-\pgfmath@count=\count305
-\pgfmath@box=\box47
-\pgfmath@toks=\toks30
-\pgfmath@stack@operand=\toks31
-\pgfmath@stack@operation=\toks32
+\pgfmath@dimen=\dimen188
+\pgfmath@count=\count310
+\pgfmath@box=\box51
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
 unctions.code.tex"
@@ -846,57 +866,57 @@ unctions.misc.code.tex")
 unctions.integerarithmetics.code.tex")))
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
 loat.code.tex"
-\c@pgfmathroundto@lastzeros=\count306
+\c@pgfmathroundto@lastzeros=\count311
 ))
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen188
-\pgf@picmaxx=\dimen189
-\pgf@picminy=\dimen190
-\pgf@picmaxy=\dimen191
-\pgf@pathminx=\dimen192
-\pgf@pathmaxx=\dimen193
-\pgf@pathminy=\dimen194
-\pgf@pathmaxy=\dimen195
-\pgf@xx=\dimen196
-\pgf@xy=\dimen197
-\pgf@yx=\dimen198
-\pgf@yy=\dimen199
-\pgf@zx=\dimen256
-\pgf@zy=\dimen257
+\pgf@picminx=\dimen189
+\pgf@picmaxx=\dimen190
+\pgf@picminy=\dimen191
+\pgf@picmaxy=\dimen192
+\pgf@pathminx=\dimen193
+\pgf@pathmaxx=\dimen194
+\pgf@pathminy=\dimen195
+\pgf@pathmaxy=\dimen196
+\pgf@xx=\dimen197
+\pgf@xy=\dimen198
+\pgf@yx=\dimen199
+\pgf@yy=\dimen256
+\pgf@zx=\dimen257
+\pgf@zy=\dimen258
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen258
-\pgf@path@lasty=\dimen259
+\pgf@path@lastx=\dimen259
+\pgf@path@lasty=\dimen260
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen260
-\pgf@shorten@start@additional=\dimen261
+\pgf@shorten@end@additional=\dimen261
+\pgf@shorten@start@additional=\dimen262
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box48
-\pgf@hbox=\box49
-\pgf@layerbox@main=\box50
-\pgf@picture@serial@count=\count307
+\pgfpic=\box52
+\pgf@hbox=\box53
+\pgf@layerbox@main=\box54
+\pgf@picture@serial@count=\count312
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen262
+\pgflinewidth=\dimen263
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen263
-\pgf@pt@y=\dimen264
-\pgf@pt@temp=\dimen265
+\pgf@pt@x=\dimen264
+\pgf@pt@y=\dimen265
+\pgf@pt@temp=\dimen266
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcorequick.code.tex"
@@ -913,13 +933,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen266
+\pgfarrowsep=\dimen267
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen267
-\pgf@sys@shading@range@num=\count308
+\pgf@max=\dimen268
+\pgf@sys@shading@range@num=\count313
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcoreimage.code.tex"
@@ -928,7 +948,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box51
+\pgfexternal@startupbox=\box55
 ))
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcorelayers.code.tex"
@@ -945,7 +965,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
 duleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box52
+\pgfnodeparttextbox=\box56
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
 duleplot.code.tex"
@@ -954,8 +974,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
 gfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen268
-\pgf@nodesepend=\dimen269
+\pgf@nodesepstart=\dimen269
+\pgf@nodesepend=\dimen270
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
 gfcomp-version-1-18.sty"
@@ -977,10 +997,10 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
 code.tex")
-\pgffor@iter=\dimen270
-\pgffor@skip=\dimen271
-\pgffor@stack=\toks33
-\pgffor@toks=\toks34
+\pgffor@iter=\dimen271
+\pgffor@skip=\dimen272
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
 ))
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
 \tikz\tikz.code.tex"
@@ -989,37 +1009,49 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
 libraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count309
-\pgfplotmarksize=\dimen272
+\pgf@plot@mark@count=\count314
+\pgfplotmarksize=\dimen273
 )
-\tikz@lastx=\dimen273
-\tikz@lasty=\dimen274
-\tikz@lastxsaved=\dimen275
-\tikz@lastysaved=\dimen276
-\tikzleveldistance=\dimen277
-\tikzsiblingdistance=\dimen278
-\tikz@figbox=\box53
-\tikz@figbox@bg=\box54
-\tikz@tempbox=\box55
-\tikz@tempbox@bg=\box56
-\tikztreelevel=\count310
-\tikznumberofchildren=\count311
-\tikznumberofcurrentchild=\count312
-\tikz@fig@count=\count313
+\tikz@lastx=\dimen274
+\tikz@lasty=\dimen275
+\tikz@lastxsaved=\dimen276
+\tikz@lastysaved=\dimen277
+\tikzleveldistance=\dimen278
+\tikzsiblingdistance=\dimen279
+\tikz@figbox=\box57
+\tikz@figbox@bg=\box58
+\tikz@tempbox=\box59
+\tikz@tempbox@bg=\box60
+\tikztreelevel=\count315
+\tikznumberofchildren=\count316
+\tikznumberofcurrentchild=\count317
+\tikz@fig@count=\count318
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
 dulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count314
-\pgfmatrixcurrentcolumn=\count315
-\pgf@matrix@numberofcolumns=\count316
+\pgfmatrixcurrentrow=\count319
+\pgfmatrixcurrentcolumn=\count320
+\pgf@matrix@numberofcolumns=\count321
 )
-\tikz@expandcount=\count317
+\tikz@expandcount=\count322
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
 \tikz\libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-)))
+))) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+\tu@tmpa=\dimen280
+\CRB@ydiffl=\dimen281
+\CRB@xdiffl=\dimen282
+Package: copyrightbox 2011/11/27  v 0.1
+)
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
 \tikz\libraries\tikzlibraryarrows.code.tex"
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
@@ -1027,12 +1059,8 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
 libraryarrows.code.tex"
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen279
+\arrowsize=\dimen283
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
-\tikz\libraries\tikzlibrarypositioning.code.tex"
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-)
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.s
 ty"
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
@@ -1043,12 +1071,12 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 .code.tex"
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
 core.code.tex"
-\t@pgfplots@toka=\toks35
-\t@pgfplots@tokb=\toks36
-\t@pgfplots@tokc=\toks37
-\pgfplots@tmpa=\dimen280
-\c@pgfplots@coordindex=\count318
-\c@pgfplots@scanlineindex=\count319
+\t@pgfplots@toka=\toks36
+\t@pgfplots@tokb=\toks37
+\t@pgfplots@tokc=\toks38
+\pgfplots@tmpa=\dimen284
+\c@pgfplots@coordindex=\count323
+\c@pgfplots@scanlineindex=\count324
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfp
 lotssysgeneric.code.tex"))
@@ -1064,7 +1092,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 mpatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfco
 mpatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count320
+\c@pgfmathroundto@lastzeros=\count325
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfco
 mpatib\pgfplotsoldpgfsupp_leq.code.tex"))
@@ -1076,14 +1104,14 @@ cture\pgfplotsliststructure.code.tex")
 cture\pgfplotsliststructureext.code.tex")
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
 cture\pgfplotsarray.code.tex"
-\c@pgfplotsarray@tmp=\count321
+\c@pgfplotsarray@tmp=\count326
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
 cture\pgfplotsmatrix.code.tex")
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\numtable
 \pgfplotstableshared.code.tex"
-\c@pgfplotstable@counta=\count322
-\t@pgfplotstable@a=\toks38
+\c@pgfplotstable@counta=\count327
+\t@pgfplotstable@a=\toks39
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
 cture\pgfplotsdeque.code.tex")
@@ -1095,13 +1123,13 @@ plotsbinary.data.code.tex"))
 plotsutil.verb.code.tex")
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\pgf
 librarypgfplots.surfshading.code.tex"
-\c@pgfplotslibrarysurf@no=\count323
+\c@pgfplotslibrarysurf@no=\count328
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfl
 ibrarypgfplots.surfshading.pgfsys-xetex.def"
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfl
 ibrarypgfplots.surfshading.pgfsys-dvipdfmx.def"
-\c@pgfplotslibrarysurf@streamlen=\count324
+\c@pgfplotslibrarysurf@streamlen=\count329
 ))))
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
 plotscolormap.code.tex"
@@ -1131,16 +1159,16 @@ ticks.code.tex")
 \tikz\libraries\tikzlibrarydecorations.code.tex"
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
 duledecorations.code.tex"
-\pgfdecoratedcompleteddistance=\dimen281
-\pgfdecoratedremainingdistance=\dimen282
-\pgfdecoratedinputsegmentcompleteddistance=\dimen283
-\pgfdecoratedinputsegmentremainingdistance=\dimen284
-\pgf@decorate@distancetomove=\dimen285
-\pgf@decorate@repeatstate=\count325
-\pgfdecorationsegmentamplitude=\dimen286
-\pgfdecorationsegmentlength=\dimen287
+\pgfdecoratedcompleteddistance=\dimen285
+\pgfdecoratedremainingdistance=\dimen286
+\pgfdecoratedinputsegmentcompleteddistance=\dimen287
+\pgfdecoratedinputsegmentremainingdistance=\dimen288
+\pgf@decorate@distancetomove=\dimen289
+\pgf@decorate@repeatstate=\count330
+\pgfdecorationsegmentamplitude=\dimen290
+\pgfdecorationsegmentlength=\dimen291
 )
-\tikz@lib@dec@box=\box57
+\tikz@lib@dec@box=\box61
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
 \tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
@@ -1150,13 +1178,13 @@ orations\pgflibrarydecorations.pathmorphing.code.tex"))
 \tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\dec
 orations\pgflibrarydecorations.pathreplacing.code.tex"))
-\pgfplots@numplots=\count326
-\pgfplots@xmin@reg=\dimen288
-\pgfplots@xmax@reg=\dimen289
-\pgfplots@ymin@reg=\dimen290
-\pgfplots@ymax@reg=\dimen291
-\pgfplots@zmin@reg=\dimen292
-\pgfplots@zmax@reg=\dimen293
+\pgfplots@numplots=\count331
+\pgfplots@xmin@reg=\dimen292
+\pgfplots@xmax@reg=\dimen293
+\pgfplots@ymin@reg=\dimen294
+\pgfplots@ymax@reg=\dimen295
+\pgfplots@zmin@reg=\dimen296
+\pgfplots@zmax@reg=\dimen297
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
 \tikz\libraries\tikzlibraryplotmarks.code.tex"
@@ -1169,89 +1197,86 @@ File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\rotating.s
 ty"
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\c@r@tfl@t=\count327
-\rotFPtop=\skip112
-\rotFPbot=\skip113
-\rot@float@box=\box58
-\rot@mess@toks=\toks39
+\c@r@tfl@t=\count332
+\rotFPtop=\skip116
+\rotFPbot=\skip117
+\rot@float@box=\box62
+\rot@mess@toks=\toks40
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.s
 ty"
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip114
-\multirow@cntb=\count328
-\multirow@dima=\skip115
-\bigstrutjot=\dimen294
+\multirow@colwidth=\skip118
+\multirow@cntb=\count333
+\multirow@dima=\skip119
+\bigstrutjot=\dimen298
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.s
 ty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen295
-\lightrulewidth=\dimen296
-\cmidrulewidth=\dimen297
-\belowrulesep=\dimen298
-\belowbottomsep=\dimen299
-\aboverulesep=\dimen300
-\abovetopsep=\dimen301
-\cmidrulesep=\dimen302
-\cmidrulekern=\dimen303
-\defaultaddspace=\dimen304
-\@cmidla=\count329
-\@cmidlb=\count330
-\@aboverulesep=\dimen305
-\@belowrulesep=\dimen306
-\@thisruleclass=\count331
-\@lastruleclass=\count332
-\@thisrulewidth=\dimen307
+\heavyrulewidth=\dimen299
+\lightrulewidth=\dimen300
+\cmidrulewidth=\dimen301
+\belowrulesep=\dimen302
+\belowbottomsep=\dimen303
+\aboverulesep=\dimen304
+\abovetopsep=\dimen305
+\cmidrulesep=\dimen306
+\cmidrulekern=\dimen307
+\defaultaddspace=\dimen308
+\@cmidla=\count334
+\@cmidlb=\count335
+\@aboverulesep=\dimen309
+\@belowrulesep=\dimen310
+\@thisruleclass=\count336
+\@lastruleclass=\count337
+\@thisrulewidth=\dimen311
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\threeparttable\thre
 eparttable.sty"
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box59
+\@tempboxb=\box63
 ) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
-\col@sep=\dimen308
-\ar@mcellbox=\box60
-\extrarowheight=\dimen309
-\NC@list=\toks40
-\extratabsurround=\skip116
-\backup@length=\skip117
-\ar@cellbox=\box61
+\col@sep=\dimen312
+\ar@mcellbox=\box64
+\extrarowheight=\dimen313
+\NC@list=\toks41
+\extratabsurround=\skip120
+\backup@length=\skip121
+\ar@cellbox=\box65
 )
-\c@definition=\count333
-\c@theorem=\count334
+\c@definition=\count338
+\c@theorem=\count339
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.
 sty"
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
-\c@subfigure=\count335
-\c@subtable=\count336
+\c@subfigure=\count340
+\c@subtable=\count341
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
 ty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
-\Gm@cnth=\count337
-\Gm@cntv=\count338
-\c@Gm@tempcnt=\count339
-\Gm@bindingoffset=\dimen310
-\Gm@wd@mp=\dimen311
-\Gm@odd@mp=\dimen312
-\Gm@even@mp=\dimen313
-\Gm@layoutwidth=\dimen314
-\Gm@layoutheight=\dimen315
-\Gm@layouthoffset=\dimen316
-\Gm@layoutvoffset=\dimen317
-\Gm@dimlist=\toks41
+\Gm@cnth=\count342
+\Gm@cntv=\count343
+\c@Gm@tempcnt=\count344
+\Gm@bindingoffset=\dimen314
+\Gm@wd@mp=\dimen315
+\Gm@odd@mp=\dimen316
+\Gm@even@mp=\dimen317
+\Gm@layoutwidth=\dimen318
+\Gm@layoutheight=\dimen319
+\Gm@layouthoffset=\dimen320
+\Gm@layoutvoffset=\dimen321
+\Gm@dimlist=\toks42
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\xetexconfig\geome
 try.cfg"))
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\endnotes\endnotes.s
 ty"
-\c@endnote=\count340
-\endnotesep=\dimen318
+\c@endnote=\count345
+\endnotesep=\dimen322
 \@enotes=\write4
 ) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\dcolumn.sty
 "
@@ -1266,52 +1291,52 @@ LaTeX Info: Redefining \bm on input line 207.
 ) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.s
 ty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip118
+\@mathmargin=\skip122
 For additional information on amsmath, use the `?' option.
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 LaTeX Info: Redefining \boldsymbol on input line 28.
-\pmbraise@=\dimen319
+\pmbraise@=\dimen323
 ) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
 y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count341
+\inf@bad=\count346
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count342
-\leftroot@=\count343
+\uproot@=\count347
+\leftroot@=\count348
 LaTeX Font Info:    Redeclaring math symbol \varTheta on input line 373.
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count344
-\DOTSCASE@=\count345
+\classnum@=\count349
+\DOTSCASE@=\count350
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box62
-\strutbox@=\box63
-\big@size=\dimen320
+\Mathstrutbox@=\box66
+\strutbox@=\box67
+\big@size=\dimen324
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count346
-\c@MaxMatrixCols=\count347
+\macc@depth=\count351
+\c@MaxMatrixCols=\count352
 \dotsspace@=\muskip17
-\c@parentequation=\count348
-\dspbrk@lvl=\count349
-\tag@help=\toks42
-\row@=\count350
-\column@=\count351
-\maxfields@=\count352
-\andhelp@=\toks43
-\eqnshift@=\dimen321
-\alignsep@=\dimen322
-\tagshift@=\dimen323
-\tagwidth@=\dimen324
-\totwidth@=\dimen325
-\lineht@=\dimen326
-\@envbody=\toks44
-\multlinegap=\skip119
-\multlinetaggap=\skip120
-\mathdisplay@stack=\toks45
+\c@parentequation=\count353
+\dspbrk@lvl=\count354
+\tag@help=\toks43
+\row@=\count355
+\column@=\count356
+\maxfields@=\count357
+\andhelp@=\toks44
+\eqnshift@=\dimen325
+\alignsep@=\dimen326
+\tagshift@=\dimen327
+\tagwidth@=\dimen328
+\totwidth@=\dimen329
+\lineht@=\dimen330
+\@envbody=\toks45
+\multlinegap=\skip123
+\multlinetaggap=\skip124
+\mathdisplay@stack=\toks46
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 ) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latexsym.sty
@@ -1324,51 +1349,51 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 "
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
-\linenopenalty=\count353
-\output=\toks46
-\linenoprevgraf=\count354
-\linenumbersep=\dimen327
-\linenumberwidth=\dimen328
-\c@linenumber=\count355
-\c@pagewiselinenumber=\count356
-\c@LN@truepage=\count357
-\c@internallinenumber=\count358
-\c@internallinenumbers=\count359
-\quotelinenumbersep=\dimen329
-\bframerule=\dimen330
-\bframesep=\dimen331
-\bframebox=\box64
+\linenopenalty=\count358
+\output=\toks47
+\linenoprevgraf=\count359
+\linenumbersep=\dimen331
+\linenumberwidth=\dimen332
+\c@linenumber=\count360
+\c@pagewiselinenumber=\count361
+\c@LN@truepage=\count362
+\c@internallinenumber=\count363
+\c@internallinenumbers=\count364
+\quotelinenumbersep=\dimen333
+\bframerule=\dimen334
+\bframesep=\dimen335
+\bframebox=\box68
 LaTeX Info: Redefining \\ on input line 3056.
 ) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
-\UL@box=\box65
-\UL@hyphenbox=\box66
-\UL@skip=\skip121
-\UL@hook=\toks47
-\UL@height=\dimen332
-\UL@pe=\count360
-\UL@pixel=\dimen333
-\ULC@box=\box67
+\UL@box=\box69
+\UL@hyphenbox=\box70
+\UL@skip=\skip125
+\UL@hook=\toks48
+\UL@height=\dimen336
+\UL@pe=\count365
+\UL@pixel=\dimen337
+\ULC@box=\box71
 Package: ulem 2012/05/18
-\ULdepth=\dimen334
+\ULdepth=\dimen338
 )
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyvrb\fancyvrb.s
 ty"
 Package: fancyvrb 2018/11/20
 Style option: `fancyvrb' v3.1a <2018/11/20> (tvz)
-\FV@CodeLineNo=\count361
+\FV@CodeLineNo=\count366
 \FV@InFile=\read4
-\FV@TabBox=\box68
-\c@FancyVerbLine=\count362
-\FV@StepNumber=\count363
+\FV@TabBox=\box72
+\c@FancyVerbLine=\count367
+\FV@StepNumber=\count368
 \FV@OutFile=\write5
 ) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\framed\framed.sty
 "
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip122
-\fb@frw=\dimen335
-\fb@frh=\dimen336
-\FrameRule=\dimen337
-\FrameSep=\dimen338
+\OuterFrameSep=\skip126
+\fb@frw=\dimen339
+\fb@frh=\dimen340
+\FrameRule=\dimen341
+\FrameSep=\dimen342
 )
 
 Package array Warning: Column x is already defined on input line 73.
@@ -1390,13 +1415,19 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 )) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.st
 y"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip123
-\bibsep=\skip124
+\bibhang=\skip127
+\bibsep=\skip128
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count364
+\c@NAT@ctr=\count369
 ) (OpRisk_PHD_Thesis.aux
 
 LaTeX Warning: Label `Desk_Proportions' multiply defined.
+
+
+LaTeX Warning: Label `eqn4' multiply defined.
+
+
+LaTeX Warning: Label `eqn3' multiply defined.
 
 )
 \openout1 = `OpRisk_PHD_Thesis.aux'.
@@ -1421,7 +1452,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 164.
 LaTeX Font Info:    ... okay on input line 164.
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 164.
-\AtBeginShipoutBox=\box69
+\AtBeginShipoutBox=\box73
 Package hyperref Info: Link coloring OFF on input line 164.
 
 ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
@@ -1432,7 +1463,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 string.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count365
+\c@section@level=\count370
 )
 LaTeX Info: Redefining \ref on input line 164.
 LaTeX Info: Redefining \pageref on input line 164.
@@ -1442,6 +1473,12 @@ LaTeX Info: Redefining \nameref on input line 164.
 \openout6 = `OpRisk_PHD_Thesis.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+
+("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.s
+ty"
+Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
+)
 Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1552,43 +1589,43 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ] [6
 
-] (OpRisk_PHD_Thesis.toc
-Overfull \hbox (2.98808pt too wide) in paragraph at lines 11--11
- [][] [][]\TU/lmr/m/n/12 Basel Committee’s quantitative operational risk manage
-ment framework[] []  
- []
-
-
-Overfull \hbox (12.52805pt too wide) in paragraph at lines 23--23
- [][] [][]\TU/lmr/m/n/12 Theoretical investigations for the quantification of m
-oderm ORMF[] []  
- []
-
-[7
+] (OpRisk_PHD_Thesis.toc [7
 
 ]
-Overfull \hbox (1.54811pt too wide) in paragraph at lines 55--55
+Overfull \hbox (1.54811pt too wide) in paragraph at lines 57--57
  [][] [][]\TU/lmr/m/n/12 Applicability of EBOR methodology for capturing forwar
 d-looking as- 
  []
 
 
-Overfull \hbox (27.3241pt too wide) in paragraph at lines 72--72
+Overfull \hbox (27.3241pt too wide) in paragraph at lines 74--74
  [][] [][]\TU/lmr/m/n/12 The estimation of some poisson regression generalised 
 linear models (GLM’s)[] []  
  []
 
 
-Overfull \hbox (21.5161pt too wide) in paragraph at lines 75--75
+Overfull \hbox (21.5161pt too wide) in paragraph at lines 77--77
  [][] [][]\TU/lmr/m/n/12 The estimation of some generalised additive models for
  location scale and 
  []
 
-)
+
+Overfull \hbox (12.52805pt too wide) in paragraph at lines 84--84
+ [][] [][]\TU/lmr/m/n/12 Theoretical investigations for the quantification of m
+oderm ORMF[] []  
+ []
+
+
+Overfull \hbox (5.85603pt too wide) in paragraph at lines 85--85
+ [][] [][]\TU/lmr/m/n/12 THEORETICAL INVESTIGATIONS INTO THE QUANTIFICATION OF 
+
+ []
+
+[8])
 \tf@toc=\write7
 \openout7 = `OpRisk_PHD_Thesis.toc'.
 
-[8] (OpRisk_PHD_Thesis.lot
+[9] (OpRisk_PHD_Thesis.lot
 Overfull \hbox (5.11209pt too wide) in paragraph at lines 4--4
  [][] [][]\TU/lmr/m/n/12 The generalized linear model link functions with their
  associated units 
@@ -1634,7 +1671,7 @@ s, condi-
 \tf@lot=\write8
 \openout8 = `OpRisk_PHD_Thesis.lot'.
 
-[9
+[10
 
 ] (OpRisk_PHD_Thesis.lof
 Overfull \hbox (26.91614pt too wide) in paragraph at lines 3--3
@@ -1643,149 +1680,170 @@ Overfull \hbox (26.91614pt too wide) in paragraph at lines 3--3
  []
 
 
-Overfull \hbox (19.10411pt too wide) in paragraph at lines 6--6
+Overfull \hbox (19.10411pt too wide) in paragraph at lines 7--7
  [][] [][]\TU/lmr/m/n/12 A simple comparison of the Sigmoidal like features of 
 the fat-tailed, right 
  []
 
 
-Overfull \hbox (4.22409pt too wide) in paragraph at lines 6--6
+Overfull \hbox (4.22409pt too wide) in paragraph at lines 7--7
  \TU/lmr/m/n/12 skewed distribution for exposure, and first-digit frequency dis
 tribution 
  []
 
 
-Overfull \hbox (15.60011pt too wide) in paragraph at lines 6--6
+Overfull \hbox (15.60011pt too wide) in paragraph at lines 7--7
  \TU/lmr/m/n/12 from the exposure data with the expected distribution according
  to Ben- 
  []
 
 
-Overfull \hbox (14.40813pt too wide) in paragraph at lines 7--7
+Overfull \hbox (14.40813pt too wide) in paragraph at lines 8--8
  [][] [][]\TU/lmr/m/n/12 Two numerical solutions: Histograms showing the distri
 bution of Updat- 
  []
 
 
-Overfull \hbox (25.30812pt too wide) in paragraph at lines 8--8
+Overfull \hbox (25.30812pt too wide) in paragraph at lines 9--9
  [][] [][]\TU/lmr/m/n/12 Density plots showing a comparison of realised vs pend
 ing losses and/near 
  []
 
 
-Overfull \hbox (7.6441pt too wide) in paragraph at lines 8--8
+Overfull \hbox (7.6441pt too wide) in paragraph at lines 9--9
  \TU/lmr/m/n/12 misses over a month for the day in the month the OpRisk inciden
 t was 
  []
 
 
-Overfull \hbox (22.8361pt too wide) in paragraph at lines 10--10
+Overfull \hbox (22.8361pt too wide) in paragraph at lines 11--11
  [][] [][]\TU/lmr/m/n/12 Mosaic grid plots for the bidimensional distribution b
 y traded instrument, 
  []
 
 
-Overfull \hbox (2.02815pt too wide) in paragraph at lines 10--10
+Overfull \hbox (2.02815pt too wide) in paragraph at lines 11--11
  \TU/lmr/m/n/12 the trader originating the operational event, and by the techni
 cal sup- 
  []
 
 
-Overfull \hbox (14.24411pt too wide) in paragraph at lines 10--10
+Overfull \hbox (14.24411pt too wide) in paragraph at lines 11--11
  \TU/lmr/m/n/12 port personnel involved in query resolution, against the dummy 
 variable 
+ []
+
+
+Overfull \hbox (14.67613pt too wide) in paragraph at lines 15--15
+ [][] [][]\TU/lmr/m/n/12 Graphically displayed correlations by strength and a p
+lot of OpRisk loss 
+ []
+
+
+Overfull \hbox (6.52814pt too wide) in paragraph at lines 16--16
+ [][] [][]\TU/lmr/m/n/12 Finding the optimal number of \TU/lmr/m/it/12 k \TU/lm
+r/m/n/12 groups by the Silhouette Statistic SS: 
+ []
+
+
+Overfull \hbox (18.84015pt too wide) in paragraph at lines 16--16
+ \TU/lmr/m/n/12 Sum is a measure to approximate the optimal number of \TU/lmr/m
+/it/12 k \TU/lmr/m/n/12 groups by the 
+ []
+
+
+Overfull \hbox (13.66812pt too wide) in paragraph at lines 17--17
+ [][] [][]\TU/lmr/m/n/12 A scatterplot matrix for the \TU/lmr/m/it/12 k\TU/lmr/
+m/n/12 -means clustering of size 4, and the covari- 
+ []
+
+
+Overfull \hbox (34.82413pt too wide) in paragraph at lines 17--17
+ \TU/lmr/m/n/12 ates of frequency loss events consisting of 369 loss event freq
+uencies amount- 
  []
 
 )
 \tf@lof=\write9
 \openout9 = `OpRisk_PHD_Thesis.lof'.
 
-[10
+[11
 
 ]
 Chapter 1.
-
-Overfull \hbox (19.49605pt too wide) in paragraph at lines 334--344
-\TU/lmr/m/n/12 that financial institutions (FI’s) are risk-neutral. Thirdly, in
- lieu of the afore-mentioned, 
- []
-
 [1
 
-] [2] [3] [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 547--547
+] [2] [3]
+File: bank-oprisk_fig1_full.eps Graphic file (type eps)
+<bank-oprisk_fig1_full.eps>
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+[4] [5] [6] [7] [8]
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 600.
+
+
+Package caption Warning: \label without proper reference on input line 617.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `BL/ET Matrix' on page 9 undefined on input line 611.
+
+[9]
+
+LaTeX Font Warning: Command \huge invalid in math mode on input line 635.
+
+
+Overfull \hbox (46.18005pt too wide) in paragraph at lines 661--662
+[][] 
+ []
+
+[10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 718--718
 [][][]\TU/lmr/m/n/10 The aggregate loss distribution is obtained by convoluting
  a loss event frequency distribution
  []
 
-[7]
-Overfull \hbox (5.92805pt too wide) in paragraph at lines 553--563
+[12] [13]
+Overfull \hbox (5.92805pt too wide) in paragraph at lines 783--793
 \TU/lmr/m/n/12 OpRisk measurement, banks are mostly free to choose among variou
 s AMA principle- 
  []
 
-
-Overfull \hbox (7.06802pt too wide) in paragraph at lines 575--585
+[14]
+Overfull \hbox (7.06802pt too wide) in paragraph at lines 805--815
 \TU/lmr/m/n/12 accurate OpRisk measurement was obtained and stable measures of 
 RC were reached, 
  []
 
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 626--626
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 856--856
 [][][]\TU/lmr/m/n/10 Meaning as of the publication [@risk2016supporting] the me
 thods brought forth in the consul-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 626--626
+Underfull \hbox (badness 10000) in paragraph at lines 856--856
 \TU/lmr/m/n/10 tative document have not been approved for the public, the ideas
  within an experimental (leased)
  []
 
-[10]
-Overfull \hbox (4.6328pt too wide) in paragraph at lines 669--678
-[]\TU/lmr/m/n/12 Consider the case of a regulator in a financial system, who as
-sumes that he/she 
- []
-
-[11]
-Overfull \hbox (5.61679pt too wide) in paragraph at lines 679--690
+[16] [17]
+Overfull \hbox (5.61679pt too wide) in paragraph at lines 909--922
 []\TU/lmr/m/n/12 When an attack such as an operational error occurs at a speed 
 that the OpRisk 
  []
 
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 775--775
-[][][]\TU/lmr/m/n/10 As recent evidence from human brain imaging has shown [@ku
-hnen2005neural] linking neural
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 805--805
-[][][]\TU/lmr/m/n/10 Representing ability of FI’s financial market models to ch
-aracterise the repeated decision-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 836--836
-[][][]\TU/lmr/m/n/10 OpRisk loss events in FI’s are largely due to human failin
-gs that are exploitable e.g., fraud-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 836--836
-\TU/lmr/m/n/10 ulent trading activity, and PT is based on the same behavioural 
-element of how people make
- []
-
-[16] [17] [18] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+[18] [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1010
 [][][]\TU/lmr/m/n/10 A typical approach taken in the literature is to use an un
 supervised learning algorithm to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1010
 \TU/lmr/m/n/10 train a model of the unlabeled data and then use the results to 
 extract interesting features from
  []
@@ -1794,162 +1852,124 @@ extract interesting features from
 Chapter 2.
 [25
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1122--1122
-[][][]\TU/lmr/m/n/10 In behavioral finance, we investigate whether certain fina
-ncial phenomena are the result of less
- []
-
-
-Overfull \hbox (3.46805pt too wide) in paragraph at lines 1138--1149
-\TU/lmr/m/n/12 and the behavioural theory of the firm explain risk seeking and 
-risk averse behaviour 
- []
-
-[26] [27] [28]
-Overfull \hbox (0.8888pt too wide) in paragraph at lines 1231--1236
-[]\TU/lmr/m/n/12 Historical severity curves obtained from historical loss count
-s have been widely 
- []
-
-[29]
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1261.
-
-
-Package caption Warning: \label without proper reference on input line 1317.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `BL/ET Matrix' on page 30 undefined on input line 1268
-.
-
-
-LaTeX Font Warning: Command \huge invalid in math mode on input line 1290.
-
-
-Overfull \hbox (46.18005pt too wide) in paragraph at lines 1316--1318
-[][]
- []
-
-[30] [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1352--1352
+] [26] [27] [28] [29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 1296--1296
 [][][]\TU/lmr/m/n/10 The term distribution function is monotonic increasing fun
 ction of $\OML/cmm/m/it/10 n$ \TU/lmr/m/n/10 which tends to $\OT1/cmr/m/n/10 0$
  \TU/lmr/m/n/10 as
  []
 
 
-Overfull \hbox (0.32005pt too wide) in paragraph at lines 1361--1362
+Overfull \hbox (0.32005pt too wide) in paragraph at lines 1305--1306
 []\TU/lmr/m/n/12 The probability density function (p.d.f) : A density function 
 is a non–negative 
  []
 
-[33]
-Overfull \hbox (0.32053pt too wide) in paragraph at lines 1382--1383
+[31]
+Overfull \hbox (0.32053pt too wide) in paragraph at lines 1326--1327
 \TU/lmr/m/n/12 loss type $\OML/cmm/m/it/12 j \OT1/cmr/m/n/12 = 1$ \TU/lmr/m/n/1
 2 (process risk). One models the amount of the total operational 
  []
 
-[34]
-Overfull \hbox (1.48807pt too wide) in paragraph at lines 1417--1424
+[32]
+Overfull \hbox (1.48807pt too wide) in paragraph at lines 1361--1368
 \TU/lmr/m/n/12 combine them in one aggregate loss distribution that allows us t
 o predict an amount 
  []
 
-[35] [36]
-Overfull \hbox (0.695pt too wide) in paragraph at lines 1475--1476
+[33] [34]
+Overfull \hbox (0.695pt too wide) in paragraph at lines 1419--1420
 \TU/lmr/m/n/12 imation method will do. One such method consists of taking a set
  $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 #[]; [] ; #[]\OMS/cmsy/m/n/12 i$\TU/lmr/m/
 n/12 , 
  []
 
 
-Overfull \hbox (5.54852pt too wide) in paragraph at lines 1475--1476
+Overfull \hbox (5.54852pt too wide) in paragraph at lines 1419--1420
 \TU/lmr/m/n/12 simulated values of the random variable $\OML/cmm/m/it/12 #[]$ \
 TU/lmr/m/n/12 for $\OML/cmm/m/it/12 s \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 ; [] 
 ; S$ \TU/lmr/m/n/12 [@fraleigh2003first].  
  []
 
-[37]
-Overfull \hbox (3.09682pt too wide) in paragraph at lines 1513--1525
+[35]
+Overfull \hbox (3.09682pt too wide) in paragraph at lines 1457--1469
 []\TU/lmr/m/n/12 More precisely, the frequency distributions of the individual 
 cells of the BL/ET 
  []
 
-[38]
-Overfull \hbox (3.60922pt too wide) in paragraph at lines 1532--1540
+[36]
+Overfull \hbox (3.60922pt too wide) in paragraph at lines 1476--1484
 \TU/lmr/m/n/12 the functions $\OT1/cmr/bx/n/12 C []$ \TU/lmr/m/n/12 is a joint 
 distribution function with marginals 
  []
 
-[39] [40]
-Overfull \hbox (3.3928pt too wide) in paragraph at lines 1614--1630
+[37] [38] [39]
+Overfull \hbox (3.3928pt too wide) in paragraph at lines 1602--1611
 []\TU/lmr/m/n/12 In a theoretical paper, Einemann et al. (2018) construct a mat
 hematical frame- 
  []
 
-[41] [42] [43] [44]
+[40] [41] [42] [43] [44] [45] [46] [47] [48]
 Chapter 3.
 
-Overfull \hbox (18.3848pt too wide) in paragraph at lines 1723--1732
+Overfull \hbox (18.3848pt too wide) in paragraph at lines 1907--1916
 []\TU/lmr/m/n/12 The fundamental premise in the nature behind ORMFs, is to prov
 ide an exposure- 
  []
 
 
-Overfull \hbox (7.34401pt too wide) in paragraph at lines 1742--1742
+Overfull \hbox (7.34401pt too wide) in paragraph at lines 1926--1926
 |\TU/lmr/bx/n/12 Applicability of EBOR methodology for capturing forward-lookin
 g aspects
  []
 
-[45
+[49
 
-] [46] [47] [48] [49]
-Overfull \hbox (16.48045pt too wide) in paragraph at lines 1924--1925
+] [50] [51] [52] [53]
+Overfull \hbox (16.48045pt too wide) in paragraph at lines 2108--2109
 []\TU/lmr/m/n/12 The random component given by the independent random variables
  $\OML/cmm/m/it/12 Y[]; Y[]; [] ; Y[]$ 
  []
 
-[50]
+[54]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1960; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2144; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10.95 ".
 (fontspec)                  The requested feature is "RawFeature=+tnum". 
 
-[51] [52] [53] [54]
-Overfull \hbox (28.3732pt too wide) in paragraph at lines 2138--2147
+[55] [56] [57] [58]
+Overfull \hbox (28.3732pt too wide) in paragraph at lines 2322--2331
 []\TU/lmr/m/n/12 The random component is given by the independent random variab
 les $\OML/cmm/m/it/12 Y[]; Y[]; [] ; Y[]$\TU/lmr/m/n/12 , 
  []
 
-[55]
-Underfull \hbox (badness 10000) in paragraph at lines 2156--2156
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 2340--2340
 [][][]\TU/lmr/m/n/10 If you were to guess an independent $\OML/cmm/m/it/10 Y[]$
  \TU/lmr/m/n/10 from a random sample, the best guess is given by this
  []
 
-[56]
-Overfull \hbox (1.71603pt too wide) in paragraph at lines 2224--2233
+[60]
+Overfull \hbox (1.71603pt too wide) in paragraph at lines 2408--2417
 \TU/lmr/m/n/12 consists of two separate datasets on a trade-by-trade basis of d
 aily frequencies (num- 
  []
 
-[57]
+[61]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2246; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2430; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10.95 ".
 (fontspec)                  The requested feature is "RawFeature=+tnum". 
 
-[58] [59]
+[62] [63]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2322; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2506; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1961,17 +1981,17 @@ File: IntraDayUpdatedTime.eps Graphic file (type eps)
 File: TrendTraderId.eps Graphic file (type eps)
 <TrendTraderId.eps>
 
-Overfull \hbox (213.47534pt too wide) in paragraph at lines 2321--2329
+Overfull \hbox (213.47534pt too wide) in paragraph at lines 2505--2513
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2321--2329
+Underfull \hbox (badness 10000) in paragraph at lines 2505--2513
 
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2336; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2520; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1983,23 +2003,23 @@ File: UpdatedDayFreq.eps Graphic file (type eps)
 File: TradedDayFreq.eps Graphic file (type eps)
 <TradedDayFreq.eps>
 
-Overfull \hbox (198.07262pt too wide) in paragraph at lines 2335--2343
+Overfull \hbox (198.07262pt too wide) in paragraph at lines 2519--2527
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2335--2343
+Underfull \hbox (badness 10000) in paragraph at lines 2519--2527
 
  []
 
 
-Overfull \hbox (0.43205pt too wide) in paragraph at lines 2351--2357
+Overfull \hbox (0.43205pt too wide) in paragraph at lines 2535--2541
 \TU/lmr/m/n/12 trade was booked to the moment the operational risk event was ob
 served and ended. 
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2361; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2545; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2013,38 +2033,38 @@ File: Dist_exposure.eps Graphic file (type eps)
 File: Benford.eps Graphic file (type eps)
 <Benford.eps>
 
-Overfull \hbox (29.17133pt too wide) in paragraph at lines 2360--2370
+Overfull \hbox (29.17133pt too wide) in paragraph at lines 2544--2554
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2360--2370
+Underfull \hbox (badness 10000) in paragraph at lines 2544--2554
 
  []
 
-[60] [61]
-Overfull \hbox (3.79208pt too wide) in paragraph at lines 2399--2412
+[64] [65]
+Overfull \hbox (3.79208pt too wide) in paragraph at lines 2583--2596
 \TU/lmr/m/n/12 a factor variable with 23 categories; \TU/lmr/m/it/12 Reason\TU/
 lmr/m/n/12 , a description of the cause of the OpRisk 
  []
 
-[62]
+[66]
 File: Exploratory_UpdateTime_Frequency3plot.eps Graphic file (type eps)
 <Exploratory_UpdateTime_Frequency3plot.eps>
 
-Overfull \hbox (119.24615pt too wide) in paragraph at lines 2451--2452
+Overfull \hbox (119.24615pt too wide) in paragraph at lines 2635--2636
 [][] 
  []
 
 File: Exploratory_UpdateDay_Frequency3plot.eps Graphic file (type eps)
 <Exploratory_UpdateDay_Frequency3plot.eps>
 
-Overfull \hbox (119.24615pt too wide) in paragraph at lines 2457--2458
+Overfull \hbox (119.24615pt too wide) in paragraph at lines 2641--2642
 [][] 
  []
 
 
-Overfull \hbox (1.70477pt too wide) in paragraph at lines 2466--2474
+Overfull \hbox (1.70477pt too wide) in paragraph at lines 2650--2658
 []\TU/lmr/m/n/12 Similarly, the influence of trading desk’s on the frequency of
  operational events 
  []
@@ -2052,7 +2072,7 @@ Overfull \hbox (1.70477pt too wide) in paragraph at lines 2466--2474
 File: Density_UpdateDay_TradedDay.eps Graphic file (type eps)
 <Density_UpdateDay_TradedDay.eps>
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2489; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2673; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2061,14 +2081,14 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2489; it cannot
 
 File: Exploratory_Desk_Proportions.eps Graphic file (type eps)
 <Exploratory_Desk_Proportions.eps>
-[63] [64]
-Underfull \hbox (badness 10000) in paragraph at lines 2530--2530
+[67] [68]
+Underfull \hbox (badness 10000) in paragraph at lines 2714--2714
 [][][]\TU/lmr/m/n/10 i.e. the type of financial instrument, the trader who orig
 inated the incident on the deal, and
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2540; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2724; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2080,29 +2100,29 @@ File: Single_Instr.eps Graphic file (type eps)
 File: Stacked_TrId_TechSup.eps Graphic file (type eps)
 <Stacked_TrId_TechSup.eps>
 
-Overfull \hbox (17.17122pt too wide) in paragraph at lines 2539--2547
+Overfull \hbox (17.17122pt too wide) in paragraph at lines 2723--2731
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2539--2547
+Underfull \hbox (badness 10000) in paragraph at lines 2723--2731
 
  []
 
-[65]
+[69]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2577; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2761; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10.95 ".
 (fontspec)                  The requested feature is "RawFeature=+tnum". 
 
-[66] [67]
+[70] [71]
 File: Mosaic_Contingency.eps Graphic file (type eps)
 <Mosaic_Contingency.eps>
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2620; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2804; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2110,43 +2130,43 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2620; it cannot
 (fontspec)                  The requested feature is "RawFeature=+tnum". 
 
 
-Overfull \hbox (1.29373pt too wide) in paragraph at lines 2622--2622
+Overfull \hbox (1.29373pt too wide) in paragraph at lines 2806--2806
 []|\TU/lmr/m/n/10.95 TradeStatus| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2622--2622
+Underfull \hbox (badness 10000) in paragraph at lines 2806--2806
 []|\TU/lmr/m/n/10.95 Loss Indica-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2622--2622
+Underfull \hbox (badness 10000) in paragraph at lines 2806--2806
 []|\TU/lmr/m/n/10.95 Vice Princi-
  []
 
 
-Overfull \hbox (32.85162pt too wide) in paragraph at lines 2623--2623
+Overfull \hbox (32.85162pt too wide) in paragraph at lines 2807--2807
 []|[]| 
  []
 
 
-Overfull \hbox (12.93358pt too wide) in paragraph at lines 2625--2625
+Overfull \hbox (12.93358pt too wide) in paragraph at lines 2809--2809
 []|[]| 
  []
 
 
-Overfull \hbox (25.56987pt too wide) in paragraph at lines 2629--2629
+Overfull \hbox (25.56987pt too wide) in paragraph at lines 2813--2813
 []|[]| 
  []
 
 
-Overfull \hbox (13.44125pt too wide) in paragraph at lines 2620--2632
+Overfull \hbox (13.44125pt too wide) in paragraph at lines 2804--2816
  [][] 
  []
 
-[68]
+[72]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2643; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2827; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2154,139 +2174,139 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2643; it cannot
 (fontspec)                  The requested feature is "RawFeature=+tnum". 
 
 
-Overfull \hbox (37.26608pt too wide) in paragraph at lines 2646--2646
+Overfull \hbox (37.26608pt too wide) in paragraph at lines 2830--2830
 []|\TU/lmr/m/n/10.95 CapturedBy_TECHSUPPORT| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2647--2647
+Underfull \hbox (badness 10000) in paragraph at lines 2831--2831
 []|\TU/lmr/m/n/10.95 TradeStatus_BO con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2650--2650
+Underfull \hbox (badness 10000) in paragraph at lines 2834--2834
 []|\TU/lmr/m/n/10.95 Reason_Trade en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2650--2650
+Underfull \hbox (badness 10000) in paragraph at lines 2834--2834
 \TU/lmr/m/n/10.95 richment for system
  []
 
 
-Overfull \hbox (35.26225pt too wide) in paragraph at lines 2651--2651
+Overfull \hbox (35.26225pt too wide) in paragraph at lines 2835--2835
 []|\TU/lmr/m/n/10.95 EventTypeCategoryLevel_EL7| 
  []
 
 
-Overfull \hbox (1.1749pt too wide) in paragraph at lines 2652--2652
+Overfull \hbox (1.1749pt too wide) in paragraph at lines 2836--2836
 []|\TU/lmr/m/n/10.95 BusinessLineLevel_BL2| 
  []
 
 
-Overfull \hbox (24.60002pt too wide) in paragraph at lines 2659--2659
+Overfull \hbox (24.60002pt too wide) in paragraph at lines 2843--2843
 |\TU/lmr/bx/n/12 The estimation of some poisson regression generalised linear m
 odels (GLM’s)| 
  []
 
-[69]
-Overfull \hbox (2.40802pt too wide) in paragraph at lines 2676--2683
+[73]
+Overfull \hbox (2.40802pt too wide) in paragraph at lines 2860--2867
 \TU/lmr/m/n/12 tory variables are composed of numeric, continuous and categoric
 al variables. Where 
  []
 
 
-Overfull \hbox (23.82877pt too wide) in paragraph at lines 2688--2693
+Overfull \hbox (23.82877pt too wide) in paragraph at lines 2872--2877
 []\TU/lmr/m/n/12 Other GLM arguments are: The afore-mentioned link function poi
 sson(link=“log”); 
  []
 
 
-Overfull \hbox (58.81204pt too wide) in paragraph at lines 2688--2693
+Overfull \hbox (58.81204pt too wide) in paragraph at lines 2872--2877
 \TU/lmr/m/n/12 a data frame containing the OpRisk dataset, data=crs$training; a
 nd the r offset=log(exposure), 
  []
 
-[70]
-Overfull \hbox (82.41586pt too wide) in paragraph at lines 2722--2722
+[74]
+Overfull \hbox (82.41586pt too wide) in paragraph at lines 2906--2906
 []\TU/lmtt/m/n/12 ## glm(formula = LossesIndicator ~ TradedDay + Desk, family =
  poisson(link = "log"),[] 
  []
 
 
-Overfull \hbox (16.28369pt too wide) in paragraph at lines 2730--2730
+Overfull \hbox (16.28369pt too wide) in paragraph at lines 2914--2914
 []\TU/lmtt/m/n/12 ##                       Estimate Std. Error z value         
     Pr(>|z|)[] 
  []
 
 
-Overfull \hbox (40.96788pt too wide) in paragraph at lines 2731--2731
+Overfull \hbox (40.96788pt too wide) in paragraph at lines 2915--2915
 []\TU/lmtt/m/n/12 ## (Intercept)          -8.053221   0.193632 -41.590 < 0.0000
 000000000002 ***[] 
  []
 
 
-Overfull \hbox (28.60776pt too wide) in paragraph at lines 2732--2732
+Overfull \hbox (28.60776pt too wide) in paragraph at lines 2916--2916
 []\TU/lmtt/m/n/12 ## TradedDay            -0.014087   0.006381  -2.208         
     0.027266 *[] 
  []
 
 
-Overfull \hbox (40.96777pt too wide) in paragraph at lines 2733--2733
+Overfull \hbox (40.96777pt too wide) in paragraph at lines 2917--2917
 []\TU/lmtt/m/n/12 ## DeskAfrica            1.457695   0.413087   3.529         
     0.000417 ***[] 
  []
 
 
-Overfull \hbox (40.96786pt too wide) in paragraph at lines 2734--2734
+Overfull \hbox (40.96786pt too wide) in paragraph at lines 2918--2918
 []\TU/lmtt/m/n/12 ## DeskBonds/Repos       1.764230   0.254571   6.930      0.0
 000000000042 ***[] 
  []
 
 
-Overfull \hbox (40.96786pt too wide) in paragraph at lines 2735--2735
+Overfull \hbox (40.96786pt too wide) in paragraph at lines 2919--2919
 []\TU/lmtt/m/n/12 ## DeskCommodities       0.924033   0.235749   3.920      0.0
 000887114575 ***[] 
  []
 
 
-Overfull \hbox (25.4758pt too wide) in paragraph at lines 2736--2736
+Overfull \hbox (25.4758pt too wide) in paragraph at lines 2920--2920
 []\TU/lmtt/m/n/12 ## DeskDerivatives      -0.577626   0.344672  -1.676         
     0.093763 .[] 
  []
 
 
-Overfull \hbox (40.96783pt too wide) in paragraph at lines 2737--2737
+Overfull \hbox (40.96783pt too wide) in paragraph at lines 2921--2921
 []\TU/lmtt/m/n/12 ## DeskEquity            1.365152   0.225948   6.042      0.0
 000000015232 ***[] 
  []
 
 
-Overfull \hbox (17.17188pt too wide) in paragraph at lines 2738--2738
+Overfull \hbox (17.17188pt too wide) in paragraph at lines 2922--2922
 []\TU/lmtt/m/n/12 ## DeskManagement/Other -1.410706   1.014052  -1.391         
     0.164177[] 
  []
 
 
-Overfull \hbox (17.15974pt too wide) in paragraph at lines 2739--2739
+Overfull \hbox (17.15974pt too wide) in paragraph at lines 2923--2923
 []\TU/lmtt/m/n/12 ## DeskMM                0.339561   0.241501   1.406         
     0.159711[] 
  []
 
 
-Overfull \hbox (40.9679pt too wide) in paragraph at lines 2740--2740
+Overfull \hbox (40.9679pt too wide) in paragraph at lines 2924--2924
 []\TU/lmtt/m/n/12 ## DeskPrime Services    2.129594   0.223030   9.548 < 0.0000
 000000000002 ***[] 
  []
 
 
-Overfull \hbox (28.57175pt too wide) in paragraph at lines 2741--2741
+Overfull \hbox (28.57175pt too wide) in paragraph at lines 2925--2925
 []\TU/lmtt/m/n/12 ## DeskSND              -0.716361   0.283796  -2.524         
     0.011596 *[] 
  []
 
-[71]
-Overfull \hbox (1.4256pt too wide) in paragraph at lines 2765--2766
+[75]
+Overfull \hbox (1.4256pt too wide) in paragraph at lines 2949--2950
 []$\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 001373903 = \OML/cmm/m/i
 t/12 e[] \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 e[] \OMS/cmsy/m/n/12 ^^A \OML/cm
 m/m/it/12 e[]$\TU/lmr/m/n/12 , for the combination with \TU/lmr/bx/n/12 DeskPri
@@ -2294,197 +2314,284 @@ me
  []
 
 
-Overfull \hbox (97.85992pt too wide) in paragraph at lines 2788--2788
+Overfull \hbox (97.85992pt too wide) in paragraph at lines 2972--2972
 []\TU/lmtt/m/n/12 ### Let us fit a GLM to our data. This will be our global mod
 el. use "LossesIndicator" 
  []
 
-[72]
-Overfull \hbox (68.8199pt too wide) in paragraph at lines 2789--2789
+[76]
+Overfull \hbox (68.8199pt too wide) in paragraph at lines 2973--2973
 []\TU/lmtt/m/n/12 #as the dependent variable, while the other variables will be
  predictor variables.[] 
  []
 
 
-Overfull \hbox (10.10393pt too wide) in paragraph at lines 2794--2794
+Overfull \hbox (10.10393pt too wide) in paragraph at lines 2978--2978
 []\TU/lmtt/m/n/12 data=crs$training, family=poisson(link = 'log'), offset = log
 (Exposure))[] 
  []
 
 
-Overfull \hbox (2.0759pt too wide) in paragraph at lines 2806--2806
+Overfull \hbox (2.0759pt too wide) in paragraph at lines 2990--2990
 []    \TU/lmtt/m/n/12 Instrument + Reason + EventTypeCategoryLevel1 + BusinessL
 ineLevel1,[] 
  []
 
 
-Overfull \hbox (59.54387pt too wide) in paragraph at lines 2807--2807
+Overfull \hbox (59.54387pt too wide) in paragraph at lines 2991--2991
 []    \TU/lmtt/m/n/12 family = poisson(link = "log"), data = crs$training, offs
 et = log(Exposure))[] 
  []
 
 
-Overfull \hbox (58.89586pt too wide) in paragraph at lines 2815--2815
+Overfull \hbox (58.89586pt too wide) in paragraph at lines 2999--2999
 []\TU/lmtt/m/n/12 (Intercept)             -8.601892    0.738478 -11.648   < 0.0
 000000000000002 ***[] 
  []
 
 
-Overfull \hbox (47.15982pt too wide) in paragraph at lines 2820--2820
+Overfull \hbox (47.15982pt too wide) in paragraph at lines 3004--3004
 []\TU/lmtt/m/n/12 DeskAfrica               2.388334    0.575306   4.151    0.00
 0033042768080 ***[] 
  []
 
 
-Overfull \hbox (47.12386pt too wide) in paragraph at lines 2821--2821
+Overfull \hbox (47.12386pt too wide) in paragraph at lines 3005--3005
 []\TU/lmtt/m/n/12 DeskBonds/Repos          2.975192    0.442633   6.722    0.00
 0000000017977 ***[] 
  []
 
 
-Overfull \hbox (47.14781pt too wide) in paragraph at lines 2824--2824
+Overfull \hbox (47.14781pt too wide) in paragraph at lines 3008--3008
 []\TU/lmtt/m/n/12 DeskEquity               1.745408    0.427535   4.082    0.00
 0044556065633 ***[] 
  []
 
-[73] [74] [75]
-Overfull \hbox (114.85187pt too wide) in paragraph at lines 2930--2930
+[77] [78] [79]
+Overfull \hbox (114.85187pt too wide) in paragraph at lines 3114--3114
 []\TU/lmtt/m/n/12 Global model call: glm(formula = LossesIndicator ~ UpdatedDay
  + UpdatedTime + TradedDay + 
  []
 
 
-Overfull \hbox (2.0759pt too wide) in paragraph at lines 2932--2932
+Overfull \hbox (2.0759pt too wide) in paragraph at lines 3116--3116
 []    \TU/lmtt/m/n/12 Instrument + Reason + EventTypeCategoryLevel1 + BusinessL
 ineLevel1,[] 
  []
 
 
-Overfull \hbox (289.43965pt too wide) in paragraph at lines 2937--2937
+Overfull \hbox (289.43965pt too wide) in paragraph at lines 3121--3121
 []     \TU/lmtt/m/n/12 (Intrc) BsLL1 Desk ETCL1 Instr Reasn   TrddD TrdrI TrdSt
   UpdtD      UpdtT     df    logLik   AICc  delta weight[] 
  []
 
 
-Overfull \hbox (289.35548pt too wide) in paragraph at lines 2938--2938
+Overfull \hbox (289.35548pt too wide) in paragraph at lines 3122--3122
 []\TU/lmtt/m/n/12 894   -8.566     + +     +     +     + -0.014630000 +     +  
                        71  -879.525 1907.6   0.00  0.082[] 
  []
 
 
-Overfull \hbox (289.39151pt too wide) in paragraph at lines 2939--2939
+Overfull \hbox (289.39151pt too wide) in paragraph at lines 3123--3123
 []\TU/lmtt/m/n/12 382   -8.627     + +     +     +     + -0.014730000 +        
                        68  -882.870 1907.7   0.14  0.076[] 
  []
 
 
-Overfull \hbox (288.7436pt too wide) in paragraph at lines 2940--2940
+Overfull \hbox (288.7436pt too wide) in paragraph at lines 3124--3124
 []\TU/lmtt/m/n/12 1918  -8.362     + +     +     +     + -0.015200000 +     + -
 0.012880000            72  -878.679 1908.1   0.50  0.064[] 
  []
 
 
-Overfull \hbox (289.04361pt too wide) in paragraph at lines 2941--2941
+Overfull \hbox (289.04361pt too wide) in paragraph at lines 3125--3125
 []\TU/lmtt/m/n/12 1406  -8.447     + +     +     +     + -0.015290000 +       -
 0.011540000            69  -882.168 1908.5   0.92  0.052[] 
  []
 
 
-Overfull \hbox (289.3914pt too wide) in paragraph at lines 2942--2942
+Overfull \hbox (289.3914pt too wide) in paragraph at lines 3126--3126
 []\TU/lmtt/m/n/12 830   -8.889     + +     +     +     +              +     +  
                        70  -881.128 1908.6   1.02  0.049[] 
  []
 
 
-Overfull \hbox (289.09142pt too wide) in paragraph at lines 2943--2943
+Overfull \hbox (289.09142pt too wide) in paragraph at lines 3127--3127
 []\TU/lmtt/m/n/12 318   -8.942     + +     +     +     +              +        
                        67  -884.505 1908.8   1.23  0.044[] 
  []
 
 
-Overfull \hbox (288.7795pt too wide) in paragraph at lines 2944--2944
+Overfull \hbox (288.7795pt too wide) in paragraph at lines 3128--3128
 []\TU/lmtt/m/n/12 1854  -8.705     + +     +     +     +              +     + -
 0.011920000            71  -880.413 1909.4   1.78  0.034[] 
  []
 
 
-Overfull \hbox (289.04358pt too wide) in paragraph at lines 2945--2945
+Overfull \hbox (289.04358pt too wide) in paragraph at lines 3129--3129
 []\TU/lmtt/m/n/12 2942  -8.730     + +     +     +     + -0.014640000 +     +  
              0.3133000 72  -879.413 1909.6   1.97  0.031[] 
  []
 
-[76]
-Overfull \hbox (51.51588pt too wide) in paragraph at lines 2982--2982
+[80]
+Overfull \hbox (51.51588pt too wide) in paragraph at lines 3166--3166
 []\TU/lmtt/m/n/12 glm(formula = LossesIndicator ~ <8 unique rhs>, family = pois
 son(link = "log"),[] 
  []
 
 
-Overfull \hbox (11.33992pt too wide) in paragraph at lines 2997--2997
+Overfull \hbox (11.33992pt too wide) in paragraph at lines 3181--3181
 []\TU/lmtt/m/n/12 BusinessLineLevel1  Desk     EventTypeCategoryLevel1  Instrum
 ent  Reason[] 
  []
 
 
-Overfull \hbox (41.92781pt too wide) in paragraph at lines 2999--2999
+Overfull \hbox (41.92781pt too wide) in paragraph at lines 3183--3183
 []\TU/lmtt/m/n/12 TradedDay           TraderId TradeStatus              Updated
 Day  UpdatedTime[] 
  []
 
-[77] [78]
-Overfull \hbox (2.38803pt too wide) in paragraph at lines 3054--3054
+[81] [82]
+Overfull \hbox (2.38803pt too wide) in paragraph at lines 3238--3238
 |\TU/lmr/bx/n/12 The estimation of some generalised additive models for locatio
 n scale and
  []
 
-[79]
+[83]
 Chapter 4.
-[80
 
-]
+Overfull \hbox (3.50406pt too wide) in paragraph at lines 3287--3297
+\TU/lmr/m/n/12 porting the call from industry for a new class of EBOR models th
+at capture forward- 
+ []
+
+[84
+
+] [85] [86] [87] [88]
+Underfull \hbox (badness 10000) in paragraph at lines 3445--3445
+[][][]\TU/lmr/m/n/10 As recent evidence from human brain imaging has shown [@ku
+hnen2005neural] linking neural
+ []
+
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 3475--3475
+[][][]\TU/lmr/m/n/10 Representing ability of FI’s financial market models to ch
+aracterise the repeated decision-
+ []
+
+[90]
 Chapter 5.
-[81
 
-] [82
+Underfull \hbox (badness 10000) in paragraph at lines 3530--3530
+[][][]\TU/lmr/m/n/10 OpRisk loss events in FI’s are largely due to human failin
+gs that are exploitable e.g., fraud-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3530--3530
+\TU/lmr/m/n/10 ulent trading activity, and PT is based on the same behavioural 
+element of how people make
+ []
+
+[91
+
+] [92] [93]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3620.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3620.
+
+[94] [95]
+Underfull \hbox (badness 10000) in paragraph at lines 3699--3699
+[][][]\TU/lmr/m/n/10 A typical approach taken in the literature is to use an un
+supervised learning algorithm to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3699--3699
+\TU/lmr/m/n/10 train a model of the unlabeled data and then use the results to 
+extract interesting features from
+ []
+
+[96]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 3744; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/12 ".
+(fontspec)                  The requested feature is "RawFeature=+tnum". 
+
+File: Loss_vs_Exposure(1).eps Graphic file (type eps)
+<Loss_vs_Exposure(1).eps>
+File: CorrPlot.eps Graphic file (type eps)
+<CorrPlot.eps>
+[97]
+
+LaTeX Warning: Reference `Fig5' on page 98 undefined on input line 3773.
+
+[98]
+File: IterateKmeans.eps Graphic file (type eps)
+<IterateKmeans.eps>
+[99] [100]
+File: CA14MeansPlot.eps Graphic file (type eps)
+<CA14MeansPlot.eps>
+[101] [102] [103
 
 ]
-Overfull \hbox (3.7553pt too wide) in paragraph at lines 3194--3198
+Overfull \hbox (3.7553pt too wide) in paragraph at lines 3946--3950
  \TU/lmr/m/it/12 sues \TU/lmr/m/n/12 (pp. 1–12). Retrieved from []$[][][][] [] 
 [] [] [][][] [] [][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] []
  
  []
 
 
-Overfull \hbox (14.34705pt too wide) in paragraph at lines 3194--3198
+Overfull \hbox (14.34705pt too wide) in paragraph at lines 3946--3950
  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]
   
  []
 
-[83]
-Overfull \hbox (0.13258pt too wide) in paragraph at lines 3311--3315
+[104]
+Overfull \hbox (73.64697pt too wide) in paragraph at lines 4030--4035
+ []$[][][][][] [] [] [] [][][][][][][][][][][][][][][][][][][][] [] [][][] [] [
+][][] [] [][][][][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][]$[]  
+ []
+
+[105]
+Overfull \hbox (0.13258pt too wide) in paragraph at lines 4112--4116
  [][]\TU/lmr/m/n/12 Shefrin, H. (2016). \TU/lmr/m/it/12 Behavioral risk managem
 ent: Managing the psychology that drives 
  []
 
 
-Overfull \hbox (7.8196pt too wide) in paragraph at lines 3326--3330
+Overfull \hbox (125.57492pt too wide) in paragraph at lines 4117--4121
+ [][][][][][][] [] [][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][]$[]  
+ []
+
+
+Overfull \hbox (7.8196pt too wide) in paragraph at lines 4132--4136
  \TU/lmr/m/n/12 operational risk and the cost of fraud. \TU/lmr/m/it/12 Expert 
 Systems with Applications\TU/lmr/m/n/12 , \TU/lmr/m/it/12 41\TU/lmr/m/n/12 (16)
 , 
  []
 
-[84]
 No file OpRisk_PHD_Thesis.bbl.
-[85]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3344.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3344.
+[106]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4155.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4155.
 (OpRisk_PHD_Thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3344.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3344.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4155.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4155.
 
 Package rerunfilecheck Info: File `OpRisk_PHD_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5B7067ABE2F028DDB42954A6854BEFF4.
+(rerunfilecheck)             Checksum: CF0F821E1C331F183AFFC14FA6BE02A8.
 
 LaTeX Warning: There were undefined references.
 
@@ -2493,12 +2600,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 47467 strings out of 427798
- 1041603 string characters out of 3148017
- 1413922 words of memory out of 3000000
- 50788 multiletter control sequences out of 15000+200000
- 555655 words of font info for 135 fonts, out of 3000000 for 9000
+ 47683 strings out of 427798
+ 1045265 string characters out of 3148017
+ 1416376 words of memory out of 3000000
+ 50983 multiletter control sequences out of 15000+200000
+ 555679 words of font info for 138 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 69i,17n,98p,1208b,844s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,17n,98p,1208b,941s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on OpRisk_PHD_Thesis.pdf (96 pages).
+Output written on OpRisk_PHD_Thesis.pdf (118 pages).

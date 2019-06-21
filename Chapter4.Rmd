@@ -1,3 +1,75 @@
+---
+output: pdf_document
+---
+\doublespacing
+
+\section{Introduction}
+\label{sec:Introduction}
+
+This section of the paper concentrates on combining various supervised learning techniques with extreme value theory (EVT) fitting, which is very much based on the Dynamic EVT-POT model developed by @chavez2016extreme. This can only happen due to an abundance of larger and better quality datasets and which also benefits the loss distribution approach (LDA) and other areas of OpRisk modeling.  In @chavez2016extreme, they consider dynamic models based on covariates and in particular concentrate on the influence of internal root causes that prove to be useful from the proposed methodology.    
+
+Motivated by the abundance of data and better data quality, these new data-intensive techniques offer an important tool for ORM and at the same time supporting the call from industry for a new class of EBOR models that capture forward-looking aspects of ORM [@embrechts2018modeling]. Three different machine learning techniques viz., decision trees, random forest, and neural networks, will be employed using R. A comprehensive list of user defined variables associated with root causes that contribute to the accumulation of OpRisk events (frequency) has been provided, moreover, a lot can be gained from this dataset as it also bears the impacts of these covariates on the severity of OpRisk. 
+
+\section{Modeling Oprisk: The loss distribution approach (LDA)}
+\label{sec:Modeling Oprisk: The loss distribution approach (LDA)}
+
+Machine Learning (ML) is used as a substitute tool for the traditional model based Autoregressive Moving Average (ARMA) used for analysing and representing stochastic processes. As opposed to the statistical tool, ML does not impose a functional relationship between variables, the functional relationship is determined by extracting the pattern of the training set and by learning from the data observed.\medskip 
+
+Using computationally intensive (using ML techniques on historical data ) OpRisk measurement techniques and mixing with a theory is not a new approach for modeling, particularly in calculating OpRisk RC; as evidenced through @agostini2010combining in a study whereby the LDA model for forecasting OpRisk RC, via VaR, was implemented in conjunction with the use of advanced credibility theory (CT). The idea at the basis of their use of CT, is to advance the very recent literature that a better estimation of the OpRisk RC measurement can be obtained by integrating historical data and scenario analysis i.e., combining the historical simulations with scenario assessments through formulas that are weighted averages of the historical data entries and scenario assessments, advocating for the combined use of both experiences.\medskip 
+
+However, applying ML is an original way of looking at the approximation issue as opposed to advanced CT. The essential feature of PT are assumptions which are more compatible with basic principles of perception and judgement for decisions taken under uncertainty, whereas ML will reveal additional chance probabilities determined through the natural clusters of unknown data feature findings from which new discoveries are made.\medskip
+
+Twenty-one key risk indicators (kri's) with eight feature groups including person identification, trade origination, root causes and market value sensitivities are in the chosen covariates. For each risk event there is information about: trading risk exposure, trading characteristics, causal factor characteristics and the losses created by these factors. The development, training and validation of the machine learning (ML) models lends itself to this new type of data and requires a higher degree of involvement across operations. Moreover, at this level of granularity the different types of data is particularly suited to exposure-based treatment, and other forward-looking aspects within the OpRisk framework, for improved forecasts of OpRisk losses.\medskip
+
+The aggregated operational losses can be seen as a sum $S$ of a random number $N$ individual operational losses $$(X_1, \ldots, X_N )$$. The total required capital is the sum of VaR of each BL/ET combination calibrated through the underlying mathematical model whose analytic expression is given by: 
+
+\singlespacing
+\begin{equation}\label{eqn4}
+\mathbf{G}_{\vartheta(t)}(x)=Pr[\vartheta(t)\leq x]=Pr\left(\sum_{n=1}^{N(t)}X_{n} \leq x\right), \qquad \mbox{where} \quad \vartheta(t) = \sum_{n=1}^{N(t)} X_{n}.
+\end{equation} 
+\doublespacing
+
+$\mathbf{G}(t)$ can only be obtained numerically using the Monte Carlo method, Panjer's recursive approach, and the inverse of the characteristic function (@frachot2001loss; @aue2006lda; @panjer2006operational; \& others).
+
+\subsection{Research Objective II}
+
+To test the accuracy of several classes of data-intensive techniques in approximating the weights of the risk factors; i.e., the input features of the model viz., TraderID, UpdatedDay, Desk, etc.  of the underlying value-adding processes, against traditional statistical techniques, in order to separately estimate the frequency and severity distribution of the OpRisk losses from historical data. As a consequence, capital estimates should be able to adapt to changes in the risk profile e.g., upon the addition of new products or varying the business mix of the bank (e.g., terminations, voids,  allocations, etc.) to provide sufficient incentives for ORM to mitigate risk [@einemann2018operational].
+
+\section{Analysis and interpretation issues with behavioral finance theory}
+\label{sec:Analysis and interpretation issues with behavioral finance theory}
+
+Behavioral management theory is very much concerned with social factors such as motivation, support and employee relations. A critical component of behavioral finance is building models which better reflect actual behavior. Studies have revealed that these social factors are not easy to incorporate into finance models or to understand in the traditional framework.\medskip 
+
+The traditional finance paradigm seeks to understand financial markets using models in which agents are \lq\lq rational\rq\rq.  According to @barberis2003survey, this means that agents update their beliefs on the onset of new information, and that given their beliefs, they make choices that are normatively acceptable, and that most people do this most of the time. Neoclassical theory has grown to become the primary take on modern-day economics formed to solve problems for decision making under uncertainty/risk. Expected Utility Theory (EUT) has dominated the analysis and has been generally accepted as the normative model of rational choice, and widely applied as a descriptive model of economic choice [@kahneman2013prospect]. 
+
+\subsection{Expected utility theory}
+\label{ssec:Expected utility theory}
+
+Expected utility theory\footnote{Expected utility theory provides a model of rationality based on choice.} (EUT): We see a fundamental relation for expected utility (Expectation) of a contract $X$, that yields outcome $x_i$ with probability $p_i$, where $X = (x_1,p_1; ...; x_n,p_n)$ and $p_1+p_2+\ldots+p_n=1$ given by:
+
+\singlespacing
+\begin{equation}\label{EUT_extended}
+U(x_1,p_1;\ldots;x_n,p_n) = p_1u(x_1)+\ldots+p_nu(x_n) 
+\end{equation}
+\doublespacing
+corroborated by @morgenstern1953theory; @friedman1948utility; @kahneman2013prospect \& others.  
+
+A common thread running through the rational viz., the neoclassical take of modern-day economics vs the non-neoclassical schools of thought are findings of behavioral economics which tend to refute the notion that individuals behave rationally. Many argue that individuals are fundamentally irrational because they do not behave rationally giving rise to a literature and debates as to which heuristics and sociological and institutional priors are rational [@altman2008behavioral].\medskip
+
+In the real world there is a point of transition between the traditional (neoclassical) approach to decision making, based on data and data anaysis (logic and rational), by adding new parameters and arguments that are outside rational conventional thinking but are also valid. For example, that neoclassical theory makes use of the assumption that all parties will behave rationally overlooks the fact that human nature is vulnerable to other forces, which causes people to make irrational choices.\medskip 
+
+An essential ingredient of any model trying to understand trading behavior is an assumption about investor preferences [@barberis2003survey], or how investors evaluate risky gambles. Investors systematically deviate from rationality when making financial decisions, yet as acknowledged by @kuhnen2005neural, the mechanisms responsible for these deviations have not been fully identified. Some errors in judgement suggest distinct mental operations promote different types of financial choices that may lead to investing mistakes. Deviations from the optimal investment strategy of a rational risk neutral agent are viewed as risk-seeking mistakes and risk-aversion mistakes [@kuhnen2005neural].\medskip 
+
+\subsection{Theoretical investigations for the quantification of moderm ORMF}
+
+@kuhnen2005neural explain that these risk-seeking choices (such as gambling at a casino) and risk-averse choices (such as buying insurance) may be driven by distinct neural\footnote{As recent evidence from human brain imaging has shown [@kuhnen2005neural] linking neural states to risk-related behaviours [@paulus2003increased].} phenomena, which when activated can lead to a shift in risk preferences. @kuhnen2005neural found that certain areas of the brain precede risk-seeking mistakes or risky choices and other areas precede risk-aversion mistakes or riskless choices. A risk-aversion mistake is one where a gamble on a prospect of a gain is taken by a risk-averse agent in the face of the chance of a prospective loss. The fear of losing prohibits one's urge to gamble, but people engage in gambling activity anyway. @barberis2003survey show that people regularly deviate from the traditional finance paradigm evidenced by the extensive experimental results compiled by cognitive psycologists on how people make decisions given their beliefs.\medskip 
+
+@kahneman2013prospect maintains, preferences between prospects which violate rational behaviour demonstrate that outcomes which are obtained with certainty are overweighted relative to uncertain outcomes. This will contribute to a risk-averse preference for a sure gain over a larger gain that is merely probable or a risk-seeking preference for a loss that is merely probable over a smaller loss that it certain. As a psycological principle, overweighting of certainty favours risk-aversion in the domain of gains and risk-seeking in the domain of losses.\medskip
+
+The present discussion replicates the common behavioral pattern of risk aversion, where people weigh losses more than equivalent gains. Furthermore, neuroeconomic research shows that this pattern of behavior is directly tied to the brain's greater sensitivity to potential losses than gains [@tom2007neural]. This provides a target for investigating a more comprehensive theory of individual decision-making rather than the rational actor model and thus yield new insights relevant to economic theory\footnote{Representing ability of FI's financial market models to characterise the repeated decision-making process that applies to loss aversion} [@kuhnen2005neural].\medskip  
+
+If people are reasonably accurate in predicting their choices, the presence of systematic violations of risk neutral behavior provides presumptive evidence against this i.e., people systematically violate EUT when choosing among risky gambles.  This seeks to improve and adapt to reality and advance different interpretations of economic behaviour; viz., to propose a more adequately descriptive model, that can represent the basis for an alternative to the way the traditional model is built for decisions taken under uncertainty. This has led some influential commentators to call for an entirely new economic paradigm to displace conventional neoclassical theory with a psycologically more realistic preference specification [@list2004neoclassical].
+People exhibit a specific four-fold behaviour pattern when facing risk [@shefrin2016behavioral]. There are four combinations of gain/loss and moderate/extreme probabilities, with two choices of risk attitude per combination. OpRisk measurement focuses on only those casual factors that create losses with random uncertainty, for the value adding processes of the business unit.
 
 
-
+\singlespacing

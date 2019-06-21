@@ -244,6 +244,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Tables
+\usepackage{longtable}
 \usepackage{copyrightbox}
 \usepackage{url}
 \usepackage{tikz}

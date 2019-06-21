@@ -151,6 +151,7 @@ Acknowledge those acknowledgable individuals and things.
 \fancyfoot[C]{}
 
 \chapter{INTRODUCTION}
+\label{INTRODUCTION}
 
 ```{r, child="Chapter1.Rmd"}
 ```
@@ -187,11 +188,12 @@ Acknowledge those acknowledgable individuals and things.
 <!-- Chapter 4 -->
 \FloatBarrier
 \newpage
-\fancyhead[L]{Chapter 4's Title}
+\fancyhead[L]{Modeling OpRisk Depending on covariates}
 \fancyhead[R]{\thepage}
 \fancyfoot[C]{}
 
-\chapter{Chapter 4's Title}
+\chapter{METHODS FOR MODELING OPRISK DEPENDING ON COVARIATES}
+\label{METHODS FOR MODELING OPRISK DEPENDING ON COVARIATES}
 
 ```{r, child="Chapter4.Rmd"}
 ```
@@ -200,11 +202,11 @@ Acknowledge those acknowledgable individuals and things.
 <!-- Chapter 5 -->
 \FloatBarrier
 \newpage
-\fancyhead[L]{Chapter 5's Title}
+\fancyhead[L]{Theoretical Investigations into the Quantification of Modern ORMF's}
 \fancyhead[R]{\thepage}
 \fancyfoot[C]{}
 
-\chapter{Chapter 5's Title}
+\chapter{THEORETICAL INVESTIGATIONS INTO THE QUANTIFICATION OF MODERN ORMF'S}
 
 ```{r, child="Chapter5.Rmd"}
 ```

@@ -103,130 +103,146 @@ regression performances.\medskip
 Our understanding of existing ORMF to date is limited to the assumption
 that financial institutions (FI's) are risk-neutral: In lieu of the
 afore-mentioned this study finally seeks to invalidate the risk-neutral
-assumption; by means of an evidence-based discoveries of the natural
-clusters in the unknowns of the data through a prescribed model which
-applies unsupervised learning techniques to determine what is going on,
-by proposing that FI's are more risk-averse. This determination can be
-made by analysing subtle patterns between data features and trends in
-the allocated risk capital estimates. In theory, a risk manager who
-experiences persistent/excessive losses due to particular risk events,
-would over-compensate cover for these particular risk types, and this
-would show in reduced losses in these types over time.
+assumption by means of evidence-based discoveries revealed through a
+clustering algorithm arising naturally in the unknowns of the data by
+means of a prescribed model, which applies unsupervised learning
+techniques to determine what is going on, proposing that FI's are more
+risk-averse. This determination is best understood analysing subtle
+patterns between data features and trends in the allocated risk capital
+estimates. In theory, a risk manager who experiences
+persistent/excessive losses due to particular risk events, would
+over-compensate cover for these particular risk types, and this would
+show in reduced losses in data for these event types over time.
 
 \section{Fundamentals of ORMF's}
 \label{sec:Fundamentals of ORMF's}
 
-Taking a few steps back to @cruz2002modeling, they allude to the notion
-that most banks' estimates for their risk's are divided into credit risk
-(50\%), market risk (15\%) and OpRisk (35\%). @cruz2002modeling
-postulate that OpRisk, which focuses on the human side of risk
-management is difficult to manage with the reduced ability to measure
-it. The process of that risk, that is, the how in OpRisk manifests in
-the conscious and/or unconscious states of the risk management
-practitioner {[}@hemrit2012major{]}, and encompasses approaches and
-theories that focus on how they will choose when faced with a decision
-based on how comfortable they are with the situation and the variables
-that are present.
-
-\subsection{Definition of operational risk}
-\label{ssec:Definition of operational risk}
+Congruent to @cruz2002modeling, in the current study the researcher
+alludes to the notion that most banks' estimates for their risk's are
+divided into credit risk (50\%), market risk (15\%) and OpRisk (35\%).
+@cruz2002modeling postulates that OpRisk, which focuses on the human
+side of risk management is difficult to manage with the reduced ability
+to measure it. The process of that risk, that is the how, manifests in
+the conscious and/or unconscious states of mind of the risk practitioner
+{[}@hemrit2012major{]}, and encompasses approaches and theories that
+focus on how they will choose when faced with a decision, based on how
+comfortable they are with the situation and the variables that are
+present.
 
 \begin{definition}
-\textbf{Operational risk} (OpRisk) is defined as: \emph{The risk of loss resulting from inadequate or failed internal processes, people and systems, and from external events. This definition includes legal risk, but excludes strategic and reputational risk.}[@risk2001supporting].\medskip
+\emph{\textbf{Operational Risk} (OpRisk) is defined as:} The risk of loss resulting from inadequate or failed internal processes, people and systems, and from external events. This definition includes legal risk, but excludes strategic and reputational risk.\medskip
 \end{definition}
 
-A major managerial concern for businesses is their inability to identify
-and hence account for susceptibility to OpRisk events following a number
-of very costly and highly publicized operational losses. In particular,
-Oprisk became popular following a now famed fraudulent trading incident
-which was responsible for catastrophic losses that lead to the collapse
-of Barings Bank (the UK's oldest bank) in 1995.\medskip
+{[}@risk2001supporting{]}.
 
-The term OpRisk began to be used after the afore-mentioned and similar
-types of OpRisk events became common. A trader (Nick Leeson
-@panjer2006operational) risked the banks' survival rather than expose
-his trading losses by consciously deceiving senior management to hide
-unethical rogue trading acts, was found to have been responsible for
-unethical trading practices when he created illegal trades in his
-account, then used his position in the front and back offices of the
-bank to hide his losses. Worse still, he went further in his fraudulent
-activity incurring greater risks to the bank, by lying in order to give
-a false impression of his profits. this alludes to the behavoural notion
-{[}@shefrin2016behavioral{]}, that in most decision-making positions
-people would rather incur greater risks to hold on to things they
+\section{A theoretical foundation for operational risk}
+\label{sec:A theoretical foundation for operational risk}
+
+The major managerial concern for businesses is in the lack of
+universally accepted ways to identify their OpRisk, and hence the
+inability to successfully account for their susceptibility to this,
+particularly following a number of very costly and highly publicized
+operational events that lead to catastrophic losses for the banks in
+question. OpRisk became popular following a now famed fraudulent trading
+incident which was responsible for catastrophic losses that lead to the
+collapse of Barings Bank (the UK's oldest bank) in 1995. The term
+\emph{OpRisk} began to be used extensively after the afore-mentioned and
+similar types of OpRisk events became common.\medskip
+
+A \emph{rogue} trader, Nick Leeson {[}@panjer2006operational{]} risked
+the banks' survival rather than expose his trading losses by consciously
+deceiving senior management to hide unethical rogue trading acts, was
+found responsible for unethical trading practices when he created
+illegal trades in his account. He then used his position in the front
+and back offices of the bank to hide his losses. Worse still, he went
+further in his fraudulent activities incurring greater risks to the
+bank, by lying in order to give a false impression of his profits. This
+supports the behavoural notion alluded to by @shefrin2016behavioral,
+that in most risk-bearing decision-making situations people would rather
+incur greater risks to hold on to their current position and things they
 already have, than the risks they would have taken to get into that
 position in the first place.\medskip
 
 It was later discovered that Nick was placing illegal bets in the
-Asian-markets, and kept these contracts out of sight from senior
-management to cover up his illegal activity. When his fraudulent
-behaviour was discovered (after an earthquake hit at Kobe in Japan, that
-collapsed the Osaka Securities Exchange) he succumbed to unrecoverable
-losses due to trading positions he had accumulated which resulted in a
-loss of around \pounds 1.3 billion to the bank, thus resulting in it's
-collapse {[}@martin2009risk{]}. In most, if not all of these cases,
-human error is at the center of the chain of events that lead or may
-lead to OpRisk losses.\medskip\medskip
+Asian-markets, while covertly keeping these contracts out of sight from
+senior management to cover up his illegal trading activities. When his
+fraudulent behaviour was discovered (after an earthquake hit at Kobe in
+Japan, that collapsed the Osaka Securities Exchange) he succumbed to
+unrecoverable losses due to trading positions he had accumulated which
+resulted in a loss of around \pounds 1.3 billion to the bank, thus
+resulting in it's collapse {[}@martin2009risk{]}. In most, if not all of
+case involving OpRisk hazard, human error is at the center of the chain
+of events that lead or may lead to OpRisk losses.\medskip
 
-Since then, there have been a series of destructive events that have
-threatened the stability financial systems due to OpRisk losses. Hefty
-fines worthy of bringing down an entire corporate entities often have to
-be imposed on guilty parties causing irreparable damage to banks'
-averall business and reputation, such that regulatory scrutiny has been
-heightened as a result of a number of scandalous operational events
-e.g., the January 2016 \lq\lq Dark Pool\rq\rq~trading penalties suffered
-by Barclays Bank PLC amounting to about \$70mn and Credit Suisse
-(\$85mn), imposed by the United States (US) based securities exchange
-commision (SEC). These OpRisk loss events were due to fraudulent trading
-activity consisting of rogue traders dealing in illegally placed high
-frequency trades for private clients where prices are hidden.\medskip
-
-@orxablr2018 recognises from information offered via the ORX global
-banking loss database that gross loss sizes were predominantly high and
-volatile, characterised by a period (from 2011 to 2016) driven by the
-occurence of large loss events. This coincides with the afore-mentioned
-post-crisis period, predominantly in 2012, following which a
-comparatively stable period in 2017 where industry Oprisk losses sees
-sizes decrease significantly. Figure \ref{bank-oprisk_fig} illustrates
-distribution of severity of losses reported from 2011 to 2016 during
-which major banks suffered nearly \$210 billion from Oprisk.
+Since then, there have been a series of destructive events worldwide
+that have threatened the stability financial systems due to OpRisk
+losses. Hefty fines worthy of bankrupting entire corporate entities
+often have to be imposed on the guilty culprits sometimes resulting in
+irreparable damage to banks' overall business and reputations, such that
+widespread regulatory scrutiny has been heightened as a result of a
+number of scandalous operational events. @orxablr2018 recognise from
+information offered via the operational riskdata exchange (ORX) global
+banking loss database that historically, gross loss sizes have been
+predominantly high and volatile, characterised by a period (from 2011 to
+2016) driven by the occurence of large loss events. This coincides with
+the afore-mentioned post-crisis period, predominantly in 2012, followed
+by a comparatively stable period in 2017 where industry Oprisk losses
+saw sizes decrease significantly. Figure \ref{bank-oprisk_fig}
+illustrates comparative distribution of severity of losses per loss
+event type reported from 2011 to 2016 during which major banks suffered
+nearly \$210 billion worldwide from Oprisk alone.\medskip
 
 \begin{figure}
 \centering
-\copyrightbox[b]{\includegraphics[width=15cm,height=10cm]{bank-oprisk_fig1_full.eps}}
+\copyrightbox[b]{\includegraphics[width=15cm,height=7.5cm]{bank-oprisk_fig1_full.eps}}
              {Source: \url{https://www.bain.com/contentassets/f0199ad9887e402cb37cd1fd316f5ee3/bain_brief_how_banks_can_manage_operational_risk.pdf}}
 \caption[Losses suffered from 2011 to 2016 from Oprisk]{Histogram showing a breakdown of gross losses focusing on OpRisk loss events in comparison to each other recorded from 2011 up to and including 2016}
 \label{bank-oprisk_fig}
 \end{figure}
 
-In South Africa (SA), there is an upcoming case of price fixing and
-market allocation in trading foreign exchange (FX) currency pairs,
-reffered to the SA based competition tribunal for prosecution. Absa
-bank, Standard bank \& Investec may be liable to payment of an
-admistrative penalty equal to 10\% of their annual turnover in 2016,
-following accusations by the local based competition commission in
-February 2017, of rogue traders manipulating the price of the rand
-through buying and selling US dollars in exchange for the rand at fixed
-prices. According to the competition commission, it has been alleged
-that currency traders have been colluding or manipulating the price of
-the rand through these buy and sell orders to change supply of the
-currency.\medskip
+These OpRisk loss events were due to fraudulent trading activity
+consisting of rogue traders dealing in illegally placed high frequency
+trades for private clients where prices are hidden. For example, the
+January 2016 \lq\lq Dark Pool\rq\rq~trading penalties suffered by
+Barclays Bank PLC amounting to about \$70mn and Credit Suisse (\$85mn),
+imposed by the United States (US) based securities exchange commision
+(SEC). In a case closer to home, @suntimes2019 reports ongoing
+investigations launched in April 2015 for price fixing and
+``widespread'' collusion between banking insiders in South Africa (SA),
+of the market allocation for foreign exchange (FX) currency pairs viz.,
+USD/ZAR rates, a case which now has been referred to SA based
+competition tribunal for prosecution, as late as February 2017. Three
+local banks viz., Absa bank, Standard bank \& Investec are implicated in
+the scandal along with 14 others; some of which have already been fined
+within juristictions they reside {[}@bustech2017{]}, may be liable to
+payment of an admistrative penalty equal to 10\% of their annual
+turnover.\medskip
 
-This has compromised the quality and accuracy of risk management's
-advisory service and pedigree, and aroused huge interest as the value of
-the rand has implications on South African's. Furthermore, this kind of
-behaviour can lead to catastrophic operational losses, as with the case
-for the Barings event, resulting is a mismatch between business'
-expectations and the value the risk management practice was able to
-deliver, which is prevalent across FI's and remains unchanged. There are
-many attitudes that can potentially infect organisational processes, the
-most persistent of these attitudes stem from human failings that are
-exploitable {[}@barberis2003survey{]}; i.e.~humans' propensity to be
-deceitful during periods of distress, thus forming a basis for a
-theoretical foundation of OpRisk management.
+This investigation led by the local based competition commission
+uncovered irregularities when rogue traders manipulated the price of the
+rand through buying and selling US dollars in exchange for the rand at
+fixed prices between 2007 and 2013. According to the competition
+commission, currency traders allegedly had been colluding or
+manipulating the price of the rand through these buy and sell orders to
+change supply of the currency in contravention of the competition act
+{[}@suntimes2019{]}.\medskip
 
-\section{Basel Committee's quantitative operational risk management framework}
-\label{sec:Basel Committee's quantitative operational risk management framework}
+These acts compromise risk management's advisory service and pedigree,
+and arouse huge interest as, with the SA incident, distorting the rand
+value has major implications on the living standards of SA's, felt down
+to the man in the street. Furthermore, this kind of behaviour can lead
+to catastrophic operational losses resulting is a mismatch between
+business' expectations and the value the risk management practice is
+delivering, which is prevalent across the world and remains unchanged.
+There are many attitudes that can potentially infect organisational
+processes, the most persistent of these attitudes stem from human
+failings that are exploitable {[}@barberis2003survey{]}; such as the
+human conditions' propensity to being deceitful during periods of
+distress, thus forming a the basis for a (behavioural) theoretical
+foundation of OpRisk management.
+
+\section{The basel committee operational risk management framework}
+\label{sec:The basel committee operational risk management framework}
 
 The Bank for International Settlements (BIS) is an organisation
 consisting of a group of central bank governors and heads of supervision
@@ -234,12 +250,12 @@ of central banks around the world who represent an authority on good
 risk management in banking. More specifically, the BIS oversee the
 duties of the Basel Committee on Banking Supervision (BCBS)/Basel
 Commitee. The role of the BCBS is to set out guidelines on international
-financial regulation to cover risks in the banking sector. There have
-been three banking accords from the BCBS under the supervision of the
-BIS in dealing with financial regulation, viz., Basel I, Basel II \&
+financial regulation to cover risks in the banking sector. There are to
+date three banking accords from the BCBS under the supervision of the
+BIS in dealing with financial regulation viz., Basel I, Basel II \&
 Basel III. These accords describe an overview of capital requirements
 for financial institutions (FI's) in order to create a level playing
-field, by making regulations uniform throughout the world.\medskip 
+field, by making regulations uniform throughout the world.
 
 \subsection{The Capital Adequacy Accord (Basel I)}
 
@@ -248,74 +264,69 @@ to assign capital for credit risk to protect against credit default. In
 1996, an amendment to Basel I imposed additional requirements to cover
 exposure due to market risk as well as credit risks. Basel I effectively
 minimised rules that favoured local FI's over potential foreign
-competitors, by opening up global competition so that these banks could
+competitors by opening up global competition so that these banks could
 buffer against international solvency. In 2001, the @risk2001supporting
 consultative package provided an overview of the proposed framework for
-regulatory capital (RC) charge for OpRisk. A fiancial institution (FI)
-has an OpRisk component, which constitutes a substantial risk component
-other than credit and market risk. There are two types of OpRisk's viz.,
-potential high severity risk where the probability of an extreme loss is
-very small but costly, and high frequency/low severity risk where
-frequency plays a major role in the OpRisk capital charge
-calculation.\medskip 
+regulatory capital (RC) charge for OpRisk upon the realisation of
+financial institutions' (FIs) OpRisk component, which constitutes a
+substantial risk component other than credit and market risk. \medskip
+
+A construct for credit risk modelling uses in OpRisk is borne out of the
+structural model found in @merton1974pricing, whereby a theory for
+pricing corporate debt is presented. @merton1974pricing postulates the
+bond's value is dependent on the volatility of the firms value at a
+given interest rate i.e., the risk structure of interest rates
+{[}@rosa2012litigation{]} under possible gains or losses to investors
+when there is a significant (unanticipated) probability of default. This
+credit risk model adapted to OpRisk defines what is now called the
+\emph{exposure-based} operation risk (EBOR) model. The ultimate task of
+defining the ideal \emph{exposure} measure for a operational event data
+is specifically dealt with in this study. There are two types of
+OpRisk's viz., potential high severity risk where the probability of an
+extreme loss is very small but costly, and high frequency/low severity
+risk where frequency plays a major role in the OpRisk capital charge
+calculation. Many times loss of operational nature are attributed to
+credit defaults or market risk related movement.\medskip
+
+Conscequently, @rosa2012litigation founded risk \emph{exposure} for
+events of operational nature which triggered off the filing of
+litigations, but nevertheless related to credit or market risk losses as
+defined by the credit risk or market risk exposures as opposed to
+standard OpRisk types whose exposure was undefined. The adaptation to
+the OpRisk case, of the @merton1974pricing's concept adapted in
+@rosa2012litigation to OpRisk losses involving initial public offerings
+(IPO's) requires new types of data which incorporate predictive factors
+(using a combination of statistical modeling and scenario analysis),
+allowing for buliding this \emph{exposure-based} method.\medskip
+
+After completing the IPO dataset, an EBOR model is expressed as a common
+credit risk model:
+
+\textbackslash{}begin(eqnarray) L\_\{EXPECTED\} =
+\mbox{probability of litigaion} X L\_\{DEFAULT\}
+\textbackslash{}end\{eqnarray\}
+
+Where \(L\) denotes loss. Conceptually, this factor based quantification
+model for capital requirements can be extended to also include future
+events.
 
 \subsection{New Capital Adequacy Accord (Basel II)}
 
 The framework for Basel II was implemented in June 2006. The rationale
-for Basel II is to introduces risk sensitivity through more restrictive
+for Basel II is to introduce risk sensitivity through more restrictive
 capital charge measures and flexibility with specific emphasis on
 OpRisk. The structure of the new accord is built upon a three-pillar
 framework: Pillar I stipulates minimum capital requirements for the
 calcualtion of regulatory capital for credit risk, market risk and
 OpRisk in order to retain capital to ward against these risks. Pillar II
-imposes a supervisory review process through which additional
-requirements can be imposed, such as the bank's internal capital
-assessements, or to act on needed adequate capital support or best
-practice for mitigating their risks. Pillar III relates to market
-discipline, i.e.~transparency requirements which require banks to
+imposes a supervisory review process whereby additional capital
+requirements can be imposed; such as the bank's internal capital
+assessements or to act on needed adequate capital support or best
+practice, for mitigating their risks. Pillar III relates to market
+discipline i.e., transparency requirements which require banks to
 publicly provide risk disclosures to keep them in line by enabling
 investors to form an accurate view of their capital adequacy, in order
 to reward or punish them on the basis of their risk profile.\medskip
-
-\subsection{Basel III}
-
-Basel III establishes tougher capital standards through more restrictive
-capital definitions, higher RWA's, additional capital buffers, and
-higher requirements for minimum capital ratios {[}@mysis2013{]}. Through
-Basel III, the BCBS is introducing a number of fundamental reforms
-grouped under three main headings {[}@basel2010basel{]}: 1{]} A future
-of more capital through incremental trading book risk (credit items in
-trading book treated in the same way as if they were in banking book),
-2{]} More liquidity through the introduction of a global liquidity risk
-standard (Basel III will push banks toward holding greater levels of
-liquid instruments, such as government bonds and more liquid corporate
-instruments), and 3{]} Lower risk under the new requirements of the
-capital base, i.e., establish more standardized risk-adjusted capital
-requirements.\medskip
-
-Regarding the sequence Basel I and Basel II: Regulation begins as a
-qualitative recommendation which requires banks to have an
-assets-to-capital multiple of at least 20, then focuses on ratios in
-which both on-balance sheet and off-balance sheet items are used to
-calculate the bank's total risk-weighted assets
-(RWA's)\footnote{Also reffered to as risk-weighted amount, it is a measure of the bank's total credit exposure},
-then on tail risk. In other words, auditors' discretion is replaced by
-market perception of capital, meaning there is a market risk capital
-charge for all items in the trading business line, then exciting new
-static risk management approaches which involve calculating a 99.9
-percentile left tail confidence interval to measure OpRisk value-at-risk
-(VaR) and convert it into a RC charge.\medskip 
-
-The future regulatory environment requires OpRisk professionals, who are
-not only intelligent, creative and motivated but also have the courage
-to uphold the OpRisk advisory service standards. Businesses that want to
-successfuly manage risk, would be well advised to utilize new
-theoretical and empirical techniques, such that large and small scale
-experiments play an important role in risk analysis and regulatory
-research.
-
-\section{Modern OpRisk measurement frameworks (ORMF's)}
-\label{sec:modern OpRisk measurement frameworks (ORMF's)}
 
 Basel II describes three methods of calculating capital charge for
 OpRisk RC viz., the standardised approach (SA), the basic indicator
@@ -326,24 +337,121 @@ annual capital charge. The SA is similar to the BIA except the firm is
 split into eight business lines and assigned a different percentage of a
 three year average gross income per business line, the summation of
 which is the capital charge {[}@hoohlo2015new{]}. In the IMA, the bank
-uses it's own internal models to calculate OpRisk loss.\medskip
+uses it's own internal models to calculate OpRisk loss.
+
+\subsection{Basel III}
+
+Basel III establishes tougher capital standards through more restrictive
+capital definitions, higher risk weighted
+assets\footnote{Also reffered to as risk-weighted amount, it is a measure of the bank's total credit exposure}
+(RWA's), additional capital buffers, and higher requirements for minimum
+capital ratios {[}@mysis2013{]}. Through Basel III, the BCBS is
+introducing a number of fundamental reforms grouped under three main
+headings {[}@basel2010basel{]}: 1{]} A future of more capital through
+incremental trading book risk (credit items in trading book treated in
+the same way as if they were in banking book), 2{]} More liquidity
+through the introduction of a global liquidity risk standard: Basel III
+will push banks toward holding greater levels of liquid instruments,
+such as government bonds and more liquid corporate instruments, and 3{]}
+Lower risk under the new requirements of the capital base i.e.,
+establish more standardized risk-adjusted capital requirements.\medskip
+
+The future regulatory environment requires OpRisk professionals who are
+not only intelligent, creative and motivated but also have the courage
+to uphold the OpRisk advisory service standards. Businesses that want to
+successfuly manage OpRisk would be well advised to utilize new
+theoretical and empirical techniques such that large and small scale
+experiments play an important role in risk analysis and regulatory
+research.
+
+\section{Modern OpRisk measurement frameworks (ORMF's)}
+\label{sec:Modern OpRisk measurement frameworks (ORMF's)}
+
+Regarding the sequence Basel I and Basel II: Regulation begins as a
+qualitative recommendation which requires banks to have an
+assets-to-capital multiple of at least 20, then focuses on ratios in
+which both on-balance sheet and off-balance sheet items are used to
+calculate the bank's total RWA, then on tail risk. In other words,
+auditors' discretion is replaced by market perception of capital,
+meaning there is a market risk capital charge for all items in the
+trading business line, then exciting new static risk management
+approaches which involve calculating a 99.9 percentile left tail
+confidence interval to measure OpRisk value-at-risk (OpVaR) and convert
+it into a RC charge.\medskip
 
 \subsection{Advanced Measurement Approach (AMA)}
+\label{sec:Advanced Measurement Approach (AMA)}
 
 The advanced measurement approach (AMA) is an IMA method which applies
 estimation techniques of OpRisk capital charge derived from a bank's
-internal risk measurement system @cruz2002modeling. Basel II proposed
-measurement of OpRisk to define capital requirements against unexpected
-bank losses whereas the unexpected loss (UL) is the quantile for the
-level \(\alpha\) minus the mean. According to the AMA, which is thought
-to outperform the simpler SA approach and the BIA, RC requirements are
-defined according to the UL limit in one year and the loss distribution
-at a 99.9\% confidence level (\(\alpha = 0.01\%\)) aggegate loss
+internal risk measurement system {[}@cruz2002modeling{]}. Basel II
+proposed measurement of OpRisk to define capital requirements against
+unexpected bank losses whereas the unexpected loss (UL) is the quantile
+for the level \(\alpha\) minus the mean. According to the AMA, which is
+thought to outperform the simpler SA approach and the BIA, RC
+requirements are defined according to the UL limit in one year and the
+loss distribution at a 99.9\% confidence level (\(\alpha = 0.01\%\))
+aggegate loss
 distribution\footnote{The aggregate loss distribution is obtained by convoluting a loss event frequency distribution and a loss severity distribution by means of the random sums method.}
 used as a measure of RC. The BCBS proposes to define RC as \(RC = UL\).
 This involves simulations based on historical data to establish
 frequency and severity distributions for losses. In this case the RC is
-a VaR measure.\medskip
+a value-at-risk (VaR) measure.\medskip
+
+\subsubsection{Loss distribution approach (LDA)}
+\label{sssec:Loss distribution approach (LDA)}
+
+The loss distribution approach (LDA) model is based on actuarial
+techniques and is generally accepted as the industry (AMA) standard for
+OpRisk estimation. LDA models require quant level expertise in order for
+one to accept the statistical relationships linking the actual
+(perceived) risk exposures. What it has done is to provide the most
+realistic risk profiles of a company to date
+{[}@einemann2018operational{]}, based on partitioning OpRisk loss data
+into sufficiently homgeneous sets, typically corresponding to
+combinations of business lines (BL) and event types (ET), and to
+calibrate a frequency and severity distribution for each BL/ET
+combination. LDA models cover risks that are well reflected through
+historical events and exposure data is used in several of the steps of
+the process in frequency and severity modeling.\medskip
+
+\section{What is exposure?}
+\label{sec:What is exposure?}
+
+The formal definition of exposure in risk management is:
+
+\begin{definition}
+\textbf{The risk remaining after risk treaments have been applied} i.e., the risk *a priori* to considering the actual experience of the corporation or FI.
+\end{definition}
+
+In the OpRisk context, the total OpRisk loss is captured by certain
+\emph{exposure} measures, which are quantities that are thought to be
+roughly proportional to the overall risk associated with an operational
+event or loss {[}@parodi2014pricing{]}. The measure of exposure needed
+depends on what loss variable one is attempting at projecting which is
+dependent on a varied mix of factors. Specifically in relation to the
+LDA model for OpRisk the exposure measure is dependent on whether we are
+projecting the aggregate losses (severity) or the number of losses
+(frequency). When carrying out this decision making expercise the
+following were considered:
+
+\begin{list}{*}{}
+\item The availability of historical exposure data over the same period for which the losses are recorded
+\item The exposure estimate for future periods
+\end{list}
+\medskip
+
+In this study, the intensity (rate) of occurance of loss events is the
+fundamental unit of of analysis for estimating the number of loss events
+(frequency) used for OpRisk loss based on the causal factors for the
+business. The causal factors are key to the relationship of the
+phenomenona which consists of a problem questioning whether a firm
+susceptibility to OpRisk hazard growth results in the degree of OpRisk
+losses slowing as a conscequence of enhanced OpRisk controls. As per LDA
+model steps, one begins by using Poisson modeling for counts to estimate
+the rate loss events (frequency) and the opportunity or exposure for
+counting for all available observations over a time lag (\([T,T+\tau]\))
+\emph{d}; defined as the \emph{exposure} measure.\medskip
 
 The Basel III capital adequacy rules permit model-based calculation
 methods for capital, including the AMA for OpRisk capital. Under Basel
@@ -428,7 +536,7 @@ active discussions on practical approaches to quantify, model and manage
 OpRisk for better risk management and improved controls, or abandon the
 adoption of innovative measurement approaches, such as the AMA, in
 exchange for being able to use a simple formula across the whole
-industry?\medskip 
+industry?
 
 \section{Context of the study}
 \label{sec:Context of the study}
@@ -444,7 +552,7 @@ defeating the explicit objectives of risk management frameworks. This
 demonstrates a scourge of reflexivity prevailing in financial markets
 emphasising that, there are theories that seem to work for a time only
 to outlive their use and become insufficient for the complexities that
-arise in reality.\medskip 
+arise in reality.
 
 \subsection{Why \texttt{OpRisk?}}
 
@@ -458,288 +566,61 @@ investment activity. Conversely, the risk of the loss of business
 certainty associated with lowered organisational competitiveness and
 inadequate systems technology that underpins operations and services is
 a key source leading to a potential breakdown in investment services
-activity {[}@hoohlo2015new{]}. In fact OpRisk control could set banks
-apart in competition. This serves as an incentive to support regulation,
-particularly Basel III recovery and resolution processes.\medskip
+activity {[}@hoohlo2015new{]}.\medskip
 
-Consider the case of a regulator in a financial system, who assumes that
-he/she is consiously and accurately analysing an observed subject,
-trusting the validity and relying on the visual information that their
-sense of sight reveals. In the absence of visual confirmation they are
-hindered from extracting and/or analysing information about the system
-and their efforts to regulate could potentialy fail. The organisational
-methods and functioning of current information systems in this industry
-sector obscure the full extent of OpRisk challenges from the eyes of the
-risk practitioner.\medskip 
+In fact, OpRisk controls could set banks apart in competition. Consider
+the case of a risk practitioner in a financial system who assumes that
+he/she is consiously and accurately executing tasks and analysing an
+observed subject trusting the validity and relying on visual information
+that their sense of sight reveals alone. In the absence of visual
+confirmation they are hindered from extracting and/or analysing
+information about the system and their efforts to regulate could
+potentialy fail. In this scenario, the organisational methods and
+functioning of information systems would usually pose shortcomings,
+which obscure the full extent of OpRisk challenges from the eyes of the
+risk practitioner allowing for operational errors. \medskip
 
 When an attack such as an operational error occurs at a speed that the
 OpRisk agent (an individual legal entity or a group) is unable to react
 quickly enough, due to limitations of their processing speed, and they
 are not able to process all the information in the given time span, they
-could lose control/fail to comply with regulatory standards. The latter
-case is more often than not the most accurate reflection of current risk
-management practices. The agent represents one end of the spectrum of a
-risk management strategy, which mitigates risk and enforces regulation,
-dependent on the information recieved. The other end of the spectrum is
-one which does not react at all to changes in the system
-environment.\medskip 
+could lose control/fail of fail in compliance, disincentivising support
+for regulation, particularly Basel III recovery and resolution
+processes. In latter days more often than not, OpRisk loss cases reflect
+lack of sufficient controls being the driver of current OpRisk
+management catastrophies. The agent on this end of the spectrum of the
+risk management strategy, which mitigates risk and enforces regulation
+dependent on visual and information controls is better off than an agent
+on the other extreme, who does not react at all to changes in the system
+environment.
 
-Current conventional financial systems where information processing is
-slow and have a tendency to rely on manual, uncertain, unpredictable and
-unrealistic controls, obscure risk management reporting and produce
-undesirable market conditions. The OpRisk management function should be
-able to assist the firms' ability to mitigate risks by acquiring and/or
-refining risk management solutions which deliver reliable and consistent
-benefits of improved control and management of the risks inherent in
-banking operations {[}@mysis2013{]}. This proposal attempts to fill the
-gap in the current system where there is a risk management information
-lag or an obstruction from the eyes of the risk practitioner.
-
-\section{Analysis and interpretation issues with behavioral finance theory}
-\label{sec:Analysis and interpretation issues with behavioral finance theory}
-
-Behavioral management theory is very much concerned with social factors
-such as motivation, support and employee relations. A critical component
-of behavioral finance is building models which better reflect actual
-behavior. Studies have revealed that these social factors are not easy
-to incorporate into finance models or to understand in the traditional
-framework.\medskip 
-
-The traditional finance paradigm seeks to understand financial markets
-using models in which agents are \lq\lq rational\rq\rq. According to
-@barberis2003survey, this means that agents update their beliefs on the
-onset of new information, and that given their beliefs, they make
-choices that are normatively acceptable, and that most people do this
-most of the time. Neoclassical theory has grown to become the primary
-take on modern-day economics formed to solve problems for decision
-making under uncertainty/risk. Expected Utility Theory (EUT) has
-dominated the analysis and has been generally accepted as the normative
-model of rational choice, and widely applied as a descriptive model of
-economic choice {[}@kahneman2013prospect{]}.
-
-\subsection{Expected utility theory}
-\label{ssec:Expected utility theory}
-
-Expected utility
-theory\footnote{Expected utility theory provides a model of rationality based on choice.}
-(EUT): We see a fundamental relation for expected utility (Expectation)
-of a contract \(X\), that yields outcome \(x_i\) with probability
-\(p_i\), where \(X = (x_1,p_1; ...; x_n,p_n)\) and
-\(p_1+p_2+\ldots+p_n=1\) given by:
-
-\singlespacing
-
-\begin{equation}\label{EUT_extended}
-U(x_1,p_1;\ldots;x_n,p_n) = p_1u(x_1)+\ldots+p_nu(x_n) 
-\end{equation} \doublespacing corroborated by @morgenstern1953theory;
-@friedman1948utility; @kahneman2013prospect \& others.
-
-A common thread running through the rational viz., the neoclassical take
-of modern-day economics vs the non-neoclassical schools of thought are
-findings of behavioral economics which tend to refute the notion that
-individuals behave rationally. Many argue that individuals are
-fundamentally irrational because they do not behave rationally giving
-rise to a literature and debates as to which heuristics and sociological
-and institutional priors are rational
-{[}@altman2008behavioral{]}.\medskip
-
-In the real world there is a point of transition between the traditional
-(neoclassical) approach to decision making, based on data and data
-anaysis (logic and rational), by adding new parameters and arguments
-that are outside rational conventional thinking but are also valid. For
-example, that neoclassical theory makes use of the assumption that all
-parties will behave rationally overlooks the fact that human nature is
-vulnerable to other forces, which causes people to make irrational
-choices.\medskip 
-
-An essential ingredient of any model trying to understand trading
-behavior is an assumption about investor preferences
-{[}@barberis2003survey{]}, or how investors evaluate risky gambles.
-Investors systematically deviate from rationality when making financial
-decisions, yet as acknowledged by @kuhnen2005neural, the mechanisms
-responsible for these deviations have not been fully identified. Some
-errors in judgement suggest distinct mental operations promote different
-types of financial choices that may lead to investing mistakes.
-Deviations from the optimal investment strategy of a rational risk
-neutral agent are viewed as risk-seeking mistakes and risk-aversion
-mistakes {[}@kuhnen2005neural{]}.\medskip 
-
-\subsection{Theoretical investigations for the quantification of moderm ORMF}
-
-@kuhnen2005neural explain that these risk-seeking choices (such as
-gambling at a casino) and risk-averse choices (such as buying insurance)
-may be driven by distinct
-neural\footnote{As recent evidence from human brain imaging has shown [@kuhnen2005neural] linking neural states to risk-related behaviours [@paulus2003increased].}
-phenomena, which when activated can lead to a shift in risk preferences.
-@kuhnen2005neural found that certain areas of the brain precede
-risk-seeking mistakes or risky choices and other areas precede
-risk-aversion mistakes or riskless choices. A risk-aversion mistake is
-one where a gamble on a prospect of a gain is taken by a risk-averse
-agent in the face of the chance of a prospective loss. The fear of
-losing prohibits one's urge to gamble, but people engage in gambling
-activity anyway. @barberis2003survey show that people regularly deviate
-from the traditional finance paradigm evidenced by the extensive
-experimental results compiled by cognitive psycologists on how people
-make decisions given their beliefs.\medskip 
-
-@kahneman2013prospect maintains, preferences between prospects which
-violate rational behaviour demonstrate that outcomes which are obtained
-with certainty are overweighted relative to uncertain outcomes. This
-will contribute to a risk-averse preference for a sure gain over a
-larger gain that is merely probable or a risk-seeking preference for a
-loss that is merely probable over a smaller loss that it certain. As a
-psycological principle, overweighting of certainty favours risk-aversion
-in the domain of gains and risk-seeking in the domain of losses.\medskip
-
-The present discussion replicates the common behavioral pattern of risk
-aversion, where people weigh losses more than equivalent gains.
-Furthermore, neuroeconomic research shows that this pattern of behavior
-is directly tied to the brain's greater sensitivity to potential losses
-than gains {[}@tom2007neural{]}. This provides a target for
-investigating a more comprehensive theory of individual decision-making
-rather than the rational actor model and thus yield new insights
-relevant to economic
-theory\footnote{Representing ability of FI's financial market models to characterise the repeated decision-making process that applies to loss aversion}
-{[}@kuhnen2005neural{]}.\medskip  
-
-If people are reasonably accurate in predicting their choices, the
-presence of systematic violations of risk neutral behavior provides
-presumptive evidence against this i.e., people systematically violate
-EUT when choosing among risky gambles. This seeks to improve and adapt
-to reality and advance different interpretations of economic behaviour;
-viz., to propose a more adequately descriptive model, that can represent
-the basis for an alternative to the way the traditional model is built
-for decisions taken under uncertainty. This has led some influential
-commentators to call for an entirely new economic paradigm to displace
-conventional neoclassical theory with a psycologically more realistic
-preference specification {[}@list2004neoclassical{]}.
-
-\section{A new class of ORMF models approach}
-\label{sec:A new class of ORMF models approach}
-
-A substantial body of evidence shows that decision makers systematically
-violate EUT when choosing between risky prospects. Indeed, people would
-rather satisfy their needs than maximise their utility, contravening the
-normative model of rational choice (i.e., EUT) which has dominated the
-analysis of decision making under risk. In recent work
-{[}@barberis2003survey{]} in behavioral finance, it has been argued that
-some of the lessons learnt from violations of EUT are central to
-understanding a number of financial phenomena. In response to this,
-there has been several theories put forward advocating for the basis of
-a slightly different intepretation which describes how individuals
-actually make decisions under uncertainty/risk. Of all the non-EUT's, we
-focus on Prospect Theory (PT) as this framework has had most success
-matching most empirical
-facts\footnote{OpRisk loss events in FI's are largely due to human failings that are exploitable e.g., fraudulent trading activity, and PT is based on the same behavioural element of how people make financial decisions about prospects}.\medskip 
-
-@kahneman2013prospect list the key elements of PT, which are 1{]} a
-value function, and 2{]} a non-linear transformation of the probability
-scale, that factors in risk aversion of the participants. According to
-@kahneman2013prospect, the probability scale overweights small
-probabilities and underweights high probabilities. This feature is known
-as loss/risk aversion: This means that people have a greater sensitivity
-to losses (around 2.5 times more times) than gains, and are especially
-sensitive to small losses unless accompanied by small
-gains\footnote{Diminishing marginal utility for gains but opposite for losses.}.
-Loss aversion is a strong differentiator when it comes to explaining
-exceptions to the general risk patterns that characterize prospect
-theory.\medskip 
-
-\subsection{Prospect theory}
-\label{ssec:Prospect theory}
-
-By relaxation of the expectation principle in equation
-\ref{ssec:Expected utility theory}, the over-all value
-\(\mathbf{\bigvee}\) of the regular prospect \((x,p;y,q)\): In such a
-prospect, one receives \(x\) with probability \(p\), \(y\) with
-probability \(q\), and nothing with probability \(1-p-q\), is expressed
-in terms of two scales, \(\pi(\cdot)\), and \(\nu(\cdot)\), where
-\(\pi(\cdot)\) is a decision weight and \(\nu(\cdot)\) a number
-reflecting the subjective value of the outcome. Then
-\(\mathbf{\bigvee}\) is assigned the value:
-
-\begin{equation}\label{eqn2}
-\mathbf{\bigvee}=\pi(p)\nu(x)+\pi(q)\nu(y) \qquad\mbox{iff} \qquad p+q \leq 1
-\end{equation}
-
-The scale, \(\pi\), associates with each probability \(p\) a decision
-weight which reflects the impact of \(p\) on the over-all value of the
-prospect. The second scale, \(\nu\), assigns to each outcome \(x\) a
-number \(\nu(x)\), which measures the value of deviations from a
-reference point i.e., gains or losses. \(\pi\) is not a probability
-measure and \(\pi(p) + \pi(1-p) < 1\). Through PT we add new parameters
-and arguments to improve the mathematical modelling method for decisions
-taken under risk/uncertainty, such that the value of each outcome is
-multiplied by a decision weight, not by an additive probability.
-
-PT looks for common attitudes in people (in FI's) with regard to their
-behaviour toward taking financial risks or gambles that cannot be
-captured by EUT. In light of this view, people are not fully invested in
-either of the percieved outcomes \(x\) and \(y\), Which tells us that
-\(p+q \leq 1\). In lieu of this, an FI using (internal) historical
-OpRisk loss data to model future events; say a historical case of fraud
-at the FI occurs and is incorporated in the model, the probability of
-making the same error in future is provided for in the model versus risk
-events that haven't happened. The modelled future should over-provide
-for the loss events that have already occured, which fits normal
-patterns around individuals psycological make up and is consistent with
-risk-averse behavior. The idea at the basis of PT is that a better
-modeling method can be obtained which leads to a closer approximation of
-the over-all-value of OpRisk losses.
-
-\subsection{Modeling}
+\section{A new class of EBOR models approach}
+\label{sec:A new class of EBOR models approach}
 
 In this study, an important new algorithm for ORMFs and is laid out
 coupled with data intensive estimation techniques; viz.~Generalised
 Additive Models for locatin Scale \& Shape (GAMLSS), Generalized Linear
-Models (GLDs), Artificial Neural Networks (ANNs), Random Forest (RF) \&
+Models (GLMs), Artificial Neural Networks (ANNs), Random Forest (RF) \&
 Decision Trees (DTs), which have capabilities to tease out the deep
 hierarchies in the features of covariates irrespective of the challenges
 associated with the non-linear or multi-dimensional nature of the
 underlying problem, at the same time supporting the call from industry
 for a new class of EBOR models that capture forward-looking aspects.
-Machine Learning (ML) is used as a substitute tool for the traditional
-model based Autoregressive Moving Average (ARMA) used for analysing and
-representing stochastic processes. As opposed to the statistical tool,
-ML does not impose a functional relationship between variables, the
-functional relationship is determined by extracting the pattern of the
-training set and by learning from the data observed.\medskip 
-
-Using computationally intensive (using ML techniques on historical data
-) OpRisk measurement techniques and mixing with a theory is not a new
-approach for modeling, particularly in calculating OpRisk RC; as
-evidenced through @agostini2010combining in a study whereby the LDA
-model for forecasting OpRisk RC, via VaR, was implemented in conjunction
-with the use of advanced credibility theory (CT). The idea at the basis
-of their use of CT, is to advance the very recent literature that a
-better estimation of the OpRisk RC measurement can be obtained by
-integrating historical data and scenario analysis i.e., combining the
-historical simulations with scenario assessments through formulas that
-are weighted averages of the historical data entries and scenario
-assessments, advocating for the combined use of both
-experiences.\medskip 
-
-However, applying ML is an original way of looking at the approximation
-issue as opposed to advanced CT. The essential feature of PT are
-assumptions which are more compatible with basic principles of
-perception and judgement for decisions taken under uncertainty, whereas
-ML will reveal additional chance probabilities determined through the
-natural clusters of unknown data feature findings from which new
-discoveries are made.\medskip
-
-According to @kahneman2013prospect, the decision maker, who is a risk
-agent within the FI, constructs a representation of the losses and
-outcomes that are relevant to the decision, then assesses the value of
-each prospect and chooses according to the losses (changes in wealth),
-not the overall financial state of the FI. We wish to bring the
-prescribed model to equilibrium, by applying a method that tries to
-establish what accurately ascribes to decision rules that people wish to
-obey, in made predictions about what operational loss events might
-result in the future, then use empirical data to test this idea in a way
-that is falsifyable.
 
 \section{Problem statement}
 \label{sec:Problem statement}
+
+Conventional controls in financial systems where information processing
+is slow and have tendencies to rely on manual, uncertain, unpredictable
+and unrealistic methods, obscure risk managements' reporting and produce
+undesirable pre-market conditions that are vital for operations. The
+OpRisk management's function should be able to assist in the ability to
+mitigate risks by acquiring and/or refining risk management solutions
+which deliver reliable and consistent benefits of improved control and
+management of the risks inherent in banking operations {[}@mysis2013{]}.
+This proposal attempts to fill the gap in the current system where there
+is a risk management information lag or an obstruction from the eyes of
+the risk practitioner.
 
 \subsection{Main problem}
 
@@ -802,12 +683,18 @@ risk-taking attitudes are more risk averse. More precisely, CA learns
 the deep hierarchies of input
 features\footnote{A typical approach taken in the literature is to use an unsupervised learning algorithm to train a model of the unlabeled data and then use the results to extract interesting features from the data [@coates2012learning]}
 that constitute OpRisk event \emph{frequencies} \& \emph{severities} of
-losses during banking operations. In theory, a risk manager who
-experiences persistent/excessive losses due to particular risk events,
-would over-compensate cover for these particular risk types. This would
-show in reduced losses in those loss event types over time, subsequently
-determining whether risk adverse techniques over-compensate for
-persistent losses.
+losses during banking operations.\medskip
+
+In theory, a risk manager who experiences persistent/excessive losses
+due to particular risk events, would over-compensate cover for these
+particular risk types. This would show in reduced losses in those loss
+event types over time, subsequently determining whether risk adverse
+techniques over-compensate for persistent losses. The wish is to bring
+the prescribed model to equilibrium by applying a method that tries to
+establish what accurately ascribes to decision rules that people wish to
+obey in making predictions about what operational loss events might
+result in the future, then use empirical data to test this idea in a way
+that is falsifyable.
 
 \section{Significance of the study}
 \label{sec:Significance of the study}
@@ -847,25 +734,43 @@ dilemmas that require human judgement.
 \section{Organisation of the study}
 \label{sec:Organisation of the study}
 
-This study is made up of seven chapters. The introductory chapter is to
-the purpose, overview, research problem \& objectives, and the
-significance of the study. The introductory chapter is succeded by a
-general literaty review chapter (two) followed by three stand alone
-chapters each focusing on the three research objectives regarding the
-issues in OpRisk capital requirement estimation.\medskip
+This study consists of seven chapters. Chapter \ref{INTRODUCTION}
+outlines the purpose, followed by an overview of the relevance and
+importance in the existing work. Then the general concept behind EBOR
+models is introduced and an argument is presented of the relevance of a
+new class of EBOR models to remediate some of the shortcomings in OpRisk
+LDA modeling; coscequently the research problem \& objectives are
+stated, followed by an account of significance. The introductory chapter
+is succeded by a general literature review Chapter
+\ref{LITERATURE REVIEW}, succeeded by three stand alone chapters, the
+purpose of each is to provide clarity, based on theory and empirical
+evidence, focusing on three specific research objectives each
+contributing to resolve specific problems in the OpRisk literature,
+given how its importance has become more pronounced in time. In these
+chapters the application of machine learning techniques on the observed
+data take centre-stage demonstrating how issues in OpRisk capital
+requirement estimation are more effectively resolved.\medskip
 
-Chapter one begins with an account of significance and a commentary on
-the nature and scope of the practical problem. It then provides a
-background of current issues when dealing with OpRisk measurement, the
-research problem and research questions thereof. Chapter two gives an
-overview of the literature concerning the LDA, an AMA technique used in
-the generation of \texttt{OpVaR}. It concludes by proposing the a
-research methodology in which a combination of ML techniques and
-statistical theory underlying ORMF's would benefit measurement of
-capital requirements for OpVaR.\medskip
+Chapter \ref{LITERATURE REVIEW} gives an overview of theoretical
+foundations of OpRisk, a review of the LDA model, an AMA technique used
+in the generation of \texttt{OpVaR}. Then provides a breakdown of why
+EBOR models are a promising approach to remediate some of the LDA
+shortcomings, furthermore on how EBOR components presented in this study
+differ to contrasting papers which demonstrates to value of this paper
+by elaborating on the gap it fills in more detail. Chapter
+\ref{LITERATURE REVIEW} concludes with a lead up to chapter
+\ref{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS} by proposing a research
+methodology in which a combination of ML techniques and statistical
+theory underlying ORMF's would benefit measurement of capital
+requirements for OpVaR.\medskip
 
-Chapter three looks at the methodological and empirical determinants of
-OpRisk measurement. It explores the different dataset\ldots{}
+Chapter \ref{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS} deals with the
+application of EBOR techniques using the GLM and GAMLSS models in more
+detail, and the empirical determinants due to the different components
+of OpRisk measurement under the new class of EBOR models. The chapter
+deals with the analysis of EBOR techniques to the portfolio of a wide
+range OpRisk losses found in the dataset and their integration into an
+LDA framework.
 
 
 \end{document}
