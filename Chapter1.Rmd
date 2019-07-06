@@ -58,17 +58,27 @@ Basel I was established in 1988. Basel I meant that FI's were required to assign
 
 A construct for credit risk modelling uses in OpRisk is borne out of the structural model found in @merton1974pricing, whereby a theory for pricing corporate debt is presented. @merton1974pricing postulates the bond's value is dependent on the volatility of the firms value at a given interest rate i.e., the risk structure of interest rates [@rosa2012litigation] under possible gains or losses to investors when there is a significant (unanticipated) probability of default. This credit risk model adapted to OpRisk defines what is now called the *exposure-based* operation risk (EBOR) model. The ultimate task of defining the ideal *exposure* measure for a operational event data is specifically dealt with in this study.\medskip
 
-The main challenge in OpRisk modeling is poor data quality and usually very few data points that are often characterised by high frequency low severity (HFLS) and low frequency high severity (LFHS) data types. OpRisk's LFHS are risks where the probability of an extreme loss is very small but costly, and HFLS risks ar where frequency plays a major role in the OpRisk capital charge calculation. It is common knowledge that HFLS losses at the lower end of the loss spectrum tend to be ignored by management due to their perceived insignificance and are therefore less likely to be reported, whereas LFHS losses are sensitive information and well guarded secrets to organisations, and therefore not very likely to be made public. Many times losses of operational nature are mistakenly attributed to credit defaults or market risk related movement.\medskip
+The main challenge in OpRisk modeling is poor data quality and usually very few data points that are often characterised by high frequency low severity (HFLS) and low frequency high severity (LFHS) data types. OpRisk's LFHS are risks where the probability of an extreme loss is very small but costly, and HFLS risks are where frequency plays a major role in the OpRisk capital charge calculation. It is common knowledge that HFLS losses at the lower end of the loss spectrum tend to be ignored by management due to their perceived insignificance and are therefore less likely to be reported, whereas LFHS losses comprise of sensitive company information, hence more than not are well guarded and kept in secret by organisations, and therefore are not likely known to the public. Many times losses of operational nature are mistakenly attributed to credit defaults or market risk related movement.\medskip
 
-Conscequently, @rosa2012litigation founded risk *exposure* for events of operational nature which triggered off the filing of litigations, but nevertheless related to credit or market risk losses as defined by the credit risk or market risk exposures as opposed to standard OpRisk types whose exposure was undefined. The adaptation to the OpRisk case, of the @merton1974pricing's concept adapted in @rosa2012litigation to OpRisk losses involving initial public offerings (IPO's) requires new types of data which incorporate predictive factors (using a combination of statistical modeling and scenario analysis), allowing for buliding this *exposure-based* method.\medskip
+This is founded in a seminal paper by @rosa2012litigation, through her illustration of modern risk exposure whereby the afore-mentioned phenomena arises: An exposure-based method is derived using a credit risk structural model to predict a series of operational losses arising from events of operational nature; which triggered off the filing of litigations involving initial public offerings (IPO's), but nevertheless related to credit or market risk losses as defined by the credit risk or market risk exposures as opposed to standard OpRisk types whose exposure was undefined. In fact, a significant gap in OpRisk literature is in the current lack of a strongly risk-sensitive *exposure* measure (cf. market and credit risk) [@aue2006lda].\medskip
 
-OpRisk events are divided into business lines $i=1,\ldots,8$ and event types $j=1,\ldots,7$; An EBOR model is expressed as a common credit risk model: 
+In an adaptation of the @merton1974pricing's concept to OpRisk as illustrated by @rosa2012litigation to OpRisk losses involving these IPO's, an EBOR model emerges out of a method which requires new types of data incorporating "predictive" factors  by the use of a combination of statistical modeling and scenario analysis: Thus, allowing for the inclusion of forward-looking aspects of BEICF's in an EBOR model. An early representation of this EBOR model according to @rosa2012litigation is expressed as a common credit risk model given as:\medskip
 
+\singlespacing
 \begin{equation}\label{EBORmethod}
-Y_{ij} = \sum_{ij}p_{ij} \cdot L_{ij} \cdot EI_{ij}
+EL = p \cdot LGE 
 \end{equation}
+\doublespacing
 
-Where $Y$ denotes loss for business line (BL) event type (ET) (BL/ET) combination $ij$, an exposure indicator $EI_{ij}$ is set for each BL/ET combination to capture the the scale of the bank's activities in the cell; probability $p_{ij}$ that the event will occur over the next period and an estimate $L_{ij}$ a loss ratio given there is a default. Conceptually, this factor based quantification model for capital requirements can be extended to also include future events.
+Where $EL$ is the expected loss, $p$ is the probability of the realised loss occuring, and $LGE$ is the loss-given-event. Oprisk events are divided into event types $ET_j$ $j=1,2,\ldots$ and business lines $BL_i$ $i=1,2,\ldots$. Other necessary inputs are: the severity exposure $E_{ij}$, or the maximum possible loss for an event in the BL/ET combination risk cell $ij$, an exposure indicator capturing the scale of the bank's activities in the risk cell; and a stochastic estimate $L_{ij}$ specified since only a fraction of the exposure is typically lost, such that $LGE =L\cdot E$. Now, suppose $Y_{ij}$ denotes loss for business line $BL_i$ $i=1,2,\ldots$ and event type $ET_j$ $j=1,2,\ldots$ for BL/ET combination $ij$; and $p_{ij}$ denotes the probability that the OpRisk event will occur over the next period $[T,T+\tau]$, then the total loss $Y_{ij}$ is given by:  
+
+\singlespacing
+\begin{eqnarray}\label{EBORmethodology}
+Y_{ij} = p_{ij} \cdot L_{ij} \cdot E_{ij} \qquad \mbox{where} \quad LGE = L \cdot E \quad \mbox{by}\quad \ref{EBORmethod}
+\end{eqnarray}
+\doublespacing
+
+Conceptually, this factor based quantification model for capital requirements can be extended to also include future events.
 
 \subsection{New Capital Adequacy Accord (Basel II)}
 
@@ -76,23 +86,25 @@ The framework for Basel II  was implemented in June 2006. The rationale for Base
 
 Basel II describes three methods of calculating capital charge for OpRisk RC viz., the standardised approach (SA), the basic indicator approach (BIA) and the internal measurement approach (IMA). The basic indicator approach (BIA) sets the OpRisk RC equal to a percentage (15\%) of the annual gross income of the firm as a whole to determine the annual capital charge. The SA is similar to the BIA except the firm is split into eight business lines and assigned a different percentage of a three year average gross income per business line, the summation of which is the capital charge [@hoohlo2015new]. In the IMA, the bank uses it's own internal models to calculate OpRisk loss.
 
-\subsubsection{Internal measurement approach}
+\subsubsection{Internal measurement approach (IMA)}
 \label{sssec:Internal measurement approach}
 
-AMA's allow banks to use their internally generated risk estimates Under Basel II, the IMA is a first attempt at capital charge calculation for OpRisk. It has similarities to the Basel II model for credit risk, where a loss event is a default in the credit risk jargon. Under the IMA, OpRisk events are divided into seven event types $j=1,\ldots,7$ and eight business lines $i=1,\ldots,8$ [@risk2001supporting], forming a loss decomposition of sub-risks BL/ET combinations:\medskip
+The internal measurement approach (IMA) allows banks to use their internally generated risk estimates, Under Basel II the IMA is a first attempt at capital charge calculation for OpRisk: "to directly capture a bank's underlying risk by using the bank's internal loss data as key inputs for capital calculation" [@mori2001internal]. It has similarities to the Basel II model for credit risk, where a loss event is a default in the credit risk jargon. Under the IMA, OpRisk events are divided into seven event types $j=1,\ldots,7$ and eight business lines $i=1,\ldots,8$ [@risk2001supporting] forming a loss decomposition of $56$ BL/ET combination sub-risks. Total capital charge is computed as:\medskip
 
+\singlespacing
 \begin{eqnarray}\label{Internalmeasurement}
-\mathcal{\Large{C}}_{OpRisk}^{IMA} &=& \sum_{i=1}^8 \sum_{k=1}^7 \gamma_{ik}\epsilon_{ik} \\
-where \quad \epsilon_{ik}&:& \quad \mbox{expected loss for business line $i$, risk type $k$} \nonumber \\
-\Longleftrightarrow \epsilon_{ik} &:&= Y_{ik} = \sum_{ik}p_{ik} \cdot L_{ik} \cdot EI_{ik} \quad \mbox{from}\quad \ref{EBORmethod} \nonumber\\
-    \mbox{and} \quad  \gamma_{ik}&:& \quad \mbox{scaling factor} \nonumber
+\mathcal{\Large{C}}_{OpRisk}^{IMA} &=& \sum_{i=1}^8 \sum_{j=1}^7 \gamma_{ij}\epsilon_{ij} \\
+where \quad \epsilon_{i}&:& \quad \mbox{is the expected loss for business line $i$, risk type $j$} \nonumber \\
+    \mbox{and} \quad  \gamma_{ij}&:& \quad \mbox{is an internal scaling factor} \nonumber\\
+\Leftrightarrow \epsilon_{ij} \equiv Y_{ij} &=& p_{ij} \cdot L_{ij} \cdot E_{ij} \quad \mbox{from}\quad \ref{EBORmethodology}\nonumber\\
 \end{eqnarray}
+\doublespacing
 
-At its most basic level, the EBOR model is a special case of the internal measurement approach (IMA).
+The scaling factor $\gamma_{ij}$ represents a regulatory parameter that is used to transform $Y_{ij}$ into a capital charge. At its most basic level, the EBOR model is a special case of the IMA.
 
 \subsubsection{The BL/ET combination matrix}
 
-The 3-dimensional diagram Figure \ref{BL/ET Matrix} depicts the formation of the ($7 \times 8 =$) $56$ BL/ET matrix risk-type combinations: A duration of time $[T,T+\tau]$ which represents the next period (usually the next year's annual loss) over which RC is defined is shown along the depth ordinate.
+The 3-dimensional diagram depicts the formation of a $7 \times 8 = 56$ BL/ET combination of matrix risk-type cells: A duration parameter denoted by time $[T,T+\tau]$ representing the next period's loss (usually the next year's annual loss) over which RC is defined is shown along the depth $k$ ordinate.
 
 \begin{figure}\label{BL/ET Matrix}
 \begin{tikzpicture}[every node/.style={minimum size=0.5cm},on grid]
@@ -112,31 +124,31 @@ The 3-dimensional diagram Figure \ref{BL/ET Matrix} depicts the formation of the
 \end{scope}   
 \begin{scope}[every node/.append style={yslant=0.5},yslant=0.5]  
   \shade[right color=gray!70,left color=gray!10](8,-8) rectangle +(8,8);
-  \node at (11.5,-0.5) {$\mbox{T}+\tau \quad \Huge{\color{magenta}\xrightarrow{\hspace*{4cm}}}$};
-  \node at (8.5,-1.5) {\textbf{EL1}};
-  \node at (8.5,-2.5) {\textbf{EL2}};
-  \node at (8.5,-3.5) {\textbf{EL3}};
-  \node at (8.5,-4.5) {\textbf{EL4}};
-  \node at (8.5,-5.5) {\textbf{EL5}};
-  \node at (8.5,-6.5) {\textbf{EL6}};
-  \node at (8.5,-7.5) {\textbf{EL7}};
-  \node at (10.5,-1.5) {Internal Fraud};
-  \node at (10.5,-2.5) {External Fraud};
-  \node at (12.5,-3.5) {Employment Practices and Workplace Safety};
-  \node at (12.0,-4.5) {Client Products and Business Practices};
-  \node at (11.5,-5.5) {Damage to Physical Assets};
-  \node at (12.0,-6.5) {Business Disruption and System Failure};
-  \node at (12.5,-7.5) {Execution, Delivery and Process Management};
+  \node at (11.5,-0.5) {$\mathbf{\mbox{T}+\tau} \quad \Huge{\color{magenta}\xrightarrow{\hspace*{4cm}}}$};
+  \node at (8.5,-1.5) {\textbf{ET1}};
+  \node at (8.5,-2.5) {\textbf{ET2}};
+  \node at (8.5,-3.5) {\textbf{ET3}};
+  \node at (8.5,-4.5) {\textbf{ET4}};
+  \node at (8.5,-5.5) {\textbf{ET5}};
+  \node at (8.5,-6.5) {\textbf{ET6}};
+  \node at (8.5,-7.5) {\textbf{ET7}};
+  \node at (10.5,-1.5) {\mbox{ \scriptsize Internal Fraud}};
+  \node at (10.5,-2.5) {\mbox{ \scriptsize External Fraud}};
+  \node at (12.5,-3.5) {\mbox{ \scriptsize Employment Practices and Workplace Safety}};
+  \node at (12.0,-4.5) {\mbox{ \scriptsize Client Products and Business Practices}};
+  \node at (11.5,-5.5) {\mbox{ \scriptsize Damage to Physical Assets}};
+  \node at (12.0,-6.5) {\mbox{ \scriptsize Business Disruption and System Failure}};
+  \node at (12.5,-7.5) {\mbox{ \scriptsize Execution, Delivery and Process Management}};
 \end{scope}   
 \begin{scope}[every node/.append style={yslant=0.5,xslant=-1},yslant=0.5,xslant=-1]
-  \node at (10.0,7.5) {Corporate Finance};
-  \node at (10.0,6.5) {Trading and Sales};
-  \node at (10.0,5.5) {Retail Banking};
-  \node at (10.0,4.5) {Commercial Banking};
-  \node at (10.0,3.5) {Payment and Settlement};
-  \node at (10.0,2.5) {Agency Services};
-  \node at (10.0,1.5) {Asset Management};
-  \node at (10.0,0.5) {Retail Brokerage};
+  \node at (10.0,7.5) {\mbox{ \scriptsize Corporate Finance}};
+  \node at (10.0,6.5) {\mbox{ \scriptsize Trading and Sales}};
+  \node at (10.0,5.5) {\mbox{ \scriptsize Retail Banking}};
+  \node at (10.0,4.5) {\mbox{ \scriptsize Commercial Banking}};
+  \node at (10.0,3.5) {\mbox{ \scriptsize Payment and Settlement}};
+  \node at (10.0,2.5) {\mbox{ \scriptsize Agency Services}};
+  \node at (10.0,1.5) {\mbox{ \scriptsize Asset Management}};
+  \node at (10.0,0.5) {\mbox{ \scriptsize Retail Brokerage}};
 \end{scope}  
 \end{tikzpicture}
 \caption{The 3-Dimensional grid of the BL/ET matrix for 7 event types and 8 business lines}
@@ -151,12 +163,12 @@ The future regulatory environment requires OpRisk professionals who are not only
 \section{Modern OpRisk measurement frameworks (ORMF's)}
 \label{sec:Modern OpRisk measurement frameworks (ORMF's)}
 
-Regarding the sequence Basel I and Basel II: Regulation begins as a qualitative recommendation which requires banks to have an assets-to-capital multiple of at least 20, then focuses on ratios in which both on-balance sheet and off-balance sheet items are used to calculate the bank's total RWA, then on tail risk. In other words, auditors' discretion is replaced by market perception of capital, meaning there is a market risk capital charge for all items in the trading business line, then exciting new static risk management approaches which involve calculating a 99.9 percentile left tail confidence interval to measure OpRisk value-at-risk (OpVaR) and convert it into a RC charge.\medskip
+Regarding the sequence Basel I and Basel II: Regulation begins as a qualitative recommendation which requires banks to have an assets-to-capital multiple of at least 20, then focuses on ratios in which both on-balance sheet and off-balance sheet items are used to calculate the bank's total RWA, then on tail risk. In other words, auditors' discretion is replaced by market perception of capital, meaning there is a market risk capital charge for all items in the trading business line, then exciting new static risk management approaches which involve calculating a 99.9 percentile left tail confidence interval to measure OpRisk value-at-risk (VaR) and convert it into a RC charge.\medskip
 
 \subsection{Advanced Measurement Approach (AMA)}
 \label{sec:Advanced Measurement Approach (AMA)}
 
-The advanced measurement approach (AMA) is an IMA method which applies estimation techniques of OpRisk capital charge derived from a bank's internal risk measurement system [@cruz2002modeling]. Basel II proposed measurement of OpRisk to define capital requirements against unexpected bank losses whereas the unexpected loss (UL) is the quantile for the level $\alpha$ minus the mean. According to the AMA, which is thought to outperform the simpler SA approach and the BIA, RC requirements are defined according to the UL limit in one year and the loss distribution at a 99.9\% confidence level ($\alpha = 0.01\%$) aggegate loss distribution\footnote{The aggregate loss distribution is obtained by convoluting a loss event frequency distribution and a loss severity distribution by means of the random sums method.} used as a measure of RC. The BCBS proposes to define RC as $RC = UL$. This involves simulations based on historical data to establish frequency and severity distributions for losses. In this case the RC is a value-at-risk (VaR) measure.\medskip
+The advanced measurement approach (AMA) is an IMA method which applies estimation techniques of OpRisk capital charge derived from a bank's internal risk measurement system [@cruz2002modeling]. Basel II proposed measurement of OpRisk to define capital requirements against unexpected bank losses whereas the unexpected loss (UL) is the quantile for the level $\alpha$ minus the mean. According to the AMA, which is thought to outperform the simpler SA approach and the BIA, RC requirements are defined according to the UL limit in one year and the loss distribution at a 99.9\% confidence level ($\alpha = 0.01\%$) aggegate loss distribution\footnote{The aggregate loss distribution is obtained by convoluting a loss event frequency distribution and a loss severity distribution by means of the random sums method.} used as a measure of RC. The BCBS proposes to define RC as $RC = UL$. This involves simulations based on historical data to establish frequency and severity distributions for losses. In this case the RC is a VaR measure.\medskip
 
 \subsubsection{Loss distribution approach (LDA)}
 \label{sssec:Loss distribution approach (LDA)}
@@ -170,7 +182,7 @@ LDA models cover risks that are well reflected through historical events and exp
 
 The formal definition of exposure in risk management is:
 \begin{definition}
-\textbf{The risk remaining after risk treaments have been applied} i.e., the risk *a priori* to considering the actual experience of the corporation or FI.
+\emph{\textbf{The risk remaining after risk treaments have been applied}} i.e., the risk *a priori* to considering the actual experience of the corporation or FI.
 \end{definition}
 
 In the OpRisk context, the total OpRisk loss is captured by certain *exposure* measures, which are quantities that are thought to be roughly proportional to the overall risk associated with an operational event or loss  [@parodi2014pricing]. The measure of exposure needed depends on what loss variable one is attempting at projecting which is dependent on a varied mix of factors. Specifically in relation to the LDA model for OpRisk the exposure measure is dependent on whether we are projecting the aggregate losses (severity) or the number of losses (frequency). When carrying out this decision making expercise the following were considered:
@@ -181,7 +193,7 @@ In the OpRisk context, the total OpRisk loss is captured by certain *exposure* m
 \end{list}
 \medskip
 
-In this study, the intensity (rate) of occurance of loss events is the fundamental unit of of analysis for estimating the number of loss events (frequency) used for OpRisk loss based on the causal factors for the business. The causal factors are key to the relationship of the phenomenona which consists of a problem questioning whether a firm susceptibility to OpRisk hazard growth results in the degree of OpRisk losses slowing as a conscequence of enhanced OpRisk controls. As per LDA model steps, one begins by using Poisson modeling for counts to estimate the rate loss events (frequency) and the opportunity or exposure for counting for all available observations over a time lag ($[T,T+\tau]$) *d*; defined as the *exposure* measure.\medskip
+In this study, the intensity (rate) of occurance of loss events is the fundamental unit of of analysis for estimating the number of loss events (frequency) used for OpRisk loss based on the causal factors for the business. The causal factors are key to the relationship in our OpRisk problem: The problem consists of a phenomena questioning whether a firm's susceptibility to OpRisk hazard growth, results in the degree of OpRisk losses slowing as a conscequence of tighter controls enhancing their OpRisk framework. As per LDA model steps, one begins using Poisson modeling for counts to estimate the rate of loss events (frequency), and the opportunity or *exposure* for counting for all available observations over a time lag $(T+\tau) - T =$ *d*: We defined the *\textbf{exposure}* measure as the time interval from the initial moment when the event happened until the moment the event is observed and adjusted for.\medskip
 
 The Basel III capital adequacy rules permit model-based calculation methods for capital, including the AMA for OpRisk capital. Under Basel III, standardised methods for OpRisk capital have been overhauled, however for a while there was no prospect of an overhaul of the AMA. Given the relative infancy of the field of OpRisk measurement, banks are mostly free to choose among various AMA principle-based frameworks to a significant degree of flexibility [@risk2016supporting]. A bank that undertakes an AMA should be able to influence their capital requirements through modeling techniques resulting in lowered pressure on OpRisk capital levels, which in turn has a positive impact on the bank.\medskip
 
@@ -223,11 +235,20 @@ In this study, an important new algorithm for ORMFs and is laid out coupled with
 \section{Problem statement}
 \label{sec:Problem statement}
 
-Conventional controls in financial systems where information processing is slow and have tendencies to rely on manual, uncertain, unpredictable and unrealistic methods, obscure risk managements' reporting and produce undesirable pre-market conditions that are vital for operations. The OpRisk management's function should be able to assist in the ability to mitigate risks by acquiring and/or refining risk management solutions which deliver reliable and consistent benefits of improved control and management of the risks inherent in banking operations [@mysis2013]. This proposal attempts to fill the gap in the current system where there is a risk management information lag or an obstruction from the eyes of the risk practitioner.
-
 \subsection{Main problem}
+\label{ssec:Main problem}
 
-The existing models of OpRisk VaR measurement frameworks assume FI's are risk neutral, and do not learn from past losses/mistakes: We address weaknesses in current OpRisk VaR measurement frameworks by assuming that FI's are more risk averse. Furthermore, introducing exposure-based operational risk modeling, we gain an understanding of how capturing past losses and exposures of forward looking aspects affect risk attitudes using machine learning techniques. As a consequence, projected future losses are estimated through a learning algorithm adapting capital estimates to changes in the risk profile, i.e. in the introduction of new products or changes in the business mix of the portfolio (e.g. mergers, trade terminatons, allocations or disinvestments), providing sufficient incentives for OpRisk management to mitigate risk.
+Conventional OpRisk frameworks in banking commonly exhibit control and system deficiencies whereby information processing is slow and have the tendency to rely on manual, uncertain, unpredictable and unrealistic management and measurement methods, obscuring reporting and resulting in undesirable pre-market conditions. The OpRisk management's function should be able to assist in the ability to mitigate risks through acquiring and/or refining risk management solutions which deliver reliable and consistent benefits of improved operational controls and enhanced risk management frameworks. In banks whereby there are increasing OpRisks, the problem consists of a phenomena questioning whether the banks' susceptibility to growing OpRisk events results in the degree of OpRisk losses slowing, as a conscequence of improved controls and enhanced OpRisk management frameworks. 
+
+\subsubsection{Sub-problem 1}
+\label{sssec:Sub-problem 1}
+
+The existing models in OpRisk measurement for which historical loss distributions are the best predictors of future losses, assume that we do not learn from past losses. This is problematic for "predictable" risk types due to model's practice of undercapitalising known risks before occur, and overcapitalising for risks after the losses materialise, creating innappropriate capital estimates [@ama2013ama]. These concerns motivate the development of an EBOR modelling framework which not only captures past losses but also how exposures to forward-looking affect risk attitudes.
+
+\subsubsection{Sub-problem 2}
+\label{sssec:Sub-problem 2}
+
+Furthermore, we challenge the weakness in current OpRisk theory which assumes banks are risk neutral, asserting they are more risk averse. Consequently, "predictive" future losses can be determined who's estimated RC adapts to changes in the risk profile of the bank i.e., with the introduction of new products or in changes to the business mix of the portfolio (e.g. mergers and aquisitions, trade terminatons, allocations or disinvestments), providing sufficient incentives for OpRisk management to mitigate risk.
 
 \section{Objectives of the study}
 \label{sec:Objectives of the study}
@@ -258,9 +279,11 @@ This study will provide guidance on combining various supervised learning techni
 \section{Organisation of the study}
 \label{sec:Organisation of the study}
 
-This study consists of seven chapters. Chapter \ref{INTRODUCTION} outlines the purpose, followed by an overview of the relevance and importance in the existing work. Then the general concept behind EBOR models is introduced and an argument is presented of the relevance of a new class of EBOR models to remediate some of the shortcomings in OpRisk LDA modeling; coscequently the research problem \& objectives are stated, followed by an account of significance. The introductory chapter is succeded by a general literature review Chapter \ref{LITERATURE REVIEW}, succeeded by three stand alone chapters, the purpose of each is to provide clarity, based on theory and empirical evidence, focusing on three specific research objectives each contributing to resolve specific problems in the OpRisk literature, given how its importance has become more pronounced in time. In these chapters the application of machine learning techniques on the observed data take centre-stage demonstrating how issues in OpRisk capital requirement estimation are more effectively resolved.\medskip
+This study consists of seven chapters. Chapter \ref{INTRODUCTION} outlines the purpose, followed by an overview of the relevance and importance in the existing work. Then the general concept behind EBOR models is introduced and an argument is presented of the relevance of a new class of EBOR models to remediate some of the shortcomings in OpRisk LDA modeling, followed by statement of the research problems and objectives. This chapter is concluded by an account of significance.\medskip
 
-Chapter \ref{LITERATURE REVIEW} gives an overview of theoretical foundations of OpRisk, a review of the LDA model, an AMA technique used in the generation of \texttt{OpVaR}.  Then provides a breakdown of why EBOR models are a promising approach to remediate some of the LDA shortcomings, furthermore on how EBOR components presented in this study differ to contrasting papers which demonstrates to value of this paper by elaborating on the gap it fills in more detail. Chapter \ref{LITERATURE REVIEW} concludes with a lead up to chapter \ref{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS} by proposing a research methodology in which a combination of ML techniques and statistical theory underlying ORMF's  would benefit measurement of capital requirements for OpVaR.\medskip
+The introductory chapter is succeded by a general literature review Chapter \ref{LITERATURE REVIEW}, succeeded by three stand alone chapters, the purpose of each is to provide clarity, based on theory and empirical evidence, focusing on three specific research objectives each contributing to resolve specific problems in the OpRisk literature, given how its importance has become more pronounced in time. In these chapters the application of machine learning techniques on the observed data take centre-stage demonstrating how issues in OpRisk capital requirement estimation are more effectively resolved.\medskip
+
+Chapter \ref{LITERATURE REVIEW} gives an overview of theoretical foundations of OpRisk, followed by a review of the LDA model used to calculate an estimate of the OpVaR measure. A breakdown analysing the EBOR models approach follows promising to remediate some of the LDA shortcomings and on how EBOR components presented in the study offer a novel approach in contrast to the current literature demonstrating its value and exposing the gap in finer detail. Chapter \ref{LITERATURE REVIEW} concludes with a lead up to Chapter \ref{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS} by proposing a research methodology in which a combination of ML techniques and statistical theory underlying ORMF's  would benefit measurement of capital requirements for OpVaR.\medskip
 
 Chapter \ref{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS} deals with the application of EBOR techniques using the GLM and GAMLSS models in more detail, and the empirical determinants due to the different components of OpRisk measurement under the new class of EBOR models. The chapter deals with the analysis of EBOR techniques to the portfolio of a wide range OpRisk losses found in the dataset and their integration into an LDA framework.    
 

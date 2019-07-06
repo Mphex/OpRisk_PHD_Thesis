@@ -1,7 +1,15 @@
- ---
+---
 output: pdf_document
 ---
+
 \doublespacing
+
+\section{Introduction}
+\label{sec:IntroductionChapter5}
+
+A substantial body of evidence suggests that loss aversion, the tendency to be more sensitive to losses than to gains plays an important role in determining how people evaluate risky gambles. In this paper we evidence that human choice behavoir can substantially deviate from neoclassical norms.\medskip
+
+PT takes into account the loss avoidance agents and common attitudes toward risk or chance that cannot be captured by EUT; which is not testing for that inherent bias, so as to expect the probability of making the same operational error in future to be overcompensated for i.e., If an institution suffers from an OpRisk event and survives, it's highly unlikely to suffer the same loss in the future because they will over-provide for particular operational loss due to their natural risk aversion. This is a testable proposition which fits normal behavioral patterns and is consistent with risk averse behaviour.
 
 \section{A new class of ORMF models approach}
 \label{sec:A new class of ORMF models approach}

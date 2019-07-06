@@ -520,39 +520,64 @@ The main challenge in OpRisk modeling is poor data quality and usually
 very few data points that are often characterised by high frequency low
 severity (HFLS) and low frequency high severity (LFHS) data types.
 OpRisk's LFHS are risks where the probability of an extreme loss is very
-small but costly, and HFLS risks ar where frequency plays a major role
+small but costly, and HFLS risks are where frequency plays a major role
 in the OpRisk capital charge calculation. It is common knowledge that
 HFLS losses at the lower end of the loss spectrum tend to be ignored by
 management due to their perceived insignificance and are therefore less
-likely to be reported, whereas LFHS losses are sensitive information and
-well guarded secrets to organisations, and therefore not very likely to
-be made public. Many times losses of operational nature are mistakenly
-attributed to credit defaults or market risk related movement.\medskip
+likely to be reported, whereas LFHS losses comprise of sensitive company
+information, hence more than not are well guarded and kept in secret by
+organisations, and therefore are not likely known to the public. Many
+times losses of operational nature are mistakenly attributed to credit
+defaults or market risk related movement.\medskip
 
-Conscequently, Rosa (2012) founded risk \emph{exposure} for events of
-operational nature which triggered off the filing of litigations, but
-nevertheless related to credit or market risk losses as defined by the
-credit risk or market risk exposures as opposed to standard OpRisk types
-whose exposure was undefined. The adaptation to the OpRisk case, of the
-Merton (1974)'s concept adapted in Rosa (2012) to OpRisk losses
-involving initial public offerings (IPO's) requires new types of data
-which incorporate predictive factors (using a combination of statistical
-modeling and scenario analysis), allowing for buliding this
-\emph{exposure-based} method.\medskip
+This is founded in a seminal paper by Rosa (2012), through her
+illustration of modern risk exposure whereby the afore-mentioned
+phenomena arises: An exposure-based method is derived using a credit
+risk structural model to predict a series of operational losses arising
+from events of operational nature; which triggered off the filing of
+litigations involving initial public offerings (IPO's), but nevertheless
+related to credit or market risk losses as defined by the credit risk or
+market risk exposures as opposed to standard OpRisk types whose exposure
+was undefined. In fact, a significant gap in OpRisk literature is in the
+current lack of a strongly risk-sensitive \emph{exposure} measure
+(cf.~market and credit risk) (Aue \& Kalkbrener, 2006).\medskip
 
-OpRisk events are divided into business lines \(i=1,\ldots,8\) and event
-types \(j=1,\ldots,7\); An EBOR model is expressed as a common credit
-risk model:
+In an adaptation of the Merton (1974)'s concept to OpRisk as illustrated
+by Rosa (2012) to OpRisk losses involving these IPO's, an EBOR model
+emerges out of a method which requires new types of data incorporating
+``predictive'' factors by the use of a combination of statistical
+modeling and scenario analysis: Thus, allowing for the inclusion of
+forward-looking aspects of BEICF's in an EBOR model. An early
+representation of this EBOR model according to Rosa (2012) is expressed
+as a common credit risk model given as:\medskip
+
+\singlespacing
 
 \begin{equation}\label{EBORmethod}
-Y_{ij} = \sum_{ij}p_{ij} \cdot L_{ij} \cdot EI_{ij}
-\end{equation}
+EL = p \cdot LGE 
+\end{equation} \doublespacing
 
-Where \(Y\) denotes loss for business line (BL) event type (ET) (BL/ET)
-combination \(ij\), an exposure indicator \(EI_{ij}\) is set for each
-BL/ET combination to capture the the scale of the bank's activities in
-the cell; probability \(p_{ij}\) that the event will occur over the next
-period and an estimate \(L_{ij}\) a loss ratio given there is a default.
+Where \(EL\) is the expected loss, \(p\) is the probability of the
+realised loss occuring, and \(LGE\) is the loss-given-event. Oprisk
+events are divided into event types \(ET_j\) \(j=1,2,\ldots\) and
+business lines \(BL_i\) \(i=1,2,\ldots\). Other necessary inputs are:
+the severity exposure \(E_{ij}\), or the maximum possible loss for an
+event in the BL/ET combination risk cell \(ij\), an exposure indicator
+capturing the scale of the bank's activities in the risk cell; and a
+stochastic estimate \(L_{ij}\) specified since only a fraction of the
+exposure is typically lost, such that \(LGE =L\cdot E\). Now, suppose
+\(Y_{ij}\) denotes loss for business line \(BL_i\) \(i=1,2,\ldots\) and
+event type \(ET_j\) \(j=1,2,\ldots\) for BL/ET combination \(ij\); and
+\(p_{ij}\) denotes the probability that the OpRisk event will occur over
+the next period \([T,T+\tau]\), then the total loss \(Y_{ij}\) is given
+by:
+
+\singlespacing
+
+\begin{eqnarray}\label{EBORmethodology}
+Y_{ij} = p_{ij} \cdot L_{ij} \cdot E_{ij} \qquad \mbox{where} \quad LGE = L \cdot E \quad \mbox{by}\quad \ref{EBORmethod}
+\end{eqnarray} \doublespacing
+
 Conceptually, this factor based quantification model for capital
 requirements can be extended to also include future events.
 
@@ -585,34 +610,41 @@ three year average gross income per business line, the summation of
 which is the capital charge (Hoohlo, 2015). In the IMA, the bank uses
 it's own internal models to calculate OpRisk loss.
 
-\subsubsection{Internal measurement approach}
+\subsubsection{Internal measurement approach (IMA)}
 \label{sssec:Internal measurement approach}
 
-AMA's allow banks to use their internally generated risk estimates Under
-Basel II, the IMA is a first attempt at capital charge calculation for
-OpRisk. It has similarities to the Basel II model for credit risk, where
-a loss event is a default in the credit risk jargon. Under the IMA,
-OpRisk events are divided into seven event types \(j=1,\ldots,7\) and
-eight business lines \(i=1,\ldots,8\) (Risk, 2001), forming a loss
-decomposition of sub-risks BL/ET combinations:\medskip
+The internal measurement approach (IMA) allows banks to use their
+internally generated risk estimates, Under Basel II the IMA is a first
+attempt at capital charge calculation for OpRisk: ``to directly capture
+a bank's underlying risk by using the bank's internal loss data as key
+inputs for capital calculation'' (Mori, Harada, \& others, 2001). It has
+similarities to the Basel II model for credit risk, where a loss event
+is a default in the credit risk jargon. Under the IMA, OpRisk events are
+divided into seven event types \(j=1,\ldots,7\) and eight business lines
+\(i=1,\ldots,8\) (Risk, 2001) forming a loss decomposition of \(56\)
+BL/ET combination sub-risks. Total capital charge is computed
+as:\medskip
+
+\singlespacing
 
 \begin{eqnarray}\label{Internalmeasurement}
-\mathcal{\Large{C}}_{OpRisk}^{IMA} &=& \sum_{i=1}^8 \sum_{k=1}^7 \gamma_{ik}\epsilon_{ik} \\
-where \quad \epsilon_{ik}&:& \quad \mbox{expected loss for business line $i$, risk type $k$} \nonumber \\
-\Longleftrightarrow \epsilon_{ik} &:&= Y_{ik} = \sum_{ik}p_{ik} \cdot L_{ik} \cdot EI_{ik} \quad \mbox{from}\quad \ref{EBORmethod} \nonumber\\
-    \mbox{and} \quad  \gamma_{ik}&:& \quad \mbox{scaling factor} \nonumber
-\end{eqnarray}
+\mathcal{\Large{C}}_{OpRisk}^{IMA} &=& \sum_{i=1}^8 \sum_{j=1}^7 \gamma_{ij}\epsilon_{ij} \\
+where \quad \epsilon_{i}&:& \quad \mbox{is the expected loss for business line $i$, risk type $j$} \nonumber \\
+    \mbox{and} \quad  \gamma_{ij}&:& \quad \mbox{is an internal scaling factor} \nonumber\\
+\Leftrightarrow \epsilon_{ij} \equiv Y_{ij} &=& p_{ij} \cdot L_{ij} \cdot E_{ij} \quad \mbox{from}\quad \ref{EBORmethodology}\nonumber\\
+\end{eqnarray} \doublespacing
 
-At its most basic level, the EBOR model is a special case of the
-internal measurement approach (IMA).
+The scaling factor \(\gamma_{ij}\) represents a regulatory parameter
+that is used to transform \(Y_{ij}\) into a capital charge. At its most
+basic level, the EBOR model is a special case of the IMA.
 
 \subsubsection{The BL/ET combination matrix}
 
-The 3-dimensional diagram Figure \ref{BL/ET Matrix} depicts the
-formation of the (\(7 \times 8 =\)) \(56\) BL/ET matrix risk-type
-combinations: A duration of time \([T,T+\tau]\) which represents the
-next period (usually the next year's annual loss) over which RC is
-defined is shown along the depth ordinate.
+The 3-dimensional diagram depicts the formation of a \(7 \times 8 = 56\)
+BL/ET combination of matrix risk-type cells: A duration parameter
+denoted by time \([T,T+\tau]\) representing the next period's loss
+(usually the next year's annual loss) over which RC is defined is shown
+along the depth \(k\) ordinate.
 
 \begin{figure}\label{BL/ET Matrix}
 \begin{tikzpicture}[every node/.style={minimum size=0.5cm},on grid]
@@ -632,31 +664,31 @@ defined is shown along the depth ordinate.
 \end{scope}   
 \begin{scope}[every node/.append style={yslant=0.5},yslant=0.5]  
   \shade[right color=gray!70,left color=gray!10](8,-8) rectangle +(8,8);
-  \node at (11.5,-0.5) {$\mbox{T}+\tau \quad \Huge{\color{magenta}\xrightarrow{\hspace*{4cm}}}$};
-  \node at (8.5,-1.5) {\textbf{EL1}};
-  \node at (8.5,-2.5) {\textbf{EL2}};
-  \node at (8.5,-3.5) {\textbf{EL3}};
-  \node at (8.5,-4.5) {\textbf{EL4}};
-  \node at (8.5,-5.5) {\textbf{EL5}};
-  \node at (8.5,-6.5) {\textbf{EL6}};
-  \node at (8.5,-7.5) {\textbf{EL7}};
-  \node at (10.5,-1.5) {Internal Fraud};
-  \node at (10.5,-2.5) {External Fraud};
-  \node at (12.5,-3.5) {Employment Practices and Workplace Safety};
-  \node at (12.0,-4.5) {Client Products and Business Practices};
-  \node at (11.5,-5.5) {Damage to Physical Assets};
-  \node at (12.0,-6.5) {Business Disruption and System Failure};
-  \node at (12.5,-7.5) {Execution, Delivery and Process Management};
+  \node at (11.5,-0.5) {$\mathbf{\mbox{T}+\tau} \quad \Huge{\color{magenta}\xrightarrow{\hspace*{4cm}}}$};
+  \node at (8.5,-1.5) {\textbf{ET1}};
+  \node at (8.5,-2.5) {\textbf{ET2}};
+  \node at (8.5,-3.5) {\textbf{ET3}};
+  \node at (8.5,-4.5) {\textbf{ET4}};
+  \node at (8.5,-5.5) {\textbf{ET5}};
+  \node at (8.5,-6.5) {\textbf{ET6}};
+  \node at (8.5,-7.5) {\textbf{ET7}};
+  \node at (10.5,-1.5) {\mbox{ \scriptsize Internal Fraud}};
+  \node at (10.5,-2.5) {\mbox{ \scriptsize External Fraud}};
+  \node at (12.5,-3.5) {\mbox{ \scriptsize Employment Practices and Workplace Safety}};
+  \node at (12.0,-4.5) {\mbox{ \scriptsize Client Products and Business Practices}};
+  \node at (11.5,-5.5) {\mbox{ \scriptsize Damage to Physical Assets}};
+  \node at (12.0,-6.5) {\mbox{ \scriptsize Business Disruption and System Failure}};
+  \node at (12.5,-7.5) {\mbox{ \scriptsize Execution, Delivery and Process Management}};
 \end{scope}   
 \begin{scope}[every node/.append style={yslant=0.5,xslant=-1},yslant=0.5,xslant=-1]
-  \node at (10.0,7.5) {Corporate Finance};
-  \node at (10.0,6.5) {Trading and Sales};
-  \node at (10.0,5.5) {Retail Banking};
-  \node at (10.0,4.5) {Commercial Banking};
-  \node at (10.0,3.5) {Payment and Settlement};
-  \node at (10.0,2.5) {Agency Services};
-  \node at (10.0,1.5) {Asset Management};
-  \node at (10.0,0.5) {Retail Brokerage};
+  \node at (10.0,7.5) {\mbox{ \scriptsize Corporate Finance}};
+  \node at (10.0,6.5) {\mbox{ \scriptsize Trading and Sales}};
+  \node at (10.0,5.5) {\mbox{ \scriptsize Retail Banking}};
+  \node at (10.0,4.5) {\mbox{ \scriptsize Commercial Banking}};
+  \node at (10.0,3.5) {\mbox{ \scriptsize Payment and Settlement}};
+  \node at (10.0,2.5) {\mbox{ \scriptsize Agency Services}};
+  \node at (10.0,1.5) {\mbox{ \scriptsize Asset Management}};
+  \node at (10.0,0.5) {\mbox{ \scriptsize Retail Brokerage}};
 \end{scope}  
 \end{tikzpicture}
 \caption{The 3-Dimensional grid of the BL/ET matrix for 7 event types and 8 business lines}
@@ -700,8 +732,8 @@ auditors' discretion is replaced by market perception of capital,
 meaning there is a market risk capital charge for all items in the
 trading business line, then exciting new static risk management
 approaches which involve calculating a 99.9 percentile left tail
-confidence interval to measure OpRisk value-at-risk (OpVaR) and convert
-it into a RC charge.\medskip
+confidence interval to measure OpRisk value-at-risk (VaR) and convert it
+into a RC charge.\medskip
 
 \subsection{Advanced Measurement Approach (AMA)}
 \label{sec:Advanced Measurement Approach (AMA)}
@@ -719,7 +751,7 @@ distribution\footnote{The aggregate loss distribution is obtained by convoluting
 used as a measure of RC. The BCBS proposes to define RC as \(RC = UL\).
 This involves simulations based on historical data to establish
 frequency and severity distributions for losses. In this case the RC is
-a value-at-risk (VaR) measure.\medskip
+a VaR measure.\medskip
 
 \subsubsection{Loss distribution approach (LDA)}
 \label{sssec:Loss distribution approach (LDA)}
@@ -748,7 +780,7 @@ approach and is the focus of this study forthwith. \medskip
 The formal definition of exposure in risk management is:
 
 \begin{definition}
-\textbf{The risk remaining after risk treaments have been applied} i.e., the risk *a priori* to considering the actual experience of the corporation or FI.
+\emph{\textbf{The risk remaining after risk treaments have been applied}} i.e., the risk *a priori* to considering the actual experience of the corporation or FI.
 \end{definition}
 
 In the OpRisk context, the total OpRisk loss is captured by certain
@@ -771,14 +803,17 @@ considered:
 In this study, the intensity (rate) of occurance of loss events is the
 fundamental unit of of analysis for estimating the number of loss events
 (frequency) used for OpRisk loss based on the causal factors for the
-business. The causal factors are key to the relationship of the
-phenomenona which consists of a problem questioning whether a firm
-susceptibility to OpRisk hazard growth results in the degree of OpRisk
-losses slowing as a conscequence of enhanced OpRisk controls. As per LDA
-model steps, one begins by using Poisson modeling for counts to estimate
-the rate loss events (frequency) and the opportunity or exposure for
-counting for all available observations over a time lag (\([T,T+\tau]\))
-\emph{d}; defined as the \emph{exposure} measure.\medskip
+business. The causal factors are key to the relationship in our OpRisk
+problem: The problem consists of a phenomena questioning whether a
+firm's susceptibility to OpRisk hazard growth, results in the degree of
+OpRisk losses slowing as a conscequence of tighter controls enhancing
+their OpRisk framework. As per LDA model steps, one begins using Poisson
+modeling for counts to estimate the rate of loss events (frequency), and
+the opportunity or \emph{exposure} for counting for all available
+observations over a time lag \((T+\tau) - T =\) \emph{d}: We defined the
+\emph{\textbf{exposure}} measure as the time interval from the initial
+moment when the event happened until the moment the event is observed
+and adjusted for.\medskip
 
 The Basel III capital adequacy rules permit model-based calculation
 methods for capital, including the AMA for OpRisk capital. Under Basel
@@ -936,33 +971,47 @@ for a new class of EBOR models that capture forward-looking aspects.
 \section{Problem statement}
 \label{sec:Problem statement}
 
-Conventional controls in financial systems where information processing
-is slow and have tendencies to rely on manual, uncertain, unpredictable
-and unrealistic methods, obscure risk managements' reporting and produce
-undesirable pre-market conditions that are vital for operations. The
-OpRisk management's function should be able to assist in the ability to
-mitigate risks by acquiring and/or refining risk management solutions
-which deliver reliable and consistent benefits of improved control and
-management of the risks inherent in banking operations (Dorval, 2013).
-This proposal attempts to fill the gap in the current system where there
-is a risk management information lag or an obstruction from the eyes of
-the risk practitioner.
-
 \subsection{Main problem}
+\label{ssec:Main problem}
 
-The existing models of OpRisk VaR measurement frameworks assume FI's are
-risk neutral, and do not learn from past losses/mistakes: We address
-weaknesses in current OpRisk VaR measurement frameworks by assuming that
-FI's are more risk averse. Furthermore, introducing exposure-based
-operational risk modeling, we gain an understanding of how capturing
-past losses and exposures of forward looking aspects affect risk
-attitudes using machine learning techniques. As a consequence, projected
-future losses are estimated through a learning algorithm adapting
-capital estimates to changes in the risk profile, i.e.~in the
-introduction of new products or changes in the business mix of the
-portfolio (e.g.~mergers, trade terminatons, allocations or
-disinvestments), providing sufficient incentives for OpRisk management
-to mitigate risk.
+Conventional OpRisk frameworks in banking commonly exhibit control and
+system deficiencies whereby information processing is slow and have the
+tendency to rely on manual, uncertain, unpredictable and unrealistic
+management and measurement methods, obscuring reporting and resulting in
+undesirable pre-market conditions. The OpRisk management's function
+should be able to assist in the ability to mitigate risks through
+acquiring and/or refining risk management solutions which deliver
+reliable and consistent benefits of improved operational controls and
+enhanced risk management frameworks. In banks whereby there are
+increasing OpRisks, the problem consists of a phenomena questioning
+whether the banks' susceptibility to growing OpRisk events results in
+the degree of OpRisk losses slowing, as a conscequence of improved
+controls and enhanced OpRisk management frameworks.
+
+\subsubsection{Sub-problem 1}
+\label{sssec:Sub-problem 1}
+
+The existing models in OpRisk measurement for which historical loss
+distributions are the best predictors of future losses, assume that we
+do not learn from past losses. This is problematic for ``predictable''
+risk types due to model's practice of undercapitalising known risks
+before occur, and overcapitalising for risks after the losses
+materialise, creating innappropriate capital estimates (Group \& others,
+2013). These concerns motivate the development of an EBOR modelling
+framework which not only captures past losses but also how exposures to
+forward-looking affect risk attitudes.
+
+\subsubsection{Sub-problem 2}
+\label{sssec:Sub-problem 2}
+
+Furthermore, we challenge the weakness in current OpRisk theory which
+assumes banks are risk neutral, asserting they are more risk averse.
+Consequently, ``predictive'' future losses can be determined who's
+estimated RC adapts to changes in the risk profile of the bank i.e.,
+with the introduction of new products or in changes to the business mix
+of the portfolio (e.g.~mergers and aquisitions, trade terminatons,
+allocations or disinvestments), providing sufficient incentives for
+OpRisk management to mitigate risk.
 
 \section{Objectives of the study}
 \label{sec:Objectives of the study}
@@ -1066,12 +1115,14 @@ outlines the purpose, followed by an overview of the relevance and
 importance in the existing work. Then the general concept behind EBOR
 models is introduced and an argument is presented of the relevance of a
 new class of EBOR models to remediate some of the shortcomings in OpRisk
-LDA modeling; coscequently the research problem \& objectives are
-stated, followed by an account of significance. The introductory chapter
-is succeded by a general literature review Chapter
-\ref{LITERATURE REVIEW}, succeeded by three stand alone chapters, the
-purpose of each is to provide clarity, based on theory and empirical
-evidence, focusing on three specific research objectives each
+LDA modeling, followed by statement of the research problems and
+objectives. This chapter is concluded by an account of
+significance.\medskip
+
+The introductory chapter is succeded by a general literature review
+Chapter \ref{LITERATURE REVIEW}, succeeded by three stand alone
+chapters, the purpose of each is to provide clarity, based on theory and
+empirical evidence, focusing on three specific research objectives each
 contributing to resolve specific problems in the OpRisk literature,
 given how its importance has become more pronounced in time. In these
 chapters the application of machine learning techniques on the observed
@@ -1079,13 +1130,13 @@ data take centre-stage demonstrating how issues in OpRisk capital
 requirement estimation are more effectively resolved.\medskip
 
 Chapter \ref{LITERATURE REVIEW} gives an overview of theoretical
-foundations of OpRisk, a review of the LDA model, an AMA technique used
-in the generation of \texttt{OpVaR}. Then provides a breakdown of why
-EBOR models are a promising approach to remediate some of the LDA
-shortcomings, furthermore on how EBOR components presented in this study
-differ to contrasting papers which demonstrates to value of this paper
-by elaborating on the gap it fills in more detail. Chapter
-\ref{LITERATURE REVIEW} concludes with a lead up to chapter
+foundations of OpRisk, followed by a review of the LDA model used to
+calculate an estimate of the OpVaR measure. A breakdown analysing the
+EBOR models approach follows promising to remediate some of the LDA
+shortcomings and on how EBOR components presented in the study offer a
+novel approach in contrast to the current literature demonstrating its
+value and exposing the gap in finer detail. Chapter
+\ref{LITERATURE REVIEW} concludes with a lead up to Chapter
 \ref{EXPOSURE-BASED OPERATIONAL RISK ANALYSIS} by proposing a research
 methodology in which a combination of ML techniques and statistical
 theory underlying ORMF's would benefit measurement of capital
@@ -1127,12 +1178,22 @@ academics in this field.\medskip
 According to Cruz (2002), FI's wish to measure the impact of operational
 events upon profit and loss (P\&L), these events depict the idea of
 explaining the \emph{volatility of earnings} due to OpRisk data points
-which are directly observed and recorded. By seeking to incorporate data
-intensive statistical approaches to help understand the data, the
-framework analyses response variables that are decidedly non-normal
-(including categorical outcomes and discrete counts) which can shed
-further light on the understanding of firm-level OpRisk RC. Lastly, a
-synopsis of gaps in the literature is presented.
+which are directly observed and recorded. By seeking to incorporate new
+data intensive machine learning (ML) approaches to help understand the
+data, the framework analyses response variables that are decidedly
+non-normal, including categorical outcomes and discrete counts.\medskip
+
+Due to commonly held beliefs (Aue \& Kalkbrener, 2006), one of the main
+challenges toward the next generation of LDA models is in their
+incapability of dealing with the handling of statistical validation of
+qualitative adjustments, citing ill-conceived justification for its
+direct application to RC: However, in the advent of recent developments
+.viz ML techniquess, it is believed the advantages of conducting our
+investigations outweigh this disadvantage, shedding further light on our
+understanding of how forward-looking aspects of BEICF's affect
+firm-level OpRisk RC. Lastly, this resolves the problem associated with
+the context dependent nature of OpRisk as an apparent gap in the
+literature.
 
 \section{The theoretical foundation of OpRisk}
 \label{sec:The theoretical foundation of OpRisk}
@@ -1141,9 +1202,10 @@ Hemrit \& Arab (2012) argue that common and systematic operational
 errors in hypothetical situations poses presumtive evidence that OpRisk
 events, assuming that the subjects have no reason to disguise their
 preferences, are created sub-consciously. This study purports, supported
-by experimental evidence, behavioural finance theories should take some
-of this behaviour into account in trying to explain, in the context of a
-model, how investors maximise a specific utility/value function.\medskip
+by experimental evidence behavioural finance theories should take some
+of this behaviour into account when trying to explain in the context of
+a model, how investors maximise a specific utility/value
+function.\medskip
 
 In a theoretical paper, Wiseman \& Catanach Jr (1997) discussed several
 organizational and behavioural theories, such as prospect theory (PT),
@@ -1153,7 +1215,7 @@ theory of the firm explain risk seeking and risk averse behaviour in the
 context of OpRisk even after agency based influences are controlled for.
 Furthermore, they challenge arguments that behavioral influences are
 masking underlying root causes due to agency effects. Instead they argue
-for mixing behavioral models with agency based views to obtain more
+for mixing behavioral models with agency based views obtaining more
 complete explanations of risk preferences and risk taking behavior
 (Wiseman \& Catanach Jr, 1997). \medskip
 
@@ -1162,17 +1224,17 @@ attitudes are influenced by the decision (performance) context in which
 they are taken. In essence, managerial risk-taking attitude is
 considered as a proxy for measuring OpRisk (Acharyya, 2012). In so
 doing, Wiseman \& Catanach Jr (1997) investigate more comprehensive
-economic theories, viz.~prospect theory and the behavioural theory of
-the firm, that prove relevant to complex organizations who present a
-more fitting measure for OpRisk. Furthermore, behavioral finance
-investigations revealed by Barberis \& Thaler (2003) explain whether
-certain financial phenomena are as the result of less than fully
-rational thinking, who argue that through integrating OpRisk management
-into behavioral finance theory it may be possible to improve our
-understanding of firm level RC, by refining the resulting OpRisk models
-to account for these behavioral traits. Thus implying that people's
-economic preferences described in the model have an economic incentive
-to improve the OpRisk RC measure. \medskip
+economic theories viz.~PT and the behavioural theory of the firm, that
+prove relevant to complex organizations who present a more fitting
+measure for OpRisk. Upon further investigation, Barberis \& Thaler
+(2003) reveal that in finance, behavioral theory explains whether
+certain financial phenomena can be viewed as the result of less than
+fully rational thinking. Their argument goes, that through integrating
+OpRisk management into behavioral theory it may be possible to improve
+our understanding of firm level RC by refining the resulting OpRisk
+models to account for these behavioral traits. Thus implying that
+people's economic preferences described in the model have an economic
+incentive to improve the OpRisk RC measure. \medskip
 
 Despite the reality that OpRisk does not lend itself to scientific
 analysis in the way that market risk and credit risk do, someone must do
@@ -1255,11 +1317,11 @@ development, calibration and validation of EBOR models is challenginf
 since new types of data and ahigher degree of expert involvement acroos
 the institution is required, providing a transparent quantitative
 framework for combining forward-looking point-in-time data and
-historical loss experience (Einemann et al., 2018). The dataset is split
-into proportions and trained, validated and tested. The afore-mentioned
-LDCE, is an improved reflection of the risk factors by singling out the
-value-adding processes associated with individual losses, on a
-trade-by-trade level.
+historical loss experience (Einemann et al., 2018). The afore-mentioned
+LDCE is an improved reflection of the risk factors by singling out the
+value-adding processes associated with individual losses on a
+trade-by-trade level. The dataset is then split into proportions and
+trained, validated and tested.
 
 \section{Loss Distribution Approach (LDA)}
 \label{sec:Loss Distribution Approach (LDA)}
@@ -1276,11 +1338,19 @@ OpRisk VaR. \medskip
 We begin by defining some concepts:
 
 \begin{itemize}
-\item In line with Basel II, and according to @frachot2001loss, we consider a matrix consisting of business lines $BL$ and (operational) event types $ET$. The bank estimates, for each business line/event type (BL/ET) cell, the probability functions of the single event impact and the event frequency for the next three months. More precisely, in each cell of the BL/ET matrix separate distributions for loss frequency and severity are modeled and aggregated to a loss distribution at the group level. The aggregated operational losses can be seen as a sum $S$ of a random number $N$ of individual operational losses \begin{math} (X_1, \ldots, X_N )\end{math}. This sum can be represented by:
+\item In line with Basel II, and according to @frachot2001loss, we consider a matrix consisting of business lines $BL$ and (operational) event types $ET$. The bank estimates, for each business line/event type (BL/ET) cell, the probability functions of the single event impact and the event frequency for the next three months. More precisely, in each cell of the BL/ET matrix separate distributions for loss frequency and severity are modeled and aggregated to a loss distribution at the group level. The aggregated operational losses can be seen as a sum $L$ of a random variables $N_1,\ldots,N_m$ representing loss frequencies, i.e., the values $N_k \in \mathbb{N_{>0}}$. for each $k \in \{1,\ldots,m\}$ individual operational losses \begin{math} (X_{k1}, \ldots, X_{kN_k})\end{math} are samples of the severity distribution $X_k$ of loss type $k$. The loss variable $L_k$ in this cell is defined by
 
 \singlespacing
-\begin{equation}\label{eqn1}
-S = X_1, \ldots, X_N ,\quad N = 1, 2, \ldots 
+\begin{equation}\label{Lossvar}
+L_k = \sum_{l=1}^{N_k}X_{kl} 
+\end{equation}
+\doublespacing
+
+The aggregate loss distribution at group level is defined by
+
+\singlespacing
+\begin{equation}\label{AggLossvar}
+\mathbf{L} = \sum_{k=1}^m L_k 
 \end{equation}
 \doublespacing
 
@@ -1291,11 +1361,12 @@ S = X_1, \ldots, X_N ,\quad N = 1, 2, \ldots
 \label{ssec:Computing the frequency distribution}
 
 \begin{itemize}
-\item Let $\mathbf{N}_{ij}$ be variable in random selection, representing \textbf{the number of times of process risk event failures} between times $T$ \& $T +\tau$. Suppose subscript $i$ refers to the $BL$ which ranges from \begin{math} 1, \ldots, k \end{math} and subscript $j$ to $ET$ ($j=1$ for process risk). We have taken a random sample implying that the observations \begin{math} N_{ij}\end{math}, {where} \begin{math}{i,j}= (1,1)\,,\;\ldots, (k,1)\end{math} are independent and identically distributed (i.i.d). 
+\item Let $\mathbf{N}_{ij}$ be variable in random selection, representing \textbf{the number of times of process risk event failures} between times $T$ \& $T +\tau$. Suppose subscript $i$ refers to the $BL$ which ranges from \begin{math} 1, \ldots, k \end{math} and subscript $j$ to $ET$ which ranges from \begin{math} 1, \ldots, l \end{math} (e.g., suppose $j=1$ for Internal Fraud). We have taken a random sample implying that the observations \begin{math} N_{ij}\end{math}, {where} \begin{math}{i,j}= (1,1)\,,\;\ldots, (k,1)\end{math} are independent and identically distributed (i.i.d). 
 
 \item The random variable $N_{i1}$\footnote{$N_{ij}$ \, where subscript $j=1$ since we are only dealing with $1$ event type i.e. process risk} has distribution function\footnote{The term distribution function is monotonic increasing function of $n$ which tends to $0$ as \begin{math} n \longrightarrow -\infty\end{math}, and to $1$ as \begin{math} n \longrightarrow \infty \end{math}} The random variable has distribution function (d.f.) \begin{math}\mathbf{P}_{i1}(n/\theta_0)  \end{math}, where $\theta_0$ is an unknown parameter of the estimated distribution.  The unknown parameter $\theta_0$ may be a scalar or a vector quantity \begin{math}\mathbf{\theta_0}\end{math}, for example, The Poisson distribution depends on one parameter called $\lambda$ whereas the univariate normal distribution depends on two parameters, $\mu$ and $\sigma ^2$, the mean and variance.  These parameters are to be estimated in some way. We use the Maximum Likelihood Estimate (m.l.e) which is that value of $\theta$ that makes the observed data \lq\lq most probable\rq\rq or \lq\lq most likely\rq\rq.\medskip
 
 \item The d.f. \begin{math}\mathbf{P}_{i1}(n/\theta_0)  \end{math}, is the probability that $N_{i1}$ takes a value less than or equal to $n$, where $n$ is a small sample from the entire population of observed frequencies, i.e.
+
 \singlespacing
 \begin{equation}\label{PDF}
 \mathbf{P}_{ij}(n)=Pr \left(N_{ij}\leq n \right) \quad{i,j}= (1,1),\ldots, (k,1)
@@ -1504,68 +1575,70 @@ time lag after realised losses due to extrapolation to the 99.9th
 percentile and an overstretched distribution.\medskip
 
 Jongh et al. (2015), Galloppo \& Previati (2014), Opdyke (2014) \&
-others follow on from recent attempts of finding a statistical-based
-model for OpRisk capital calculation which suggests in the literature to
-integrate internal data and external data as well as scenario
-assessments endeavoring on improving on accuracy. Recent work in LDA
-modeling has been found wanting (Badescu, Lan, Lin, \& Tang, 2015), due
-to the very complex characteristics of data sets in OpRisk VaR modeling.
-Further insights are continually emerging of new found techniques on how
-to deal with the issues that arise in LDA modeling; this area is a
-contentious one keeping finance practitioners and academics at breadth
-with each other w.r.t latest research methods in risk theory, and even
-in the latest studies where quality OpRisk models are used there are
-often shortcomings and solution whose validity should not be overlooked.
+others follow along lines in the literature of recent attempts aimed at
+finding a statistical-based model for OpRisk capital calculation, which
+suggest integrating internal and external data as well as scenario
+assessments to endeavour on improving on accuracy for the estimates. In
+recent work, Badescu, Lan, Lin, \& Tang (2015) reported that LDA
+modelling is found wanting due to the very complex characteristics of
+data sets required to establish OpVaR. Furthermore, insightful are
+continually emerging new found techniques are being built to deal with
+these issues that arise in LDA modeling; opening new and contentious
+areas of work, keeping practitioners and academics guessing at what
+revolutionary phase may follow w.r.t the latest research methods.
 \medskip
 
 Opdyke (2014), Agostini, Talamo, \& Vecchione (2010), Jongh et al.
-(2015), Galloppo \& Previati (2014), and others explicate how greater
-accuracy, precision and robustness uphold a valid and reliable estimate
-for OpRisk capital as defined by Basel II/III. Transforming this basic
-knowledge into \lq\lq risk culture\rq\rq~or firm-wide knowledge for the
-effective management of OpRisk, serves as a starting point for a control
-function providing attribution and accounting support within a
-framework, methodology and theory for understanding OpRisk measurement.
-FI's are beginning to implement sophisticated risk management systems
-similar to those for market and credit risk, linking theories which
-govern how these risk types are controlled to theories that govern
-financial losses resulting from OpRisk events. \medskip
+(2015), Galloppo \& Previati (2014), and others seem to explicate how
+greater accuracy, precision and robustness uphold a valid and reliable
+estimate for OpRisk capital as defined by Basel II/III. Transforming
+this basic knowledge into a \lq\lq risk culture\rq\rq~or firm-wide
+knowledge for the effective management of OpRisk serves as a starting
+point forming a control function that provides attribution and
+accounting support within a framework, methodology and theory for
+understanding OpRisk. FI's are beginning to implement sophisticated risk
+management systems similar to those for market and credit risk, linking
+theories which govern how these risk types are controlled to theories
+that govern financial losses resulting from OpRisk events. \medskip
 
 Agostini et al. (2010) also argued that banks should adopt an integrated
 model by combining a forward-looking component (scenario analysis) to
-the historical operational VaR, reinforcing the foremost literature by
-including a scenario analyptic case through an integration model which
-is based on the idea of estimating the parameters of the historical and
-subjective distributions and then combining them using advanced
-credibility theory (ACT). The basis for the use of ACT is the idea that
-a better estimation of the OpRisk measure can be obtained by combining
-the two sources of information advocating for the combined use of both
-experiences.\medskip
+the historical OpVaR, reinforcing foremost discussions in today's
+literature by involving subject matter expert analysis of the case,
+through an integration model which is based on the idea of estimating
+the parameters of the historical and subjective distributions and then
+combining them using advanced credibility theory (ACT). The basis for
+the use of ACT is the idea that a better estimation of the OpRisk
+measure can be obtained by combining the two sources of information
+advocating for the combined use of both experiences.\medskip
 
 Agostini et al. (2010) seek to explain through a weight called the
 credibility, the amount of credence given to two components (historical
 and subjective) determined by statistical uncertainty of information
 sources, as opposed to the conventional weighted average approach chosen
-on the basis of qualitative judgements. He deemed the integration method
-as is self contained and independent of any arbitrary choice in the
-weight of the historical or subjective components of the model.
+on the basis of qualitative judgements. Agostini et al. (2010) proposed
+the integration method be deemed as self-contained and independent of
+any arbitrary choice in the weights of the historical or subjective
+components of the model, which serves as a more compelling
+representation of facts.
 
 \subsection{Current operational risk measurement modeling framework}
 \label{sec:Current operational risk measurement modeling framework}
 
-Historical severity curves obtained from historical loss counts
-presented in conventional quantification techniques have been widely
-considered to be the most reliable models when used in OpRisk loss
-estimation. However, they have not been very useful successfull when
-used in future loss prediction of measures capturing forward-looking
-aspects. As stated in the industry position paper, see Group \& others
-(2013), these are OpRisk types with defined risk exposure and
-identifiable risk drivers, which are then incorporated as explanatory
-variables in ``alternative'' models whose aim is to replace the
-afore-mentioned LDA modelling techniques by measures using event
-frequencies based on actual exposures and available risk factors,
-instead of hisorical loss counts in the capital adequacy prediction
-problem (Einemann et al., 2018).
+Historical severity curves obtained from historical loss counts that are
+usually presented in conventional quantification techniques, such as in
+LDA modelling, have been widely considered to be the most reliable
+models when used in OpRisk loss estimation. However, they are not useful
+and have not been very successfull when used to predict future losses,
+particularly of measure of more ``predeictive'' OpRisk types who
+capturing forward-looking aspects of the BEICFs thereof. As stated in
+the industry position paper, see Group \& others (2013), these are
+OpRisk types with defined risk exposure and identifiable risk drivers,
+which are then incorporated as explanatory variables in ``alternative''
+models whose aim is to replace the afore-mentioned LDA modelling
+techniques by measures using event frequencies based on actual exposures
+and available risk factors, instead of hisorical loss counts in the
+capital adequacy prediction problem (Einemann et al., 2018).
 
 \subsection{Benefits and Limitations}
 \label{ssec:Benefits and Limitations}
@@ -1612,13 +1685,13 @@ data.\medskip
 As mentioned in their paper (Einemann et al., 2018), they were the first
 to lay the groundwork for future development of their technique across
 industry, and to establish a common language through a strategy for
-integrating EBOR and LDA models. In the former they incorporate
-``predictable'' loss types e.g., they test their hypothesis on a
-portfolio of pending litigations, litigations being predictable as far
-as given the event triggering the filing of the litigation had already
-happened, and only the final outcome in court case has to be modelled,
-and in the latter case, they consider LDA components which cover risks
-that are well reflected through historical events.
+integrating EBOR models and LDA models. In the former EBOR model they
+incorporate ``predictable'' loss types e.g., they test their hypothesis
+on a portfolio of pending litigations, litigations being ``predictable''
+as far as when given the event triggering the filing of the litigation
+case had already happened, and only the final outcome in court has to be
+modelled. In the latter LDA modelling case, they consider LDA components
+which cover risks that are well reflected through historical events.
 
 \subsection{The general exposure-based operational risk (EBOR) concept}
 \label{ssec:The general exposure-based operational risk (EBOR) concept}
@@ -1627,36 +1700,110 @@ The general theory for measuring and allocating risk capital is
 independent of specific risk types: It is the basis from which standard
 risk measures are founded. Risk capital calculated at the aggregate
 level forms the basis from which the allocation of risk capital to
-individual events is derived. In particular, standard risk measures like
-value-at-risk (VaR) or expected shortfall (ES) are based on the Monte
-Carlo simulation of the loss distribution which is a numerical
-representation of a simple closed form of the total event distribution
-function.\medskip
+individual events is derived; in fact Aue \& Kalkbrener (2006) shows why
+a consistent framework for measuring risk and firm performance hindges,
+in fact, on a uniform application of risk theory to capital adequacy
+calculation for market, credit and Oprisk. In particular, standard risk
+measures like value-at-risk (VaR) or expected shortfall (ESF) are based
+on the Monte Carlo simulation of the loss distribution which is a
+numerical representation of a simple closed form of the total event
+distribution function. More precisely,
 
-EBOR modeling techniques consist of determining the aggregate event loss
-variable \(\mathbf{Y}\), obtained by linking OpRisk events to event
-types with defined exposures, in addition to ``predictive'' factors,
-through the introduction of a given set of \emph{risk factors} who also
-sufficiently capture risk exposure to forward-looking aspects. As a
-conscequence, capital estimates adapt to real-time changes in the risk
-profile of a bank e.g., point-in-time changes in the portfolio mix, or
-the introduction of a new product. The aggregate event loss variable of
-the EBOR model derived from \ref{EBORmethod}, with indivudual losses
-yields
+\singlespacing
+
+\begin{eqnarray}
+\mbox{VaR}(\alpha) &=& \mbox{inf}\{z \in \mathbb{R}\| \mathbb{P}(Z \leq z) \geq \alpha \},\\
+\mbox{ESF}(\alpha) &=& \mathbb{E}(Z\| \mbox{VaR}(\alpha))
+\end{eqnarray} \doublespacing
+
+The allocation of risk capital to BL/ET combination risk cells is based
+on ESF contributions, which is numerically evaluated in the tail of the
+aggregate loss distribution if a sample list of \(Z\) has been
+calculated. The tail focused allocation technique is particularly well
+suited to model risk capital allocations to individual exposures, due to
+the fact that that each sample \(z\) of \(Z\) can be reduced down in
+granularity of the \(n\) loss events .i.e., \(\sum_{j=1}^n z_j\),
+defined as its contribution to the tail of the aggregate loss
+distribution (Aue \& Kalkbrener, 2006):
+
+\singlespacing
+
+\begin{eqnarray}
+\mbox{ESF}_i(\alpha) = \mathbb{Z}(Z_i\| > \mbox(VaR)(\alpha)).
+\end{eqnarray} \doublespacing
+
+If the underlying portfolio is limited in granularity, risk capital is
+allocated to a small number of portfolio constituents whose risk
+management strategy precludes tail focused allocation techniques like
+ESF which are based on a high quantile features designed to highlight
+risk concentrations (Einemann et al., 2018). Decidedly desiring
+alternative techniques which give more weight to the body of the
+underlying distributions.\medskip
+
+EBOR modeling techniques are specifically designed to quantify specific
+aspects of OpRisk consisting of determining the aggregate event loss
+variable \(\mathbf{Y}\) which may have rather concentrated risk
+profiles, obtained by linking OpRisk events to event types with defined
+exposures, in addition to ``predictive'' factors, through the
+introduction of a given set of \emph{risk factors} who also sufficiently
+capture risk exposure to forward-looking aspects. As a conscequence,
+capital estimates adapt to real-time changes in the risk profile of a
+bank e.g., point-in-time changes in the portfolio mix, or the
+introduction of a new product. The aggregate event loss variable of the
+EBOR model derived from \ref{EBORmethod}, with indivudual losses yields
 
 \singlespacing
 
 \begin{eqnarray}\label{EBORmodel}
-\mathbf{Y} =\sum_j^n I_j\cdot L_j\cdot EI_j, \quad \mbox{where}\quad j \in {i,\ldots,n}
-\end{eqnarray} \doublespacing \medskip
+\mathbf{Y} =\sum_j^n I_r\cdot L_r\cdot EI_r, \quad \mbox{where}\quad r \in {i,\ldots,n}
+\end{eqnarray} \doublespacing
 
 The EBOR model concept defines \(n\) potential loss events, where \(n\)
-can be considered as the \emph{\textbf{frequency exposure}} and no
-longer \(n\) different components of the LDA model cells corresponding
-to BL/ET matrix combinations, but to individual loss events. In turn,
-see Section \ref{sssec:Internal measurement approach} \&
-\ref{Internalmeasurement}, the EBOR model is also a special case of the
-LDA model (Einemann et al., 2018).\medskip
+is considered as the \emph{frequency exposure} and no longer denotes
+\(n=56\) different components of the LDA model cells corresponding to
+BL/ET matrix combinations, but to individual loss events. At this stage,
+EBOR is not conidered as an option in the Basel II accord for OpRisk.
+Indeed, the regulatory framework proposes four approaches i.e., SA, BIA,
+IMA ans the SMA.\medskip
+
+The EBOR model is a special case of the IMA conditional on the IMA being
+allowed to depend only on aggregate number of events, and on the total
+loss amounts by BL/ET risk type cells but not on individual losses
+(Frachot et al., 2001). Frachot et al. (2001) demonstrates this when we
+find out the conditions under which both methods coincide i.e.,
+\(\mathcal{\Large{C}}_{OpRisk}^{IMA} = \mathcal{\Large{C}}_{OpRisk}^{LDA}\)
+and \(\mbox{EL}_{k}^{IMA}=\mbox{EL}_l^{LDA}\) i.e.,
+\(Y_{ij} = S_{ij}^{T+\tau}\). It comes that the internal scaling factor
+\(\gamma_k\):\medskip
+
+\singlespacing
+
+\begin{eqnarray}
+\gamma_k &=& \frac{\mathcal{\Large{C}}_{OpRisk}^{IMA}}{\sum_r^n I_r\cdot L_r\cdot EI_r} = \frac{\mathcal{\Large{C}}_{OpRisk}^{LDA}}{\sum_{l=1}^{N_{k}}X_{kl}}\nonumber\\
+&=& \frac{G^{-1}(\alpha)}{\sum_{l=1}^{N_{k}}X_{kl}}\\
+&\Longrightarrow& \sum_r^n I_r\cdot L_r\cdot EI_r = \sum_{l=1}^{N_{k}}X_{kl}\nonumber\\
+\end{eqnarray} \doublespacing
+
+Where \(n\) is fixed to the number of observations in the internal
+database and \(\mathbf{G}^{-1}(\alpha)\) is the quantile of
+\(\vartheta\) for the level \(\alpha\). For illustrative purposes lets
+assume the poisson/log-normal compound distribution where the frequency
+parameter (\(N \sim \mathcal{P}(\theta)\)), and the severity parameters
+(\(\zeta \sim \mathcal{LN}(\mu,\sigma)\)): The IMA model can justifiably
+be developed as a proxy for the LDA model supposedly to capture the LDA
+model in a simplified way provided \(\gamma_k\) has the following
+functional form:
+
+\singlespacing
+
+\begin{eqnarray}\label{internalfactorcond}
+\gamma = \gamma(\theta, \mu, \sigma;\alpha)
+\end{eqnarray} \doublespacing
+
+In turn, see Section \ref{sssec:Internal measurement approach} \&
+\ref{Internalmeasurement}, and provided expression
+\ref{internalfactorcond} holds, than it is justified that the EBOR model
+is also a special case of the LDA model (Einemann et al., 2018).\medskip
 
 The aggregate event loss \(\mathbf{Y}\)'s relates to the sum of
 \((I_1,\ldots,I_n)\) denoting the event indicator; a vector of
@@ -1664,13 +1811,12 @@ independent (bernoulli) rv's, whose joint event probabilities are
 specified through a bernoulli mixture model defined by:
 \(\ni \mathbb{P}(I_j=1|\Psi=\psi)=p_j(\psi)\) and \(\psi=\mathbb{R}^m\),
 such that they have to attain values
-\(y=(y_1,\ldots,y_n) \in \{0,1\}^n\), whose sum is called the event
+\(y=(y_1,\ldots,y_n) \in \{0,1\}^n\); whose sum is called the event
 \textbf{frequency variable}, taking the states \(1\) or \(0\) depending
 on whether there is a realised loss, or a pending loss/near miss.
-\(EI_j\) is the deterministic \textbf{severity exposure} of the
-\(j_{th}\) event and \(L_j\) is the (stochastic) severity ratio which
-specifies the loss ratio or loss-given-event (LGE) as a percentage of
-exposure.
+\(EI_j\) is the deterministic \emph{severity exposure} of the \(j_{th}\)
+event and \(L_j\) is the (stochastic) severity ratio which specifies the
+loss ratio or loss-given-event (LGE) as a percentage of exposure.
 
 \subsubsection{Integration of EBOR and LDA models}
 
@@ -1702,41 +1848,47 @@ the task of specifying the model.
 \label{sec:A new class of models capturing forward-looking aspects}
 
 I am using GLM's to build a ``comprehensive'' predictive model in the
-sense of including all relevant risk factors that affect the number and
-size of losses for a wide range of Oprisk loss types. Building the model
-incorporates the use of an offset feature, differentiating this
-modelling technique to the non-ideal actuarial model by Einemann et al.
-(2018). An \emph{offset} is an additional model variable which is useful
-for modeling rate data. The afore-mentioned non-ideal nature in the
-actuarial technique of integrating EBOR and LDA models is compounded by
-the real-world fact that OpRisk data is often difficult to parse into
-EBOR data and LDA data types as required in the model, and the data is
-often incomplete and many relevant variables are inconsistently coded
+sense that including all relevant risk factors responsible for loss
+mechanisms can have an affect on the number and sizes of operational
+losses, and expand the uses of the model to a wider range of Oprisk loss
+types. Building the model incorporates the use of an offset feature,
+differentiating this modelling technique to the non-ideal actuarial
+model specified in Einemann et al. (2018). An \emph{offset} is an
+additional model variable which is useful for modeling rate
+data.\medskip
+
+The afore-mentioned non-ideal nature in the actuarial technique for
+integrating EBOR models and LDA models is compounded by the real-world
+fact that OpRisk data is often difficult to parse into EBOR data and LDA
+data types as required by the integrated model, furthermore OpRisk data
+is often incomplete and many relevant variables are inconsistently coded
 and massively categorical. For these reasons (Yan, Guszcza, Flynn, \&
 Wu, 2009), in most actuarial modeling situations modelers are forced to
 exclude variables that are relevant to predicting frequency and severity
 of losses exacerbating the problem of OVB. In contrast, the offset
-option from GLM's offers the classical uses of avoiding OVB and is
-useful in predictive modelling.\medskip
+option from GLM's offers it's classical uses of avoiding OVB amongst
+others, and is useful in predictive modelling.\medskip
 
-In this paper, we develop data a intensive GLM analysis of response
-variables i.e., the loss ratio term called the LossIndicator; using an
-explanatory vector of \(p\) random variable (rv's)
-\(\Psi = (\psi_1,\ldots,\psi_p)\) the risk factors; which are those
-casual factors that create losses with random uncertainty, that are
-decidedly non-normal, who introduce dependencies between variables
-including categorical outcomes and discrete counts, and an \emph{offset}
-variable which is discussed as a measure of exposure in the context of a
+In this paper, we develop a data intensive GLM analysis of the response
+variable viz.~the loss ratio term anagolous to Einemann et al. (2018)'s
+frequency variable, called the LossIndicator; using an explanatory
+vector of \(p\) random variables (rv's)
+\(\Psi = (\psi_1,\ldots,\psi_p)\), the risk factors, which are those
+casual factors that create losses with random uncertainty and decidedly
+non-normal, and who introduce dependencies between variables including
+categorical outcomes and discrete counts; and an \emph{offset} variable
+\(d_i\) which is discussed as a measure of exposure in the context of a
 poisson regression. In the loss ratio modeling, the goal is to build a
-model targeting the LossIndicator, which is to be layered on to the
-existing plan.\medskip
+model targeting the response \(f(y;\theta)\):= the LossIndicator, which
+is to be layered on to the existing plan.\medskip
 
-The \emph{offset} is selected as measures of trading risk exposure i.e.,
-the required correction for the period in days, \(d\) exposed to risk,
-and risk factors are the business environment and internal control
-factors (BEICF's) thereof i.e., information such as unique trade
-identifier, trader identification, loss event capture personnel, trade
-status and instrument type, loss event description, loss amount, market
+The \emph{offset} is selected as a measure of trading risk exposure:
+i.e., the required correction for the period in days, \(d\) exposed to
+risk, and risk factors are the business environment and internal control
+factors (BEICF's) thereof e.g., information such as the trading times,
+trader identification, loss event capture personnel, trade status and
+instrument types, loss event description and reasons for the losses,
+loss event type categorisation, individual loss amounts, market
 variables which have an economic interpretation, trading desk and
 business line, beginning and ending date and time of the event, and
 settlement times, etc.
@@ -1751,21 +1903,22 @@ over time \([T,T+\tau]\). The stochastic process \(N_{ij}\leq n\) is
 called the frequency process. \(N_{ij}\) is equivalent to the r.h.s of
 Equation \ref{EBORexposure}, corresponding to Einemann et al. (2018)'s
 EBOR model \emph{frequency exposure}, where \(n\) is the maximun number
-of events. The unit of exposure is now the rv \(\mathbf{N}_{ij}\) in the
-current LDA model.
+of events. The unit of exposure now \emph{n} now takes on the value for
+the upper bound of the rv \(\mathbf{N}_{ij}\), the frequency variable in
+the current LDA model.
 
 \singlespacing
 
 \begin{eqnarray}
-\mathbf{N}_k = \sum_{k=1}^n I_j 
+\mathbf{N}_k = \sum_{k=1}^m I_k 
 \end{eqnarray} \doublespacing
 
 Where \(n\) is some terminal time \(T+\tau\). Nelder \& Wedderburn
 (1972), Ohlsson \& Johansson (2010) and Covrig et al. (2015) show that
 this process is a poisson process which follows a poisson distribution
-with parameter \(\lambda\), or otherwise the rate. Here we describe the
-\emph{exponential dispersion model} (EDM) of the GLM, which generates
-the poisson distribution by the model..
+with parameter \(\theta = \lambda\), or otherwise the rate. Here we
+describe the \emph{exponential dispersion model} (EDM) of the GLM, which
+generates the poisson distribution by the model..
 
 \singlespacing
 
@@ -1778,7 +1931,10 @@ requires correction for the period \(d\) exposed to risk. The exposure
 measue is readily incorporated into the estimation procedure and is a
 quantity that is roughly proportional to the risk. As this statement
 suggests, the offset/exposure measure must be on the same scale as the
-linear predictor in the basic GLM framework.
+linear predictor in the basic GLM framework. So the mean frequency will
+be estimated by the multiplicative model (Covrig et al., 2015 \&
+@ohlsson2010non) corresponding to a logarithmic link function, a
+\emph{log link}, where a new variable \(d_i\) appears
 
 \singlespacing
 
@@ -1787,51 +1943,53 @@ linear predictor in the basic GLM framework.
 \mbox{ln}\lambda_i &=&  \mbox{ln}d_i + \beta_0 + \beta_1x_{i1} + \beta_2x_{i2} + \ldots + \beta_px_{ip}
 \end{eqnarray} \doublespacing
 
-where ln\(d_i\) is the natural log of risk exposure, called the offset
-variable which affects the algorithm only directly before and after
-regression estimation, effectively replacing the rate \(\lambda\) with
-an adjusted rate (counts divided by exposures: \(R=\frac{\lambda}{d}\))
-as the target variable; using exposure as weight; dispensing with the
-offset (Yan et al., 2009).\medskip  
+where ln\(d_i\) is the natural log of risk exposure, called the
+\emph{offset variable} which affects the algorithm only directly before
+and after regression estimation, effectively replacing the rate
+\(\lambda\) with an adjusted rate (counts divided by exposures:
+\(R=\frac{\lambda}{d}\)) as the target variable; using exposure as
+weight; dispensing with the offset (Yan et al., 2009).\medskip  
 
 In the definition for exposure, the offset is most commonly discussed as
-a measure of exposure in the context of Poisson regression. for example
+a measure of exposure in the context of poisson regression. For example
 when modeling rates in some observations from an OpRisk dataset, for set
 entries corresponding to a \(d_i=6\) month time lag between the moment
-the Oprisk event was concieved \(T\) until the Oprisk event is realised
-at \(T+\tau\); while other set of events correspond to a \(d=1\) year
-lag, then it is appropriate to use (log of) months of exposure as and
-offset. If not, model variables correlated with months of exposure might
-possibly pick up some of the varaition that should be explained by
+the Oprisk event was conceived, \(T\) until the Oprisk event is realised
+at \(T+\tau\); while another set of events correspond to a \(d_j=1\)
+year lag, then it is appropriate to use (log of) months of exposure as
+and offset. If not, model variables correlated with months of exposure
+might possibly pick up some of the varaition that should be explained by
 months of exposure, resulting in biased parameter estimates.
 
 \subsubsection{Model illustration}
 \label{sssec:Model illustration}
 
-In their paper, the EBOR model pioneered by Einemann et al. (2018), the
-non-inflated successful claimed amount may provide a plausible estimate
-for the capital charge for litigation risk, but mainly because it is
+In their paper, the EBOR model pioneered by Einemann et al. (2018), a
+non-inflated successful claimed amount providea a plausible estimate for
+the capital charge for litigation risk, but mainly because it is
 particularly well-suited to the specific risk type dealt with i.e., due
 to better usage of extensive existing information (Boettrich \& Starykh,
 2017) and the more plausible model behavior over the litigation life
-cycle. This is important as it fits the required data availability
-prerequisite, such as in requiring case specific information for each
-litigation needed for accounting, as well as in the identification of
-dependencies across the porfolio which makes it easier for outflow
-estimates in the provisioning process (Einemann et al., 2018).\medskip 
+cycle. This is important, it fits in with the required data availability
+prerequisite, such as the requirement for case specific information for
+each litigation needed for accounting, as well as in the required
+identification of dependencies across the porfolio which makes it easier
+for outflow estimates in the provisioning process (Einemann et al.,
+2018).\medskip 
 
 Nevertheless, their EBOR model is bound to under-perform for many other
-OpRisk event types since these EBOR models are typically designed to
-quantify specific aspects of OpRisk. Litigation risk have rather
-concentrated risk profiles i.e., litigations can be grouped into
+OpRisk event types whose data types fall outside of the contraints,
+since these EBOR models designed for litigation risk are typically
+designed to quantify specific aspects of OpRisk. Litigation risk have
+rather concentrated risk profiles i.e., litigations can be grouped into
 clusters whereby a court ruling for one litigation impacts the
 likelihood of a payment for other litigations in the same cluster and,
 on the other hand does not influence the the outcome of litigations
 outside the cluster (Einemann et al., 2018). For example, in a chart of
-litigation settlement as a percentage of IPO issuing amounts, Rosa
-(2012) demonstrates highest concentrations of payments toward the end of
-Q2 2012 on toward early Q3, tapering off in the early and latter parts
-of year.\medskip
+litigation settlement as a percentage of IPO issuing amounts, see Rosa
+(2012) which demonstrates the highest concentrations of payments toward
+the end of Q2 2012 on toward early Q3, tapering off in the early and
+latter parts of year.\medskip
 
 However, EBOR models are important due to wide applicability beyond
 capital calculation and its potential to evolve into an important tool
@@ -1840,53 +1998,82 @@ for auditing process and early detection of potential losses.
 \section{Gap in the Literature}
 \label{sec:Gap in the Literature}
 
-The existing EBOR model is specific to litigation risk due to the
-concentrated nature of litigation risk. However, Einemann et al.
-(2018)'s EBOR model is not suitable for most OpRisk event types because
-they are not necessarily concentrated and also don't strictly meet the
-data requirements for the model to work. The new EBOR model that is
-based on GLM's is a more comprehensive model since not only does the
-standard loss collection data exercise (LCDE) allow for data
-requirements, the afore-mentioned weakness regarding concentrations in
-risk profiles is specifically dealt with through the introduction of an
-offset.\medskip
+The existing EBOR model is specific certain kinds of ``predictable''
+risk types, such as litigation risk, due to the concentrated nature of
+their risk profiles in order to capture forward-looking aspects in the
+OpRisk prediction problem. However, Einemann et al. (2018)'s EBOR model
+is not suitable for most OpRisk event types since their risk profiles
+are not necessarily concentrated, and also the data types don't strictly
+meet the data requirements for the model to work. The new EBOR model is
+more compelling to use since it is based on well established statistical
+methods, so called GLM's, whose basic ideas were introduced by Nelder \&
+Wedderburn (1972). Also when the Oprisk data set is created losses are
+always collected of all past individual events so not only does the loss
+collection data exercise (LCDE) serve for the use of a more
+comprehensive EBOR modelling approach, but weakening constraints
+regarding needed concentrated risk profiles in the afore-mentioned EBOR
+model is specifically dealt with and eliminated through the introduction
+of an offset variable - viz.~\emph{exposure} measure \emph{d}.\medskip
 
-The GLM's offset function for one eliminates OVB, secondly due to the
-recent machine learning (GLM) technique, which works well with lots of
-data points, the offset function introduces a sensitivity minimising the
-unscaled deviance (which is trivially equivalent to maximizing the
-likelihood or minimising the cost function) which is analogous to an
-activation in the biological neural system where some groups of neurons
-firing cause others to fire.
-
-There is cognitive pressure which seeks to remove information which we
-are largely unaware of, because they are undetectable to human senses
-that no one could ever see them. We seek to remove this pressure,
-effectively lowering uncertainty and allowing us to position ourselves
-to develop a defense against our cognitive biases. It is through
-patterns in that information that we are largely unaware of that
-predictions could arise; or that, OpRisk management incorporates rather
-than dismiss the many alternatives that were not imagined, the
-possibility of market inefficiencies or finding value in unusual places.
+The GLM's offset function for one eliminates OVB, and secondly due to
+the GLM's well established machine learning technique, whose efficiency
+is a function of the number of data points, the offset function
+introduces a sensitivity minimising the unscaled deviance (which is
+trivially equivalent to maximizing the likelihood or minimising the cost
+function since that deviances are intepreted as weighted sums of
+distances estimated means from observations) and hence estimating
+standard errors. The offset \(d\), see Equation \ref{EQlnOffset} serves
+as function used to measure performance in the multiplicative poisson
+model over time, which is analogous to an activation in the biological
+neural system where some groups of neurons firing cause others to fire;
+commonly put ``Neurons that fire together wire together.''
 
 \section{Conclusion}
 \label{sec:Conclusion}
 
-A substantial body of evidence suggests that loss aversion, the tendency
-to be more sensitive to losses than to gains plays an important role in
-determining how people evaluate risky gambles. In this paper we evidence
-that human choice behavoir can substantially deviate from neoclassical
-norms.\medskip
+Finance models depicting OpRisk describe human behavior, and therefore
+the model of uncertainty measured in the past as the best estimator for
+future risk, are at best subjective approximations. They are not as
+accurate as those in market risk and credit risk modelling which lend
+themselves more closely to scientific analysis. The underlying problem
+in estimating risk, i.e., the uncertainty due to the deviation between
+model prediction and what is observed in the real world, is therefore
+more pronounced in OpRisk modeling, compounded by the fact that, in
+OpRisk modelling accurate and reliable quantitative data is rarely
+available and often of low quality.\medskip
 
-PT takes into account the loss avoidance agents and common attitudes
-toward risk or chance that cannot be captured by EUT; which is not
-testing for that inherent bias, so as to expect the probability of
-making the same operational error in future to be overcompensated for
-i.e., If an institution suffers from an OpRisk event and survives, it's
-highly unlikely to suffer the same loss in the future because they will
-over-provide for particular operational loss due to their natural risk
-aversion. This is a testable proposition which fits normal behavioral
-patterns and is consistent with risk averse behaviour.
+A comparison of statistical theories such as regression models and other
+related statistical techniques should be encouraged to more effectively
+leverage off the tools used to extract knowledge from data for
+prediction. Linear regression, or the slightly larger general linear
+model are constrained since: (i) it assumes normally distributed random
+errors (ii) the mean is a linear function of covariates; while GLM's
+work with a general class of distribution unconstrained by the normal
+assumption, and a monotonic transformation of the mean .viz, the offset
+variable, a linear function of the covariates which are capable of
+modeling complex functional forms, with the linear an multiplicative
+models as special cases(Ohlsson \& Johansson, 2010).\medskip
+
+The new GLM based EBOR model lays the foundation for a closer
+mathematical representation of the real nature of OpRisk due to a
+``learning'' mode, that captures complexities of real OpRisk behavior
+through the way the GLM adapts to novel environments i.e., given a
+series of inputs the data is trained and validated and eventually
+produces a prediction that is as close to the actual output through
+``learning''.\medskip
+
+There is human element largely unawares, consisting of information that
+is undetectable to humans so that we are unconscious to its presence,
+effectively lowering the certainty in our predictions and leaving us
+vulnerable to cognitive biases. Over time, the learning algorithm begins
+to modify the individual parameters within its model so that the
+predicted and actual results become closer and closer, thanks to a
+relatively long series of trials allowing the optimization of weights
+linking inputs to outputs. It is through patterns in that information
+that we are largely unaware of that predictions could arise; or that,
+OpRisk management incorporates rather than dismiss the many alternatives
+that were not imagined, the possibility of market inefficiencies or
+finding value in unusual places.
 
 \singlespacing
 
@@ -3502,14 +3689,26 @@ for the value adding processes of the business unit.
 
 \chapter{THEORETICAL INVESTIGATIONS INTO THE QUANTIFICATION OF MODERN ORMF'S}
 
-\begin{longtable}[]{@{}l@{}}
-\toprule
-\endhead
-utput: pdf\_document\tabularnewline
-\bottomrule
-\end{longtable}
-
 \doublespacing
+
+\section{Introduction}
+\label{sec:IntroductionChapter5}
+
+A substantial body of evidence suggests that loss aversion, the tendency
+to be more sensitive to losses than to gains plays an important role in
+determining how people evaluate risky gambles. In this paper we evidence
+that human choice behavoir can substantially deviate from neoclassical
+norms.\medskip
+
+PT takes into account the loss avoidance agents and common attitudes
+toward risk or chance that cannot be captured by EUT; which is not
+testing for that inherent bias, so as to expect the probability of
+making the same operational error in future to be overcompensated for
+i.e., If an institution suffers from an OpRisk event and survives, it's
+highly unlikely to suffer the same loss in the future because they will
+over-provide for particular operational loss due to their natural risk
+aversion. This is a testable proposition which fits normal behavioral
+patterns and is consistent with risk averse behaviour.
 
 \section{A new class of ORMF models approach}
 \label{sec:A new class of ORMF models approach}
@@ -4063,6 +4262,10 @@ approach for operational risk}.
 \leavevmode\hypertarget{ref-morgenstern1953theory}{}%
 Morgenstern, O., \& Von Neumann, J. (1953). \emph{Theory of games and
 economic behavior}. Princeton university press.
+
+\leavevmode\hypertarget{ref-mori2001internal}{}%
+Mori, T., Harada, E., \& others. (2001). \emph{Internal measurement
+approach to operational risk capital charge}. Bank of Japan.
 
 \leavevmode\hypertarget{ref-nelder1972generalized}{}%
 Nelder, J. A., \& Wedderburn, R. W. (1972). Generalized linear models.
